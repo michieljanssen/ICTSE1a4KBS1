@@ -11,6 +11,7 @@ namespace KBSTest1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Console.WriteLine("push test from Hugo: SUCCES!");
             Console.ReadLine();
         }
     }
