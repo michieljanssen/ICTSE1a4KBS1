@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="8.2" multi-file="no">
+  <meta>
+    <name>UML GAME</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type stereotype="" type="UmlActor" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlSystemBoundary" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlUseCase" />
+        <value>6</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type stereotype="" type="AbstractElementGroup" />
+        <value>28</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlActor" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlSystemBoundary" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlUseCase" />
+        <value>7</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlAssociation" />
+        <value>7</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlUseCaseDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management>
+    <persons>
+      <person id="P845bb7a348944257b031e8da682b3a93">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <tasks />
+    <requirements />
+    <issues />
+    <to-dos />
+  </management>
+  <glossary />
+  <types>
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types />
+  </types>
+  <filters />
+  <items />
+  <models>
+    <model id="p242528012450260822" name="Model 1" type="" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>10/02/2015 11:41:56</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-usecase" id="p521855040703766567" name="UCD-Spel" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" auto-routed-paths="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>10/02/2015 11:41:56</creation-date>
+          <change-date>10/02/2015 12:27:55</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di948735588179754741" cid="AC002" type="actor" name="Speler" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:02:24">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di391484293339657829" cid="SYS001" type="system-boundary" name="GAME" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:02:44">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di324936389826346856" cid="UC001" type="use-case" name="Game starten" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:02:56">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <use-case />
+          </item>
+          <item id="di239691590352985217" cid="REL001" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:03:08">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di324936389826346856" to="di948735588179754741">
+              <start-role id="" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di584404919112374864" cid="UC002" type="use-case" name="Game eindigen" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:03:23">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <use-case />
+          </item>
+          <item id="di335169591439600455" cid="REL002" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:03:30">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di584404919112374864" to="di948735588179754741">
+              <start-role id="" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di307468705646264446" cid="UC003" type="use-case" name="Level Selecteren" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:26:04">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <use-case />
+          </item>
+          <item id="di620731795201657123" cid="REL003" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:26:18">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di307468705646264446" to="di948735588179754741">
+              <start-role id="" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di910311912371815709" cid="UC004" type="use-case" name="Level starten" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:26:23">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <use-case />
+          </item>
+          <item id="di187055786615174783" cid="REL004" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:26:28">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di910311912371815709" to="di948735588179754741">
+              <start-role id="" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di526086608521346816" cid="UC005" type="use-case" name="Personage bewegen" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:27:01">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <use-case />
+          </item>
+          <item id="di136543724134393729" cid="REL005" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:27:12">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di526086608521346816" to="di948735588179754741">
+              <start-role id="" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di224134326736187381" cid="UC006" type="use-case" name="Level voltooien" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:27:27">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <use-case />
+          </item>
+          <item id="di396202844134894465" cid="REL006" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P845bb7a348944257b031e8da682b3a93" creation-date="10/02/2015 12:27:55">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di224134326736187381" to="di948735588179754741">
+              <start-role id="" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di948735588179754741" iid="b06ed3147234460ba6fc44835cc02d60" creation-date="10/02/2015 12:02:24" order-index="0" type="entity">
+            <layout ax="322.5" ay="411.5" awidth="70" aheight="140" x="322.5" y="411.5" width="70" height="140" angle="0" />
+          </item>
+          <item id="di391484293339657829" iid="f5d8acdb39bd4daeb34e9e369913f63a" creation-date="10/02/2015 12:02:44" order-index="1" type="entity">
+            <layout ax="432.5" ay="86.5" awidth="263" aheight="716" x="432.5" y="86.5" width="263" height="716" angle="0" />
+          </item>
+          <item id="di324936389826346856" iid="81bcb94a674b454094f42e9bafc343f3" container="di391484293339657829" container-iid="f5d8acdb39bd4daeb34e9e369913f63a" creation-date="10/02/2015 12:02:56" order-index="2" type="entity">
+            <layout ax="499.5" ay="197.5" awidth="120" aheight="75" x="499.5" y="197.5" width="120" height="75" angle="0" />
+            <use-case />
+          </item>
+          <item id="di239691590352985217" iid="93d172722f2846f8a3dc3f87454fd62a" creation-date="10/02/2015 12:03:08" order-index="3" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="530" y1="267" x2="392" y2="440" start-border-pos="0.686998112996419" end-border-pos="0.301653126307896">
+              <points>
+                <point x="530" y="267" />
+                <point x="392" y="440" />
+              </points>
+            </layout>
+            <relation from="di324936389826346856" from-iid="81bcb94a674b454094f42e9bafc343f3" to="di948735588179754741" to-iid="b06ed3147234460ba6fc44835cc02d60" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+          <item id="di584404919112374864" iid="14638b67597547c28c704f3a6bc7fa43" container="di391484293339657829" container-iid="f5d8acdb39bd4daeb34e9e369913f63a" creation-date="10/02/2015 12:03:23" order-index="4" type="entity">
+            <layout ax="499.5" ay="292" awidth="120" aheight="75" x="499.5" y="292" width="120" height="75" angle="0" />
+            <use-case />
+          </item>
+          <item id="di335169591439600455" iid="888aa411ef0e476cb8368f467da39349" creation-date="10/02/2015 12:03:30" order-index="5" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="511" y1="351" x2="392" y2="456" start-border-pos="0.726398022969564" end-border-pos="0.330206843784877">
+              <points>
+                <point x="511" y="351" />
+                <point x="392" y="456" />
+              </points>
+            </layout>
+            <relation from="di584404919112374864" from-iid="14638b67597547c28c704f3a6bc7fa43" to="di948735588179754741" to-iid="b06ed3147234460ba6fc44835cc02d60" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+          <item id="di307468705646264446" iid="f79a8cf7bd214be297eb962793393440" container="di391484293339657829" container-iid="f5d8acdb39bd4daeb34e9e369913f63a" creation-date="10/02/2015 12:26:04" order-index="6" type="entity">
+            <layout ax="499.5" ay="670" awidth="120" aheight="75" x="499.5" y="670" width="120" height="75" angle="0" />
+            <use-case />
+          </item>
+          <item id="di620731795201657123" iid="f14a9375db944f9fad1adda1a62e8203" creation-date="10/02/2015 12:26:18" order-index="7" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="526" y1="676" x2="392" y2="520" start-border-pos="0.0552820841471354" end-border-pos="0.44382073538644">
+              <points>
+                <point x="526" y="676" />
+                <point x="392" y="520" />
+              </points>
+            </layout>
+            <relation from="di307468705646264446" from-iid="f79a8cf7bd214be297eb962793393440" to="di948735588179754741" to-iid="b06ed3147234460ba6fc44835cc02d60" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+          <item id="di910311912371815709" iid="7ebbc09fe5a34e7f87a257bd8127e201" container="di391484293339657829" container-iid="f5d8acdb39bd4daeb34e9e369913f63a" creation-date="10/02/2015 12:26:23" order-index="8" type="entity">
+            <layout ax="499.5" ay="386.5" awidth="120" aheight="75" x="499.5" y="386.5" width="120" height="75" angle="0" />
+            <use-case />
+          </item>
+          <item id="di187055786615174783" iid="80ac729ca8fa41249af3bfb3f7484772" creation-date="10/02/2015 12:26:28" order-index="9" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="506" y1="442" x2="392" y2="472" start-border-pos="0.816617126464844" end-border-pos="0.358460017613002">
+              <points>
+                <point x="506" y="442" />
+                <point x="392" y="472" />
+              </points>
+            </layout>
+            <relation from="di910311912371815709" from-iid="7ebbc09fe5a34e7f87a257bd8127e201" to="di948735588179754741" to-iid="b06ed3147234460ba6fc44835cc02d60" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+          <item id="di526086608521346816" iid="642ac20701094c37a269ee3bcf5bceb5" container="di391484293339657829" container-iid="f5d8acdb39bd4daeb34e9e369913f63a" creation-date="10/02/2015 12:27:01" order-index="10" type="entity">
+            <layout ax="499.5" ay="481" awidth="120" aheight="75" x="499.5" y="481" width="120" height="75" angle="0" />
+            <use-case />
+          </item>
+          <item id="di136543724134393729" iid="c718a191ec6f44eabce1801b840f743e" creation-date="10/02/2015 12:27:12" order-index="11" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="502" y1="507" x2="392" y2="488" start-border-pos="0.912904256184896" end-border-pos="0.386713245936802">
+              <points>
+                <point x="502" y="507" />
+                <point x="392" y="488" />
+              </points>
+            </layout>
+            <relation from="di526086608521346816" from-iid="642ac20701094c37a269ee3bcf5bceb5" to="di948735588179754741" to-iid="b06ed3147234460ba6fc44835cc02d60" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+          <item id="di224134326736187381" iid="effb0ca847684586b8ab8e509b8499ed" container="di391484293339657829" container-iid="f5d8acdb39bd4daeb34e9e369913f63a" creation-date="10/02/2015 12:27:27" order-index="12" type="entity">
+            <layout ax="499.5" ay="575.5" awidth="120" aheight="75" x="499.5" y="575.5" width="120" height="75" angle="0" />
+            <use-case />
+          </item>
+          <item id="di396202844134894465" iid="97d623cfe4974562952c256885071b79" creation-date="10/02/2015 12:27:55" order-index="13" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" name-position="10,-10" auto-path="" x1="503" y1="600" x2="392" y2="504" start-border-pos="0.00718034108479818" end-border-pos="0.415266963413783">
+              <points>
+                <point x="503" y="600" />
+                <point x="392" y="504" />
+              </points>
+            </layout>
+            <relation from="di224134326736187381" from-iid="effb0ca847684586b8ab8e509b8499ed" to="di948735588179754741" to-iid="b06ed3147234460ba6fc44835cc02d60" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+  <documents />
+  <document-templates />
+</sim-project>
