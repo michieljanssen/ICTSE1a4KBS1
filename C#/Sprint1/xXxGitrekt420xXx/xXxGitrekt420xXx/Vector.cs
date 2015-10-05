@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace xXxGitrekt420xXx
 {
-    class Vector
+    class Vector    //Positie klasse 2D game
     {
         int vecX;
         int vecY;         

@@ -10,8 +10,10 @@ namespace xXxGitrekt420xXx
 {
     class Level
     {
-        int sizeX;
-        int sizeY;
-        Player_actor player; 
+        int sizeX;              //Breedte
+        int sizeY;              //Hoogte
+        Player_actor player;    //speler
+        Level_start startpunt;  //startpunt
+        Level_eind eindpunt;    //eindpunt
     }
 }

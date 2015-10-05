@@ -10,6 +10,6 @@ namespace xXxGitrekt420xXx
 {
     class Player_actor
     {
-        Vector pos;
+        Vector pos; //Spelerpositie
     }
 }

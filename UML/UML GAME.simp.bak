@@ -25,7 +25,7 @@
       </counter>
       <counter>
         <item-type stereotype="" type="UmlClass" />
-        <value>6</value>
+        <value>7</value>
       </counter>
     </entity-names>
     <entity-ids>
@@ -51,7 +51,7 @@
       </counter>
       <counter>
         <item-type stereotype="" type="AbstractElementGroup" />
-        <value>98</value>
+        <value>99</value>
       </counter>
       <counter>
         <item-type stereotype="" type="ErdRelation" />
@@ -59,7 +59,7 @@
       </counter>
       <counter>
         <item-type stereotype="" type="UmlClass" />
-        <value>7</value>
+        <value>8</value>
       </counter>
       <counter>
         <item-type stereotype="" type="UmlContainment" />
@@ -87,11 +87,11 @@
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.AttributeField</type>
-        <value>15</value>
+        <value>17</value>
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
-        <value>8</value>
+        <value>9</value>
       </counter>
     </fields>
   </counters>
@@ -802,7 +802,7 @@
           </authors>
           <description />
           <creation-date>10/05/2015 10:14:52</creation-date>
-          <change-date>10/05/2015 10:27:59</change-date>
+          <change-date>10/05/2015 10:39:52</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -896,6 +896,24 @@
               <start-role id="" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="" name="" navigability="" association-type="association" visibility="private" />
             </relation>
+          </item>
+          <item id="di299219693818817065" cid="C007" type="class" name="Tile" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/05/2015 10:39:52">
+            <stereotypes />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="a5504b5e023ab4a7f9492f833493ae95e720" cid="AT015" name="tileColor" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a026db8679d69462cab2b66556a50fcfe615" cid="AT016" name="NewAttribute2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations />
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
           </item>
           <item id="di468512582709996159" cid="REL017" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/05/2015 10:18:54">
             <stereotypes />
@@ -1078,6 +1096,10 @@
           </item>
           <item id="di578256916662684784" iid="62a4bbf062aa46adb0957c6709e4c498" creation-date="10/05/2015 10:18:38" order-index="5" type="entity">
             <layout ax="460.5" ay="327.5" awidth="142" aheight="160" x="460.5" y="327.5" width="142" height="160" angle="0" />
+            <class />
+          </item>
+          <item id="di299219693818817065" iid="eb1a5e7ea774497cacc34a5d2b065e5a" creation-date="10/05/2015 10:39:52" order-index="11" type="entity">
+            <layout ax="77.5" ay="117.5" awidth="142" aheight="160" x="77.5" y="117.5" width="142" height="160" angle="0" />
             <class />
           </item>
         </layer>
