@@ -1,0 +1,9 @@
+C:\Users\Jordi\Documents\GitHub\ICTSE1a4KBS1\C#\Sprint1\xXxGitrekt420xXx\xXxGitrekt420xXx\bin\Debug\xXxGitrekt420xXx.exe.config
+C:\Users\Jordi\Documents\GitHub\ICTSE1a4KBS1\C#\Sprint1\xXxGitrekt420xXx\xXxGitrekt420xXx\bin\Debug\xXxGitrekt420xXx.exe
+C:\Users\Jordi\Documents\GitHub\ICTSE1a4KBS1\C#\Sprint1\xXxGitrekt420xXx\xXxGitrekt420xXx\bin\Debug\xXxGitrekt420xXx.pdb
+C:\Users\Jordi\Documents\GitHub\ICTSE1a4KBS1\C#\Sprint1\xXxGitrekt420xXx\xXxGitrekt420xXx\obj\Debug\xXxGitrekt420xXx.csprojResolveAssemblyReference.cache
+C:\Users\Jordi\Documents\GitHub\ICTSE1a4KBS1\C#\Sprint1\xXxGitrekt420xXx\xXxGitrekt420xXx\obj\Debug\xXxGitrekt420xXx.Form1.resources
+C:\Users\Jordi\Documents\GitHub\ICTSE1a4KBS1\C#\Sprint1\xXxGitrekt420xXx\xXxGitrekt420xXx\obj\Debug\xXxGitrekt420xXx.Properties.Resources.resources
+C:\Users\Jordi\Documents\GitHub\ICTSE1a4KBS1\C#\Sprint1\xXxGitrekt420xXx\xXxGitrekt420xXx\obj\Debug\xXxGitrekt420xXx.csproj.GenerateResource.Cache
+C:\Users\Jordi\Documents\GitHub\ICTSE1a4KBS1\C#\Sprint1\xXxGitrekt420xXx\xXxGitrekt420xXx\obj\Debug\xXxGitrekt420xXx.exe
+C:\Users\Jordi\Documents\GitHub\ICTSE1a4KBS1\C#\Sprint1\xXxGitrekt420xXx\xXxGitrekt420xXx\obj\Debug\xXxGitrekt420xXx.pdb
