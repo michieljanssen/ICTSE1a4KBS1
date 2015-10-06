@@ -16,12 +16,22 @@ namespace GameLoop
 
         public Window()
         {
-            loop = new GameLoop(this, 60, false, 120);
+           
+            loop = new GameLoop(this, 60, false, 60);
             InitializeComponent();
+            
+            this.SetStyle(System.Windows.Forms.ControlStyles.AllPaintingInWmPaint, true); 
+            this.SetStyle(System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer, true) ;
+          
+            this.SetStyle(ControlStyles.FixedHeight, true);
+            this.SetStyle(ControlStyles.FixedWidth, true);
+            this.SetStyle(System.Windows.Forms.ControlStyles.UserPaint, true);
+            this.SetTopLevel(true);
         }
 
         private void Window_Load(object sender, EventArgs e)
         {
+            
             this.Paint += new PaintEventHandler(loop.render);
             this.DoubleBuffered = true;
         }

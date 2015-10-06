@@ -14,6 +14,7 @@ namespace GameLoop
         [STAThread]
         static void Main()
         {
+           // System.Diagnostics.Process.GetCurrentProcess().ProcessorAffinity = (System.IntPtr)1;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Window());

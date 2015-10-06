@@ -36,6 +36,7 @@ namespace GameLoop
             this.fpsLock = fpsLock;
             this.maxFps = maxFps;
             t = new Thread(init);
+            t.Priority = ThreadPriority.Highest;
             t.Start();
         }
 
@@ -70,16 +71,23 @@ namespace GameLoop
                 {
                     if (window.InvokeRequired)
                     {
-                        frames++;
                         window.Invoke(new MethodInvoker(window.Refresh));
                     }
+                    else { 
+                        window.Refresh();
+                    }
+                    frames++;
                 } else {
                     if (deltaFps >= 1) {
                         if (window.InvokeRequired)
                         {
-                            frames++;
                             window.Invoke(new MethodInvoker(window.Refresh));
                         }
+                        else
+                        {
+                            window.Refresh();
+                        }
+                        frames++;
                         deltaFps--;
                     }
                 }
