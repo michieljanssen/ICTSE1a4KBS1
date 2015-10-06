@@ -1,0 +1,9 @@
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\GameV2\GameV2\bin\Debug\GameV2.exe.config
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\GameV2\GameV2\bin\Debug\GameV2.exe
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\GameV2\GameV2\bin\Debug\GameV2.pdb
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\GameV2\GameV2\obj\Debug\GameV2.csprojResolveAssemblyReference.cache
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\GameV2\GameV2\obj\Debug\GameV2.Properties.Resources.resources
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\GameV2\GameV2\obj\Debug\GameV2.csproj.GenerateResource.Cache
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\GameV2\GameV2\obj\Debug\GameV2.exe
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\GameV2\GameV2\obj\Debug\GameV2.pdb
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\GameV2\GameV2\obj\Debug\GameV2.Form1.resources
