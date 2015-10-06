@@ -1,0 +1,6 @@
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\Gameconsoleversie\Gameconsoleversie\bin\Debug\Gameconsoleversie.exe.config
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\Gameconsoleversie\Gameconsoleversie\bin\Debug\Gameconsoleversie.exe
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\Gameconsoleversie\Gameconsoleversie\bin\Debug\Gameconsoleversie.pdb
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\Gameconsoleversie\Gameconsoleversie\obj\Debug\Gameconsoleversie.csprojResolveAssemblyReference.cache
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\Gameconsoleversie\Gameconsoleversie\obj\Debug\Gameconsoleversie.exe
+D:\Windesheim\ICTSE1aKBS1\Sprint1\Projectyen\Versie1\Gameconsoleversie\Gameconsoleversie\obj\Debug\Gameconsoleversie.pdb
