@@ -1,0 +1,9 @@
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\GameLoop.exe.config
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\GameLoop.exe
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\GameLoop.pdb
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.csprojResolveAssemblyReference.cache
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Properties.Resources.resources
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.csproj.GenerateResource.Cache
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.exe
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.pdb
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Window.resources

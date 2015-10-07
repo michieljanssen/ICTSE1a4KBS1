@@ -1,0 +1,8 @@
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Release\GameLoop.exe.config
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Release\GameLoop.exe
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Release\GameLoop.pdb
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.Properties.Resources.resources
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.Window.resources
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.csproj.GenerateResource.Cache
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.exe
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.pdb
