@@ -86,6 +86,9 @@ namespace GameLoop
             int ups = 0;
             while (running)
             {
+                //update maxfps en targetups om dynanmisch deze te kunnen veranderen 
+                nsUps = 1000000000.0 / targetUps;
+                nsFps = 1000000000.0 / maxFps;
                 //tijd nu in nanonseconden
                 long now = NanoTime;
                 //berekent de delta voor updates
