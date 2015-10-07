@@ -11,25 +11,30 @@ namespace GameLoop
 {
     class Game
     {
-      //game variablene declarenen
+        //game variablene declarenen
+
+        //keyboard input class
+        public Keyboard keyboard;
 
         public Game()
         {
-            //game variablen initazlizeren
+            //variablene intializeren
+            keyboard = new Keyboard();
 
         }
 
         //render metode
         public void render(object sender, PaintEventArgs e)
         {
-           
+          
         }
 
         //update metode
         public void update(float time)
         {
+            //keyboard update
+            keyboard.update();
           
         }
-
     }
 }

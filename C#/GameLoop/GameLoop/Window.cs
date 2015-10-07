@@ -23,13 +23,7 @@ namespace GameLoop
             InitializeComponent();
             
             //style van het scherm aanpassen voor optimalizatie
-            this.SetStyle(System.Windows.Forms.ControlStyles.AllPaintingInWmPaint, true); 
-            this.SetStyle(System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer, true) ;
           
-            this.SetStyle(ControlStyles.FixedHeight, true);
-            this.SetStyle(ControlStyles.FixedWidth, true);
-            this.SetStyle(System.Windows.Forms.ControlStyles.UserPaint, true);
-            this.SetTopLevel(true);
         }
 
         //load event van het scherm
@@ -38,7 +32,7 @@ namespace GameLoop
             //paint/render compenent in de renderloop
             this.Paint += new PaintEventHandler(loop.render);
             this.DoubleBuffered = true;
-        }
+        }    
 
         //closing event van het scherm
         private void Window_FormClosing(object sender, FormClosingEventArgs e)
@@ -47,5 +41,17 @@ namespace GameLoop
             loop.Running = false;
             loop.loopThread.Abort();
         }
+        //keydown event
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            loop.game.keyboard.Window_KeyDown(sender, e);
+        }
+        //keyup event
+        private void Window_KeyUp(object sender, KeyEventArgs e)
+        {
+            loop.game.keyboard.Window_KeyUp(sender, e);
+        }
+
+        
     }
 }

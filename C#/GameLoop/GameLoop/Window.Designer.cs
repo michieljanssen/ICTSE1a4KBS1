@@ -40,6 +40,8 @@
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Window_FormClosing);
             this.Load += new System.EventHandler(this.Window_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Window_KeyUp);
             this.ResumeLayout(false);
 
         }

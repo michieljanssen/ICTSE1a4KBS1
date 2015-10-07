@@ -14,7 +14,7 @@ namespace GameLoop
     class GameLoop
     {
         //game class waar alles word geupdate en gerendert voor het spel
-        private Game game;
+        public Game game;
 
         //constante voor de standaard update snelheid 
         //ups = updates per seconde
@@ -44,7 +44,8 @@ namespace GameLoop
             this.targetUps = targetUps;
             this.fpsLock = fpsLock;
             this.maxFps = maxFps;
-
+            //intalizeerd het spel
+            game = new Game();
             //initalizeerd de gameloop thraed en start hem op de methode init();
             t = new Thread(init);
             t.Priority = ThreadPriority.Highest;
@@ -53,9 +54,7 @@ namespace GameLoop
 
         //initializatie
         private void init()
-        {
-            //intalizeerd eht spel
-            game = new Game();
+        {          
             running = true;
             run();
         }
