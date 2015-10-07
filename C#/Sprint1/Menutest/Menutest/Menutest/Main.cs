@@ -24,6 +24,7 @@ namespace Menutest
 
         private void SettingsButton_Click(object sender, EventArgs e)
         {
+            mainmenu.Visible = false;
             settings.Visible = true;
         }
 
@@ -46,6 +47,27 @@ namespace Menutest
         private void backButton_Click(object sender, EventArgs e)
         {
             settings.Visible = false;
+            mainmenu.Visible = true;
+        }
+
+        private void SelectLevel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

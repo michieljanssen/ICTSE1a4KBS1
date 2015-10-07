@@ -24,7 +24,7 @@ namespace Menutest
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
 
         private void YesBtn_Click(object sender, EventArgs e)

@@ -80,6 +80,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "exitBox";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "exitBox";
             this.ResumeLayout(false);
             this.PerformLayout();
