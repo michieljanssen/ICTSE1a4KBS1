@@ -8,13 +8,13 @@ namespace GameLoop
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+      /// <summary>
+      /// Start applicatie
+      /// </summary>
         [STAThread]
         static void Main()
-        {
-           // System.Diagnostics.Process.GetCurrentProcess().ProcessorAffinity = (System.IntPtr)1;
+        {  
+            //aanmaken window
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Window());
