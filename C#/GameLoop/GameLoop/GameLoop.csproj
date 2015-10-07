@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\Player.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameLoop.cs" />
     <Compile Include="Util\Keyboard.cs" />
