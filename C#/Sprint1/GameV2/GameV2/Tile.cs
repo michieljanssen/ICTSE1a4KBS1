@@ -1,4 +1,8 @@
-﻿namespace GameV2
+﻿using System;
+using System.Windows.Forms;
+using System.Drawing;
+
+namespace GameV2
 {
     
     internal class Tile
@@ -30,6 +34,39 @@
         {
             get { return pos; }
             set { pos = value; }
+        }
+
+        internal void Paint(object sender, PaintEventArgs e)
+        {
+            Pen blackoutline = new Pen(Color.Black, 1);
+            Brush fill;
+            Image texture;
+            texture = Properties.Resources.floor_tile_texture;
+            e.Graphics.DrawImage(texture, pos.X * tilesize, pos.Y * tilesize);
+
+            switch (tiletype.Type)
+            {
+                default:
+                    fill = new SolidBrush(Color.Red);
+                    break;
+                case 0:
+                    texture = Properties.Resources.floor_tile_texture;
+                    e.Graphics.DrawImage(texture, pos.X * tilesize, pos.Y * tilesize);
+                    break;
+                case 1:
+                    texture = Properties.Resources.Wall;
+                    e.Graphics.DrawImage(texture, pos.X * tilesize, pos.Y * tilesize-10);
+                    break;
+                case 2:
+                    texture = Properties.Resources.dank_kid;
+                    e.Graphics.DrawImage(texture, pos.X * tilesize, pos.Y * tilesize);
+                    break;
+                case 3:
+                    texture = Properties.Resources.dank_shrek;
+                    e.Graphics.DrawImage(texture, pos.X * tilesize, pos.Y * tilesize);
+                    break;
+            }
+            
         }
     }
 }

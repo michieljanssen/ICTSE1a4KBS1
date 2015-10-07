@@ -28,7 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
+            // 
+            // directorySearcher1
+            // 
+            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
             // Form1
             // 
@@ -37,11 +45,15 @@
             this.ClientSize = new System.Drawing.Size(1100, 679);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.DirectoryServices.DirectorySearcher directorySearcher1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
