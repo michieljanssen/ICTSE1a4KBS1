@@ -19,21 +19,33 @@ namespace Menutest
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void SettingsButton_Click(object sender, EventArgs e)
         {
-            
-            Settings settings = new Settings();
-            settings.StartPosition = FormStartPosition.CenterParent;
-            settings.Show();
-            this.Hide();
+            settings.Visible = true;
         }
 
         private void QuitGameButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            exitBox exit = new exitBox();
+            exit.ShowDialog();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            settings.Visible = false;
         }
     }
 }
