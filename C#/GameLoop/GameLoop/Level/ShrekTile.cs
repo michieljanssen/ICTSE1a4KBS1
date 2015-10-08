@@ -13,7 +13,7 @@ namespace GameLoop
         private Image floor;
 
         public ShrekTile(Location init, Image floor)
-            : base(init, TileType.shrek, Properties.Resources.dank_shrek)
+            : base(init, TileType.shrek, false, Properties.Resources.dank_shrek)
         {
             this.floor = floor;
         }

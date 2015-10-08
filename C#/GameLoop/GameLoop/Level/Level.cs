@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-
+using GameLoop.Entity;
+using System.Collections;
 namespace GameLoop
 {
     internal class Level
@@ -11,8 +12,15 @@ namespace GameLoop
         private Location start;
         private Location eind;
 
+        public Tile[][] Tiles { get { return tiles; } }
+
+        private Player speler;
+        private ArrayList entities;
+
         public Level(Location gridsize, Location s, Location e, int size = 32)
         {
+            
+            
             //Setup of the gridsize
             gridSize = new Location(gridsize.X + 2, gridsize.Y + 2); //gridsize wordt vergroot met twee voor muren
             //horizontal rows are initialized
@@ -54,6 +62,14 @@ namespace GameLoop
                     }
                 }
             }
+            Random rand = new Random();
+            speler = new Player(Start, this);
+            entities = new ArrayList();
+            for (int i = 0; i < 5; i++)
+            {
+                entities.Add(new Grunt(new Location(rand.Next(gridsize.X), rand.Next(gridsize.Y)), this));
+            }
+
         }
         public Location Start
         {
@@ -68,6 +84,29 @@ namespace GameLoop
                 for (int u = 0; u < tiles[i].Length; u++)
                 {
                     tiles[i][u].Paint(sender, e);
+                }
+            }
+            for (int i = 0; i < entities.Count; i++)
+            {
+                if (entities.ToArray()[i] is Entity.Entity)
+                {
+                    Entity.Entity enitity = (Entity.Entity)entities.ToArray()[i];
+                    enitity.Paint(sender, e);
+                }
+            }
+            speler.Paint(sender, e);
+        }
+
+        internal void update(Keyboard keyboard,float time) {
+           
+            speler.update(keyboard, time);
+        }
+
+        internal void updateEntities() {
+            for (int i = 0; i < entities.Count; i++) {
+                if (entities.ToArray()[i] is Entity.Entity) {
+                    Entity.Entity  enitity= (Entity.Entity)entities.ToArray()[i];
+                    enitity.update();
                 }
             }
         }

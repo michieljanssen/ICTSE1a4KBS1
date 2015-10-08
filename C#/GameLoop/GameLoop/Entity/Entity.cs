@@ -13,18 +13,28 @@ namespace GameLoop.Entity
     class Entity
     {
         public  enum EntityType { player, grunt};
+
+        private float turnTime;
+        protected float turnTimer;
+
         private EntityType type;
         private Location pos;
+        protected Level level;
         private int size;
 
         private int maxHealth;
         private int health;
-        
 
-        public Entity(Location pos, EntityType type) {
+        public Location Pos { get { return pos; } }
+        public float TurnTime { get { return turnTime; } }
+        public int Size { get { return size; } }
+
+        public Entity(Location pos, Level level, EntityType type) {
             this.pos = pos;
+            this.level = level;
             this.type = type;
             size = 32;
+            turnTime = 15;
         }
 
         public Entity(int x, int y, EntityType type) {
@@ -35,7 +45,7 @@ namespace GameLoop.Entity
         public virtual void Paint(object sender, PaintEventArgs e)
         {
             Graphics p = e.Graphics;
-            p.DrawEllipse(new Pen(Color.Black, 1), pos.X * size, pos.Y * size, size, size);
+            p.FillEllipse(Brushes.Red, pos.X * size, pos.Y * size, size, size);
         }
 
         public virtual void update() { 

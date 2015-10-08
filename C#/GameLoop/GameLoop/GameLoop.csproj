@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\Grunt.cs" />
     <Compile Include="Entity\Player.cs" />
     <Compile Include="Level\KidTile.cs" />
     <Compile Include="Level\FloorTile.cs" />

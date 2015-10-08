@@ -8,13 +8,41 @@ namespace GameLoop.Entity
 {
     class Player : Entity
     {
-        public Player(Location pos):base(pos, EntityType.player){
+        public Player(Location pos, Level level):base(pos, level,EntityType.player){
         
         }
-        public Player(int x, int y)
-            : base(x, y, EntityType.player)
+        internal void update(Keyboard keyboard, float time)
         {
-        
+            //Console.WriteLine("test");
+            if (turnTimer * time >= TurnTime)
+            {
+                if (keyboard.up && !level.Tiles[Pos.X][Pos.Y-1].solid)
+                {
+                    Pos.Y--;
+                    turnTimer = 0;
+                    this.level.updateEntities();
+                }
+                if (keyboard.down && !level.Tiles[Pos.X][Pos.Y + 1].solid)
+                {
+                    Pos.Y++;
+                    turnTimer = 0;
+                    this.level.updateEntities();
+                }
+                if (keyboard.left && !level.Tiles[Pos.X -1][Pos.Y ].solid)
+                {
+                    Pos.X--;
+                    turnTimer = 0;
+                    this.level.updateEntities();
+                }
+                if (keyboard.right && !level.Tiles[Pos.X +1][Pos.Y].solid)
+                {
+                    Pos.X++;
+                    turnTimer = 0;
+                    this.level.updateEntities();
+                }
+                
+            }
+            turnTimer++;
         }
     }
 }

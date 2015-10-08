@@ -11,7 +11,7 @@ namespace GameLoop
 
          //properties geven
         public WallTile(Location init)
-            : base(init, TileType.wall, Properties.Resources.Wall)
+            : base(init, TileType.wall, true, Properties.Resources.Wall)
         {
            
         }

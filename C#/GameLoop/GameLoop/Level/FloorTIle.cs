@@ -10,7 +10,7 @@ namespace GameLoop
     class FloorTile : Tile
     {
         //properties geven
-        public FloorTile(Location init) : base(init, TileType.floor, Properties.Resources.floor_tile_texture) { 
+        public FloorTile(Location init) : base(init, TileType.floor, false, Properties.Resources.floor_tile_texture) { 
         
         }
        

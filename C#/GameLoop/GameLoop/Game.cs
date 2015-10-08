@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
-using GameLoop.Entity;
+
 
 namespace GameLoop
 {
@@ -16,7 +16,7 @@ namespace GameLoop
 
         //keyboard input class
         public Keyboard keyboard;
-        private Player speler;
+      
         private Level map;
 
         public Game()
@@ -28,15 +28,15 @@ namespace GameLoop
             Location eindpunt = new Location(10, 10);
             int tilesize = 32;
             map = new Level(levelformaat, startpunt, eindpunt, tilesize);
-            speler = new Player(map.Start);
             
+
         }
 
         //render metode
         public void render(object sender, PaintEventArgs e)
         {
             map.Paint(sender, e);
-            speler.Paint(sender, e);
+          
         }
 
         //update metode
@@ -44,7 +44,8 @@ namespace GameLoop
         {
             //keyboard update
             keyboard.update();
-          
+           
+            map.update(keyboard, time);
         }
     }
 }

@@ -18,9 +18,11 @@ namespace GameLoop
         private TileType type; // huidige type van tile
         private int tilesize;
         private Image texture; // de sprite/texture van de tile
-        public Tile(Location init, TileType type, Image texture)
+        public Boolean solid;
+        public Tile(Location init, TileType type, Boolean solid, Image texture)
         {
             //variabelen initalizeren
+            this.solid = solid;
             this.texture = texture;
             this.pos = init;
             this.type = type;
