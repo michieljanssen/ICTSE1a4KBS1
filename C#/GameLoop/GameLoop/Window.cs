@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace GameLoop
 {
@@ -21,9 +23,25 @@ namespace GameLoop
             //aanmaken gameloop
             loop = new GameLoop(this, 60, false, 60);
             InitializeComponent();
-            
+
+           // Lezen XML file
+           //XmlReader testxml = Controller.XML.read(new FileStream(System.IO.Directory.GetCurrentDirectory() + "/Resources/" + "Test.xml", FileMode.Open));
+
+           // testxml.ReadToFollowing("Muren");
+           // if (testxml.ReadToDescendant("Muur"))
+           // {
+           //     do
+           //     {
+           //         testxml.ReadToFollowing("x");
+           //         Console.WriteLine("  X: {0}", testxml.ReadElementContentAsString());
+           //         testxml.ReadToFollowing("y");
+           //         Console.WriteLine("  Y: {0}", testxml.ReadElementContentAsString());
+           //     } while (testxml.ReadToNextSibling("Muur"));
+           // }
+
+
             //style van het scherm aanpassen voor optimalizatie
-          
+
         }
 
         //load event van het scherm
