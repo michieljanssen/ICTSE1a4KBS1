@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameV2
+namespace GameLoop
 {
     class Location  //Klasse met X en Y positie
     {

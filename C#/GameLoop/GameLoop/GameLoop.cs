@@ -49,6 +49,7 @@ namespace GameLoop
             //initalizeerd de gameloop thraed en start hem op de methode init();
             t = new Thread(init);
             t.Priority = ThreadPriority.Highest;
+            t.TrySetApartmentState(ApartmentState.MTA);
             t.Start();
         }
 

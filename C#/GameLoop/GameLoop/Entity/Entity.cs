@@ -6,22 +6,30 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
-using GameV2;
 
 namespace GameLoop.Entity
 {
   
     class Entity
     {
-        Location pos;
-        int size;
-        public Entity(Location pos) {
+        public  enum EntityType { player, grunt};
+        private EntityType type;
+        private Location pos;
+        private int size;
+
+        private int maxHealth;
+        private int health;
+        
+
+        public Entity(Location pos, EntityType type) {
             this.pos = pos;
+            this.type = type;
             size = 32;
         }
 
-        public Entity(int x, int y) {
+        public Entity(int x, int y, EntityType type) {
             this.pos = new Location(x, y);
+            this.type = type;
         }
 
         public virtual void Paint(object sender, PaintEventArgs e)
