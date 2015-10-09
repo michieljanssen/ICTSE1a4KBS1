@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Menutest
 {
-    public partial class ExitBox : Form
+    public partial class SettingsNoSave : Form
     {
-        public ExitBox()
+        public SettingsNoSave()
         {
             InitializeComponent();
         }
@@ -22,14 +22,15 @@ namespace Menutest
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnNo_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void YesBtn_Click(object sender, EventArgs e)
+        private void btnYes_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Main.istrue = true;
+            this.Close();
         }
     }
 }

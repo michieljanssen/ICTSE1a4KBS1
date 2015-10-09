@@ -1,6 +1,6 @@
 ﻿namespace Menutest
 {
-    partial class exitBox
+    partial class ExitBox
     {
         /// <summary>
         /// Required designer variable.
@@ -69,7 +69,7 @@
             this.NoBtn.UseVisualStyleBackColor = true;
             this.NoBtn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // exitBox
+            // ExitBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,7 +79,7 @@
             this.Controls.Add(this.label2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "exitBox";
+            this.Name = "ExitBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "exitBox";
             this.ResumeLayout(false);
