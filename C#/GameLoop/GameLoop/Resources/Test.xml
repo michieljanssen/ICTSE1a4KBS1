@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Objecten>
+  <Muren>
+    <Muur>
+      <x>10</x>
+      <y>20</y>
+    </Muur>
+    <Muur>
+      <x>20</x>
+      <y>30</y>
+    </Muur>
+  </Muren>
+  <Vijanden>
+    <Vijand>
+      <x>10</x>
+      <y>20</y>
+    </Vijand>
+  </Vijanden>
+</Objecten>
