@@ -99,8 +99,6 @@ namespace Menutest
             GameLoop.Window game = new GameLoop.Window();
             game.Show();
             mainmenu.Visible = false;
-            //SettingsNoSave a = new SettingsNoSave();
-            //a.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
