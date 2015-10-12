@@ -25,6 +25,9 @@ namespace GameLoop.Entity
             if (r < range) {
                 if (Pos.X > level.Speler.Pos.X)
                 {
+                    if (level.Tiles[Pos.X-- + Pos.Y * level.GridSize.X) {
+
+                    }
                     Pos.X--;
                 }
                 else if (Pos.X < level.Speler.Pos.X)

@@ -13,7 +13,7 @@ namespace GameLoop
         private Location eind;
 
         public Tile[][] Tiles { get { return tiles; } }
-
+        public Location GridSize { get { return gridSize; } }
         private Player speler;
         private ArrayList entities;
 
