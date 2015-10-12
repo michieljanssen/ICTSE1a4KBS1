@@ -7,6 +7,7 @@ namespace GameLoop
 {
     internal class Level
     {
+
         private Location gridSize; //hergebruik van de Locatieklasse om de afmetingen van het rooster
         private Tile[][] tiles;   //Array of all the tiles in the game
         private Location start;
@@ -19,10 +20,11 @@ namespace GameLoop
 
         public Player Speler { get { return speler; } }
 
+        public Random rand;
+
         public Level(Location gridsize, Location s, Location e, int size = 32)
         {
-            
-            
+
             //Setup of the gridsize
             gridSize = new Location(gridsize.X + 2, gridsize.Y + 2); //gridsize wordt vergroot met twee voor muren
             //horizontal rows are initialized
@@ -64,7 +66,8 @@ namespace GameLoop
                     }
                 }
             }
-            Random rand = new Random();
+            rand = new Random();
+          
             speler = new Player(Start, this);
             entities = new ArrayList();
             for (int i = 0; i < 3; i++)
@@ -99,8 +102,9 @@ namespace GameLoop
             speler.Paint(sender, e);
         }
 
-        internal void update(Keyboard keyboard,float time) {
-           
+        internal void update(Keyboard keyboard, float time)
+        {
+
             speler.update(keyboard, time);
             for (int i = 0; i < tiles.Length; i++)
             {
@@ -109,15 +113,15 @@ namespace GameLoop
                     tiles[i][u].Update();
                 }
             }
-        }
-
-        internal void updateEntities() {
-            for (int i = 0; i < entities.Count; i++) {
-                if (entities.ToArray()[i] is Entity.Entity) {
-                    Entity.Entity  enitity= (Entity.Entity)entities.ToArray()[i];
-                    enitity.update();
+            for (int i = 0; i < entities.Count; i++)
+            {
+                if (entities.ToArray()[i] is Entity.Entity)
+                {
+                    Entity.Entity enitity = (Entity.Entity)entities.ToArray()[i];
+                    enitity.update(time);
                 }
             }
         }
+
     }
 }

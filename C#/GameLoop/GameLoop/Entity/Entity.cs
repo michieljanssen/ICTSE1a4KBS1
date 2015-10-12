@@ -26,7 +26,7 @@ namespace GameLoop.Entity
         private int health;
 
         public Location Pos { get { return pos; } }
-        public float TurnTime { get { return turnTime; } }
+        public float TurnTime { get { return turnTime; } set { turnTime = value; } }
         public int Size { get { return size; } }
 
         public Entity(Location pos, Level level, EntityType type) {
@@ -48,7 +48,7 @@ namespace GameLoop.Entity
             p.FillEllipse(Brushes.Red, pos.X * size, pos.Y * size, size, size);
         }
 
-        public virtual void update() { 
+        public virtual void update(float time) { 
         
 
         }

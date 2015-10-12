@@ -20,25 +20,25 @@ namespace GameLoop.Entity
                 {
                     Pos.Y--;
                     turnTimer = 0;
-                    this.level.updateEntities();
+                   
                 }
                 if (keyboard.down && !level.Tiles[Pos.X][Pos.Y + 1].solid)
                 {
                     Pos.Y++;
                     turnTimer = 0;
-                    this.level.updateEntities();
+                   
                 }
                 if (keyboard.left && !level.Tiles[Pos.X -1][Pos.Y ].solid)
                 {
                     Pos.X--;
                     turnTimer = 0;
-                    this.level.updateEntities();
+                  
                 }
                 if (keyboard.right && !level.Tiles[Pos.X +1][Pos.Y].solid)
                 {
                     Pos.X++;
                     turnTimer = 0;
-                    this.level.updateEntities();
+                   
                 }
                 
             }
