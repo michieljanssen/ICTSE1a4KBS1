@@ -26,7 +26,7 @@ namespace Menutest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void SettingsButton_Click(object sender, EventArgs e)
@@ -96,7 +96,11 @@ namespace Menutest
 
         private void SelectLevel_Click(object sender, EventArgs e)
         {
-
+            GameLoop.Window game = new GameLoop.Window();
+            game.Show();
+            mainmenu.Visible = false;
+            //SettingsNoSave a = new SettingsNoSave();
+            //a.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -174,6 +178,11 @@ namespace Menutest
                 refreshRate = Int32.Parse(refreshRateBox.Text);
                 Console.WriteLine("Refresh Rate: {0}", refreshRate);
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

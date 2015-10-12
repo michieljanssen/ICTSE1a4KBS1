@@ -172,6 +172,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Edit UI";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label1
             // 
@@ -248,8 +249,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.settings);
             this.Controls.Add(this.mainmenu);
+            this.Controls.Add(this.settings);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);

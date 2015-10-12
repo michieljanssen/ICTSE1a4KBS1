@@ -25,3 +25,12 @@ C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameL
 C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Properties.Resources.resources
 C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Window.resources
 C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.csproj.GenerateResource.Cache
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\GameLoop.exe.config
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\GameLoop.exe
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\GameLoop.pdb
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.csprojResolveAssemblyReference.cache
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Properties.Resources.resources
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Window.resources
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.csproj.GenerateResource.Cache
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.exe
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.pdb
