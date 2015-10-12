@@ -21,6 +21,7 @@ namespace GameLoop.Entity
         private Location pos;
         protected Level level;
         private int size;
+        private Image sprite;
 
         private int maxHealth;
         private int health;
@@ -29,7 +30,8 @@ namespace GameLoop.Entity
         public float TurnTime { get { return turnTime; } set { turnTime = value; } }
         public int Size { get { return size; } }
 
-        public Entity(Location pos, Level level, EntityType type) {
+        public Entity(Location pos, Level level, EntityType type, Image sprite) {
+            this.sprite = sprite;
             this.pos = pos;
             this.level = level;
             this.type = type;
@@ -44,8 +46,14 @@ namespace GameLoop.Entity
 
         public virtual void Paint(object sender, PaintEventArgs e)
         {
-            Graphics p = e.Graphics;
-            p.FillEllipse(Brushes.Red, pos.X * size, pos.Y * size, size, size);
+            if (sprite == null)
+            {
+                Graphics p = e.Graphics;
+                p.FillEllipse(Brushes.Red, pos.X * size, pos.Y * size, size, size);
+            }
+            else {
+                e.Graphics.DrawImage(sprite, Pos.X * Size, Pos.Y * Size);
+            }
         }
 
         public virtual void update(float time) { 

@@ -13,7 +13,7 @@ namespace GameLoop.Entity
        
 
         public Grunt(Location pos, Level level)
-            : base(pos, level, EntityType.grunt)
+            : base(pos, level, EntityType.grunt, Properties.Resources.Man_slayer)
         {
             startRange = 5;
             fRange = 10;
@@ -104,9 +104,6 @@ namespace GameLoop.Entity
             turnTimer++;
         }
 
-        public override void Paint(object sender, System.Windows.Forms.PaintEventArgs e)
-        {
-            e.Graphics.FillRectangle(Brushes.Green, Pos.X * Size, Pos.Y * Size, Size, Size);
-        }
+      
     }
 }
