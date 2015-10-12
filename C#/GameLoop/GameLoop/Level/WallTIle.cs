@@ -10,8 +10,8 @@ namespace GameLoop
     {
 
          //properties geven
-        public WallTile(Location init)
-            : base(init, TileType.wall, true, Properties.Resources.Wall)
+        public WallTile(Location init, Level level)
+            : base(init, TileType.wall, true, Properties.Resources.Wall, level)
         {
            
         }

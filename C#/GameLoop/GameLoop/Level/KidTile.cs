@@ -12,8 +12,8 @@ namespace GameLoop
         private Image floor;
 
         //properties geven
-        public KidTile(Location init, Image floor)
-            : base(init, TileType.kid, false, Properties.Resources.dank_kid)
+        public KidTile(Location init, Image floor, Level level)
+            : base(init, TileType.kid, false, Properties.Resources.dank_kid, level)
         {
             this.floor = floor;
         }

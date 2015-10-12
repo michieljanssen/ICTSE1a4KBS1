@@ -17,6 +17,8 @@ namespace GameLoop
         private Player speler;
         private ArrayList entities;
 
+        public Player Speler { get { return speler; } }
+
         public Level(Location gridsize, Location s, Location e, int size = 32)
         {
             
@@ -42,30 +44,30 @@ namespace GameLoop
                 {
                     if (yloc == 0 || yloc == gridSize.Y - 1 || xloc == 0 || xloc == gridSize.X - 1)
                     {
-                        tiles[xloc][yloc] = new WallTile(new Location(xloc, yloc));   //assign the outer walls
+                        tiles[xloc][yloc] = new WallTile(new Location(xloc, yloc), this);   //assign the outer walls
                     }
                     else
                     {
                         //assign floor
-                        tiles[xloc][yloc] = new FloorTile(new Location(xloc, yloc));
+                        tiles[xloc][yloc] = new FloorTile(new Location(xloc, yloc), this);
                     }
 
                     if (new Location(xloc, yloc).Compareto(start))
                     {
                         //assign start location
-                        tiles[xloc][yloc] = new KidTile(new Location(xloc, yloc), Properties.Resources.floor_tile_texture);
+                        tiles[xloc][yloc] = new KidTile(new Location(xloc, yloc), Properties.Resources.floor_tile_texture, this);
                     }
                     if (new Location(xloc, yloc).Compareto(eind))
                     {
                         //assign end location
-                        tiles[xloc][yloc] = new ShrekTile(new Location(xloc, yloc), Properties.Resources.floor_tile_texture);
+                        tiles[xloc][yloc] = new ShrekTile(new Location(xloc, yloc), Properties.Resources.floor_tile_texture, this);
                     }
                 }
             }
             Random rand = new Random();
             speler = new Player(Start, this);
             entities = new ArrayList();
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 3; i++)
             {
                 entities.Add(new Grunt(new Location(rand.Next(gridsize.X), rand.Next(gridsize.Y)), this));
             }
@@ -100,6 +102,13 @@ namespace GameLoop
         internal void update(Keyboard keyboard,float time) {
            
             speler.update(keyboard, time);
+            for (int i = 0; i < tiles.Length; i++)
+            {
+                for (int u = 0; u < tiles[i].Length; u++)
+                {
+                    tiles[i][u].Update();
+                }
+            }
         }
 
         internal void updateEntities() {

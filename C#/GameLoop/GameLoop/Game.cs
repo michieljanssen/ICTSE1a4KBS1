@@ -23,7 +23,7 @@ namespace GameLoop
         {
             //variablene intializeren
             keyboard = new Keyboard();
-            Location levelformaat = new Location(10, 10);
+            Location levelformaat = new Location(20, 20);
             Location startpunt = new Location(1, 1);
             Location eindpunt = new Location(10, 10);
             int tilesize = 32;

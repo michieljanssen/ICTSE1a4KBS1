@@ -19,9 +19,11 @@ namespace GameLoop
         private int tilesize;
         private Image texture; // de sprite/texture van de tile
         public Boolean solid;
-        public Tile(Location init, TileType type, Boolean solid, Image texture)
+        protected Level level;
+        public Tile(Location init, TileType type, Boolean solid, Image texture, Level level)
         {
             //variabelen initalizeren
+            this.level = level;
             this.solid = solid;
             this.texture = texture;
             this.pos = init;
@@ -57,6 +59,10 @@ namespace GameLoop
         {         
             //teken texture op de goeie locatie
            e.Graphics.DrawImage(texture, pos.X * tilesize, pos.Y * tilesize);
+        }
+        public virtual void Update()
+        {
+
         }
     }
 }
