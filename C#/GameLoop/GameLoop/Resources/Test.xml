@@ -107,7 +107,7 @@
     <Kid x="2" y="2" />
   </Tiles>
   <Entities>
-    <Grunt x="4" y="2" />
+    <Grunt x="10" y="3" />
     <Illuminatie x="13" y="10" />
     <Illuminatie x="14" y="10" />
     <Illuminatie x="15" y="10" />

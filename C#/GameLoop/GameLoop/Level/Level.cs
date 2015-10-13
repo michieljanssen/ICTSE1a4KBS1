@@ -4,11 +4,14 @@ using System.Windows.Forms;
 using GameLoop.Entity;
 using System.Collections;
 using System.Xml;
+using System.Xml.Linq;
 using System.IO;
 namespace GameLoop
 {
     internal class Level
     {
+        private XDocument file;
+
 
         private Location gridSize; //hergebruik van de Locatieklasse om de afmetingen van het rooster
         private Tile[][] tiles;   //Array of all the tiles in the game
@@ -91,11 +94,22 @@ namespace GameLoop
 
         public Level(XmlReader xml)
         {
-            //rand = new Random(); dit kan nu weg?
+            this.file =XDocument.Load(xml);
+            load(file);
+        }
+
+        public Level(XDocument xdoc) {
+            load(xdoc);
+        }
+
+        public void load(XDocument xdoc) {
+            XmlReader xml = xdoc.CreateReader();
+            //xml.move
+            rand = new Random(); //nee dat kan niet weg
             entities = new ArrayList();
+
             Location start = new Location(0, 0);
             int width = 0, height = 0;
-
 
             //    xml.
             while (xml.Read())
@@ -154,45 +168,11 @@ namespace GameLoop
                             entities.Add(new Illuminatie(new Location(x, y), this));
                             break;
                     }
-
-
                 }
-
                 speler = new Player(start, this);
-
-
-                //switch (xml.NodeType) { 
-                //    case XmlNodeType.Attribute:
-                //        break;
-                //    case XmlNodeType.Element:
-                //        break;
-
-                //}
-                //if (xml.LocalName.Trim() != "") { 
-                //Console.WriteLine(xml.LocalName);
-                //}
-                //if (xml.Value.Trim() != "")
-                //{
-                //    Console.WriteLine(xml.Value);
-                //}
-
             }
-            Console.WriteLine(width + " " + height);
-
-            //xml.readtofollowing("muren");
-            //if (xml.readtodescendant("muur"))
-            //{
-            //    do
-            //    {
-            //        xml.readtofollowing("x");
-            //        console.writeline("  x: {0}", xml.readelementcontentasstring());
-            //        xml.readtofollowing("y");
-            //        console.writeline("  y: {0}", xml.readelementcontentasstring());
-            //    } while (xml.readtonextsibling("muur"));
-            //}
-
-
         }
+
         //Paint's the level
         internal void Paint(object sender, PaintEventArgs e)
         {
@@ -218,6 +198,11 @@ namespace GameLoop
 
         internal void update(Keyboard keyboard, float time)
         {
+            //checkt of de speler nog leeft
+            if (!speler.Alive) {
+                load(file); //herlaadt het spel
+            }
+
 
             speler.update(keyboard, time);
             for (int i = 0; i < tiles.Length; i++)
