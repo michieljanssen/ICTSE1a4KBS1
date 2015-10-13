@@ -38,14 +38,14 @@ namespace GameLoop
             //paint/render compenent in de renderloop
             this.Paint += new PaintEventHandler(loop.render);
             this.DoubleBuffered = true;
-        }    
+        }
 
         //closing event van het scherm
         private void Window_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //sluit de gameloop en thread af
-            loop.Running = false;
-            loop.loopThread.Abort();
+                //sluit de gameloop en thread af
+                loop.Running = false;
+                loop.loopThread.Abort();
         }
         //keydown event
         private void Window_KeyDown(object sender, KeyEventArgs e)

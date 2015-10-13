@@ -65,37 +65,24 @@ namespace GameLoop
         private void run()
         {
             //variablen voor gameloop
+            long lastTime = NanoTime;                //stelt laaste tijd een cycle is gebeurt(1 cycle is een keer door de hele gameloop)
+            long timer = NanoTime / 1000000;         //timer is de huidige tijd in milliseconden
+            double nsUps = 1000000000.0 / targetUps; //nsups is de doel tijd tussen updates
+            double deltaUps = 0;                     //deltaups is waar gemeten word of het tijd is om te updaten
+            double nsFps = 1000000000.0 / maxFps;    //nsfps is de doel tijd tussen frames
+            double deltaFps = 0;                     //deltafps is waar gemeten word of het tijd is om te renderen
+            int frames = 0;                          //staat voor de frames die voorbij zijn gegaan
+            int ups = 0;                             //stat voor de updates die voorbij zijn gegaan
 
-            //stelt laaste tijd een cycle is gebeurt(1 cycle is een keer door de hele gameloop)
-            long lastTime = NanoTime;
-
-            //timer is de huidige tijd in milliseconden
-            long timer = NanoTime / 1000000;
-
-            //nsups is de doel tijd tussen updates
-            double nsUps = 1000000000.0 / targetUps;
-            //deltaups is waar gemeten word of het tijd is om te updaten
-            double deltaUps = 0;
-            //nsfps is de doel tijd tussen frames
-            double nsFps = 1000000000.0 / maxFps;
-            //deltafps is waar gemeten word of het tijd is om te renderen
-            double deltaFps = 0;
-            
-            //staat voor de frames die voorbij zijn gegaan
-            int frames = 0;
-            //stat voor de updates die voorbij zijn gegaan
-            int ups = 0;
             while (running)
             {
                 //update maxfps en targetups om dynanmisch deze te kunnen veranderen 
                 nsUps = 1000000000.0 / targetUps;
                 nsFps = 1000000000.0 / maxFps;
-                //tijd nu in nanonseconden
-                long now = NanoTime;
-                //berekent de delta voor updates
-                deltaUps += (now - lastTime) / nsUps;
-                //berekent de delta voor frames
-                deltaFps += (now - lastTime) / nsFps;
+                
+                long now = NanoTime;                    //tijd nu in nanonseconden
+                deltaUps += (now - lastTime) / nsUps;   //berekent de delta voor updates
+                deltaFps += (now - lastTime) / nsFps;   //berekent de delta voor frames
 
                 //als de delta voor ups groter is dan 1 dan voert hij een update uit todat de delta kleiner is dan 1
                 while (deltaUps >= 1)

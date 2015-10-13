@@ -44,6 +44,7 @@
             this.QuitGameButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.mainmenu = new System.Windows.Forms.Panel();
+            this.GamePanel = new System.Windows.Forms.Panel();
             this.settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effectsVolumeSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musicVolumeSlider)).BeginInit();
@@ -235,6 +236,7 @@
             // 
             // mainmenu
             // 
+            this.mainmenu.Controls.Add(this.GamePanel);
             this.mainmenu.Controls.Add(this.QuitGameButton);
             this.mainmenu.Controls.Add(this.SettingsButton);
             this.mainmenu.Controls.Add(this.SelectLevel);
@@ -243,6 +245,16 @@
             this.mainmenu.Name = "mainmenu";
             this.mainmenu.Size = new System.Drawing.Size(1264, 681);
             this.mainmenu.TabIndex = 2;
+            this.mainmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.mainmenu_Paint);
+            // 
+            // GamePanel
+            // 
+            this.GamePanel.Location = new System.Drawing.Point(0, 0);
+            this.GamePanel.Name = "GamePanel";
+            this.GamePanel.Size = new System.Drawing.Size(1264, 669);
+            this.GamePanel.TabIndex = 6;
+            this.GamePanel.Visible = false;
+            this.GamePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.GamePanel_Paint);
             // 
             // Main
             // 
@@ -284,6 +296,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Panel GamePanel;
     }
 }
 
