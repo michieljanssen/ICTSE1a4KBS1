@@ -47,6 +47,42 @@
     </Muur>
     <Muur>
       <x>1</x>
+      <y>0</y>
+    </Muur>
+    <Muur>
+      <x>2</x>
+      <y>0</y>
+    </Muur>
+    <Muur>
+      <x>3</x>
+      <y>0</y>
+    </Muur>
+    <Muur>
+      <x>4</x>
+      <y>0</y>
+    </Muur>
+    <Muur>
+      <x>5</x>
+      <y>0</y>
+    </Muur>
+    <Muur>
+      <x>6</x>
+      <y>0</y>
+    </Muur>
+    <Muur>
+      <x>7</x>
+      <y>0</y>
+    </Muur>
+    <Muur>
+      <x>8</x>
+      <y>0</y>
+    </Muur>
+    <Muur>
+      <x>9</x>
+      <y>0</y>
+    </Muur>
+    <Muur>
+      <x>1</x>
       <y>9</y>
     </Muur>
     <Muur>
@@ -64,6 +100,54 @@
     <Muur>
       <x>5</x>
       <y>9</y>
+    </Muur>
+    <Muur>
+      <x>6</x>
+      <y>9</y>
+    </Muur>
+    <Muur>
+      <x>7</x>
+      <y>9</y>
+    </Muur>
+    <Muur>
+      <x>8</x>
+      <y>9</y>
+    </Muur>
+    <Muur>
+      <x>9</x>
+      <y>9</y>
+    </Muur>
+    <Muur>
+      <x>9</x>
+      <y>1</y>
+    </Muur>
+    <Muur>
+      <x>9</x>
+      <y>2</y>
+    </Muur>
+    <Muur>
+      <x>9</x>
+      <y>3</y>
+    </Muur>
+    <Muur>
+      <x>9</x>
+      <y>4</y>
+    </Muur>
+    <Muur>
+      <x>9</x>
+      <y>5</y>
+    </Muur>
+    <Muur>
+      <x>9</x>
+      <y>6</y>
+    </Muur>
+    <Muur>
+      <x>9</x>
+      <y>7</y>
+    </Muur>
+    <Muur>
+      <x>9</x>
+      <y>8</y>
     </Muur>
     <Shrek>
       <x>1</x>
