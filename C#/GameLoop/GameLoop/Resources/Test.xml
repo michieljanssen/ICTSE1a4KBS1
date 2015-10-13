@@ -158,10 +158,14 @@
       <y>3</y>
     </Kid>
   </Tiles>
-  <Vijanden>
-    <Vijand>
-      <x>10</x>
-      <y>20</y>
-    </Vijand>
-  </Vijanden>
+  <Entities>
+    <Grunt>
+      <x>4</x>
+      <y>2</y>
+    </Grunt>
+    <Illuminatie>
+      <x>4</x>
+      <y>4</y>
+    </Illuminatie>
+  </Entities>
 </Level>

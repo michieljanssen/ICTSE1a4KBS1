@@ -124,7 +124,7 @@ namespace GameLoop
                     }
 
                 }
-                if (xml.NodeType == XmlNodeType.Element && (xml.Name == "Muur" || xml.Name == "Vloer" || xml.Name == "Shrek" || xml.Name == "Kid"))
+                else if (xml.NodeType == XmlNodeType.Element )
                 {
                     String name = xml.Name;
 
@@ -149,6 +149,12 @@ namespace GameLoop
                         case "Kid":
                             tiles[x][y] = new KidTile(new Location(x, y), Properties.Resources.floor_tile_texture, this);
                             start = new Location(x, y);
+                            break;
+                        case "Grunt":
+                            entities.Add(new Grunt(new Location(x, y), this));
+                            break;
+                        case "Illuminatie":
+                            entities.Add(new Illuminatie(new Location(x, y), this));
                             break;
                     }
 
