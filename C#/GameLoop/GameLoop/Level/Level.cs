@@ -91,7 +91,7 @@ namespace GameLoop
 
         public Level(XmlReader xml)
         {
-            rand = new Random();
+            //rand = new Random(); dit kan nu weg?
             entities = new ArrayList();
             Location start = new Location(0, 0);
             int width = 0, height = 0;
@@ -124,16 +124,13 @@ namespace GameLoop
                     }
 
                 }
-                else if (xml.NodeType == XmlNodeType.Element && (xml.Name == "Muur" || xml.Name == "Shrek" || xml.Name == "Kid" || xml.Name == "Grunt" || xml.Name == "Illuminatie"))
+                else if (xml.NodeType == XmlNodeType.Element)
+                //  && (xml.Name == "Muur" || xml.Name == "Shrek" || xml.Name == "Kid" || xml.Name == "Grunt" || xml.Name == "Illuminatie")
                 {
                     String name = xml.Name;
 
-
-                    xml.ReadToFollowing("x");
-                    int x = xml.ReadElementContentAsInt();
-                    xml.ReadToFollowing("y");
-                    int y = xml.ReadElementContentAsInt();
-                    Console.WriteLine(name + " " + x + ' ' + y);
+                    int x = Convert.ToInt32(xml.GetAttribute("x"));
+                    int y = Convert.ToInt32(xml.GetAttribute("y"));
 
                     switch (name)
                     {
