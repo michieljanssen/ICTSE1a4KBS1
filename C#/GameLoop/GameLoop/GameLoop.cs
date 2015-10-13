@@ -37,7 +37,7 @@ namespace GameLoop
         private float targetUps;
         private Boolean fpsLock;
         private int maxFps;
-
+        
         //constructor
         public GameLoop(Window window, int targetUps, Boolean fpsLock, int maxFps) {
             //stelt alle variablen in
