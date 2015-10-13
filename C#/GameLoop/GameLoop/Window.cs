@@ -25,19 +25,7 @@ namespace GameLoop
             InitializeComponent();
 
            // Lezen XML file
-           //XmlReader testxml = Controller.XML.read(new FileStream(System.IO.Directory.GetCurrentDirectory() + "/Resources/" + "Test.xml", FileMode.Open));
-
-           // testxml.ReadToFollowing("Muren");
-           // if (testxml.ReadToDescendant("Muur"))
-           // {
-           //     do
-           //     {
-           //         testxml.ReadToFollowing("x");
-           //         Console.WriteLine("  X: {0}", testxml.ReadElementContentAsString());
-           //         testxml.ReadToFollowing("y");
-           //         Console.WriteLine("  Y: {0}", testxml.ReadElementContentAsString());
-           //     } while (testxml.ReadToNextSibling("Muur"));
-           // }
+        
 
 
             //style van het scherm aanpassen voor optimalizatie

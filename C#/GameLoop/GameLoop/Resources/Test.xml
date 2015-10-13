@@ -1,19 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Objecten>
-  <Muren>
+<Level>
+  <Size>
+    <Width>10</Width>
+    <Height>10</Height>
+  </Size>
+  <Tiles>
     <Muur>
-      <x>10</x>
-      <y>20</y>
+      <x>0</x>
+      <y>0</y>
     </Muur>
     <Muur>
-      <x>20</x>
-      <y>30</y>
+      <x>0</x>
+      <y>1</y>
     </Muur>
-  </Muren>
+    <Muur>
+      <x>0</x>
+      <y>2</y>
+    </Muur>
+    <Muur>
+      <x>0</x>
+      <y>3</y>
+    </Muur>
+    <Muur>
+      <x>0</x>
+      <y>4</y>
+    </Muur>
+    <Muur>
+      <x>0</x>
+      <y>5</y>
+    </Muur>
+    <Muur>
+      <x>0</x>
+      <y>6</y>
+    </Muur>
+    <Muur>
+      <x>0</x>
+      <y>7</y>
+    </Muur>
+    <Muur>
+      <x>0</x>
+      <y>8</y>
+    </Muur>
+    <Muur>
+      <x>0</x>
+      <y>9</y>
+    </Muur>
+    <Muur>
+      <x>1</x>
+      <y>9</y>
+    </Muur>
+    <Muur>
+      <x>2</x>
+      <y>9</y>
+    </Muur>
+    <Muur>
+      <x>3</x>
+      <y>9</y>
+    </Muur>
+    <Muur>
+      <x>4</x>
+      <y>9</y>
+    </Muur>
+    <Muur>
+      <x>5</x>
+      <y>9</y>
+    </Muur>
+    <Shrek>
+      <x>1</x>
+      <y>2</y>
+    </Shrek>
+    <Kid>
+      <x>1</x>
+      <y>3</y>
+    </Kid>
+  </Tiles>
   <Vijanden>
     <Vijand>
       <x>10</x>
       <y>20</y>
     </Vijand>
   </Vijanden>
-</Objecten>
+</Level>
