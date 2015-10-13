@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GameLoop
+namespace Menutest
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace GameLoop
             //aanmaken window
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Window());
+            Application.Run(new Main());
         }
     }
 }
