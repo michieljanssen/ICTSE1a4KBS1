@@ -97,8 +97,7 @@ namespace Menutest
         private void SelectLevel_Click(object sender, EventArgs e)
         {
             GameLoop.Window game = new GameLoop.Window();
-            game.Show();
-            mainmenu.Visible = false;
+            game.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -115,14 +114,14 @@ namespace Menutest
         {
             //Set de int effectsVolume elke keer als er gescrollt wordt in de effectsVolumeSlider
             effectsVolume = effectsVolumeSlider.Value;
-            Console.WriteLine("Effects: {0}", effectsVolumeSlider.Value);
+            //Console.WriteLine("Effects: {0}", effectsVolumeSlider.Value);
         }
 
         private void musicVolumeSlider_Scroll(object sender, EventArgs e)
         {
             //Set de int musicVolume elke keer als er gescrollt wordt in de musicVolumeSlider
             musicVolume = musicVolumeSlider.Value;
-            Console.WriteLine("Music: {0}", musicVolumeSlider.Value);
+            //Console.WriteLine("Music: {0}", musicVolumeSlider.Value);
         }
 
         private void refreshRateBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -179,6 +178,11 @@ namespace Menutest
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainmenu_Paint(object sender, PaintEventArgs e)
         {
 
         }

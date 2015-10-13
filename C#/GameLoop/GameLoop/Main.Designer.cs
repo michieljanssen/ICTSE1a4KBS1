@@ -243,6 +243,7 @@
             this.mainmenu.Name = "mainmenu";
             this.mainmenu.Size = new System.Drawing.Size(1264, 681);
             this.mainmenu.TabIndex = 2;
+            this.mainmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.mainmenu_Paint);
             // 
             // Main
             // 

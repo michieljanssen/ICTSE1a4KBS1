@@ -8,6 +8,7 @@ namespace Menutest
 {
     class Settings
     {
+        //Settings menu settings staan hier.
         internal static int refreshRate = 60;
         internal static int musicVolume = 100;
         internal static int effectsVolume = 100;
