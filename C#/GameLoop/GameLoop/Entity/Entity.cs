@@ -10,9 +10,9 @@ using System.Drawing;
 namespace GameLoop.Entity
 {
   
-    class Entity
+    abstract class Entity
     {
-        public  enum EntityType { player, grunt};
+        public  enum EntityType { player, grunt, illuminatie};
 
         private float turnTime;
         protected float turnTimer;
@@ -23,14 +23,15 @@ namespace GameLoop.Entity
         private int size;
         private Image sprite;
 
-        private int maxHealth;
-        private int health;
+        private Boolean alive;
 
+        public Boolean Alive { get { return alive; } set { alive = value; } }
         public Location Pos { get { return pos; } }
         public float TurnTime { get { return turnTime; } set { turnTime = value; } }
         public int Size { get { return size; } }
 
         public Entity(Location pos, Level level, EntityType type, Image sprite) {
+            this.alive = true;
             this.sprite = sprite;
             this.pos = pos;
             this.level = level;

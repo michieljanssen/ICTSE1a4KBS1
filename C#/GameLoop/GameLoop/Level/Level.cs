@@ -12,15 +12,21 @@ namespace GameLoop
         private Tile[][] tiles;   //Array of all the tiles in the game
         private Location start;
         private Location eind;
+        private Player speler;
 
         public Tile[][] Tiles { get { return tiles; } }
         public Location GridSize { get { return gridSize; } }
-        private Player speler;
         private ArrayList entities;
 
         public Player Speler { get { return speler; } }
 
         public Random rand;
+
+        public Location Start
+        {
+            get { return start; }
+            set { start = value; }
+        }
 
         public Level(Location gridsize, Location s, Location e, int size = 32)
         {
@@ -73,13 +79,10 @@ namespace GameLoop
             for (int i = 0; i < 3; i++)
             {
                 entities.Add(new Grunt(new Location(rand.Next(gridsize.X), rand.Next(gridsize.Y)), this));
+                entities.Add(new Illuminatie(new Location(rand.Next(gridsize.X), rand.Next(gridsize.Y)), this));
+
             }
 
-        }
-        public Location Start
-        {
-            get { return start; }
-            set { start = value; }
         }
         //Paint's the level
         internal void Paint(object sender, PaintEventArgs e)
