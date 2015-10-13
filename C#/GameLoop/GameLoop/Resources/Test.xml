@@ -1,171 +1,121 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Level>
   <Size>
-    <Width>10</Width>
-    <Height>10</Height>
+    <Width>30</Width>
+    <Height>20</Height>
   </Size>
   <Tiles>
-    <Muur>
-      <x>0</x>
-      <y>0</y>
-    </Muur>
-    <Muur>
-      <x>0</x>
-      <y>1</y>
-    </Muur>
-    <Muur>
-      <x>0</x>
-      <y>2</y>
-    </Muur>
-    <Muur>
-      <x>0</x>
-      <y>3</y>
-    </Muur>
-    <Muur>
-      <x>0</x>
-      <y>4</y>
-    </Muur>
-    <Muur>
-      <x>0</x>
-      <y>5</y>
-    </Muur>
-    <Muur>
-      <x>0</x>
-      <y>6</y>
-    </Muur>
-    <Muur>
-      <x>0</x>
-      <y>7</y>
-    </Muur>
-    <Muur>
-      <x>0</x>
-      <y>8</y>
-    </Muur>
-    <Muur>
-      <x>0</x>
-      <y>9</y>
-    </Muur>
-    <Muur>
-      <x>1</x>
-      <y>0</y>
-    </Muur>
-    <Muur>
-      <x>2</x>
-      <y>0</y>
-    </Muur>
-    <Muur>
-      <x>3</x>
-      <y>0</y>
-    </Muur>
-    <Muur>
-      <x>4</x>
-      <y>0</y>
-    </Muur>
-    <Muur>
-      <x>5</x>
-      <y>0</y>
-    </Muur>
-    <Muur>
-      <x>6</x>
-      <y>0</y>
-    </Muur>
-    <Muur>
-      <x>7</x>
-      <y>0</y>
-    </Muur>
-    <Muur>
-      <x>8</x>
-      <y>0</y>
-    </Muur>
-    <Muur>
-      <x>9</x>
-      <y>0</y>
-    </Muur>
-    <Muur>
-      <x>1</x>
-      <y>9</y>
-    </Muur>
-    <Muur>
-      <x>2</x>
-      <y>9</y>
-    </Muur>
-    <Muur>
-      <x>3</x>
-      <y>9</y>
-    </Muur>
-    <Muur>
-      <x>4</x>
-      <y>9</y>
-    </Muur>
-    <Muur>
-      <x>5</x>
-      <y>9</y>
-    </Muur>
-    <Muur>
-      <x>6</x>
-      <y>9</y>
-    </Muur>
-    <Muur>
-      <x>7</x>
-      <y>9</y>
-    </Muur>
-    <Muur>
-      <x>8</x>
-      <y>9</y>
-    </Muur>
-    <Muur>
-      <x>9</x>
-      <y>9</y>
-    </Muur>
-    <Muur>
-      <x>9</x>
-      <y>1</y>
-    </Muur>
-    <Muur>
-      <x>9</x>
-      <y>2</y>
-    </Muur>
-    <Muur>
-      <x>9</x>
-      <y>3</y>
-    </Muur>
-    <Muur>
-      <x>9</x>
-      <y>4</y>
-    </Muur>
-    <Muur>
-      <x>9</x>
-      <y>5</y>
-    </Muur>
-    <Muur>
-      <x>9</x>
-      <y>6</y>
-    </Muur>
-    <Muur>
-      <x>9</x>
-      <y>7</y>
-    </Muur>
-    <Muur>
-      <x>9</x>
-      <y>8</y>
-    </Muur>
-    <Shrek>
-      <x>1</x>
-      <y>2</y>
-    </Shrek>
-    <Kid>
-      <x>1</x>
-      <y>3</y>
-    </Kid>
+    <Muur x="0" y="0" />
+    <Muur x="0" y="1" />
+    <Muur x="0" y="2" />
+    <Muur x="0" y="3" />
+    <Muur x="0" y="4" />
+    <Muur x="0" y="5" />
+    <Muur x="0" y="6" />
+    <Muur x="0" y="7" />
+    <Muur x="0" y="8" />
+    <Muur x="0" y="9" />
+    <Muur x="0" y="10" />
+    <Muur x="0" y="11" />
+    <Muur x="0" y="12" />
+    <Muur x="0" y="13" />
+    <Muur x="0" y="14" />
+    <Muur x="0" y="15" />
+    <Muur x="0" y="16" />
+    <Muur x="0" y="17" />
+    <Muur x="0" y="18" />
+    <Muur x="0" y="19" />
+    <Muur x="29" y="1" />
+    <Muur x="29" y="2" />
+    <Muur x="29" y="3" />
+    <Muur x="29" y="4" />
+    <Muur x="29" y="5" />
+    <Muur x="29" y="6" />
+    <Muur x="29" y="7" />
+    <Muur x="29" y="8" />
+    <Muur x="29" y="9" />
+    <Muur x="29" y="10" />
+    <Muur x="29" y="11" />
+    <Muur x="29" y="12" />
+    <Muur x="29" y="13" />
+    <Muur x="29" y="14" />
+    <Muur x="29" y="15" />
+    <Muur x="29" y="16" />
+    <Muur x="29" y="17" />
+    <Muur x="29" y="18" />
+    <Muur x="29" y="19" />
+    <Muur x="1" y="0" />
+    <Muur x="2" y="0" />
+    <Muur x="3" y="0" />
+    <Muur x="4" y="0" />
+    <Muur x="5" y="0" />
+    <Muur x="6" y="0" />
+    <Muur x="7" y="0" />
+    <Muur x="8" y="0" />
+    <Muur x="9" y="0" />
+    <Muur x="10" y="0" />
+    <Muur x="11" y="0" />
+    <Muur x="12" y="0" />
+    <Muur x="13" y="0" />
+    <Muur x="14" y="0" />
+    <Muur x="15" y="0" />
+    <Muur x="16" y="0" />
+    <Muur x="17" y="0" />
+    <Muur x="18" y="0" />
+    <Muur x="19" y="0" />
+    <Muur x="20" y="0" />
+    <Muur x="21" y="0" />
+    <Muur x="22" y="0" />
+    <Muur x="23" y="0" />
+    <Muur x="24" y="0" />
+    <Muur x="25" y="0" />
+    <Muur x="26" y="0" />
+    <Muur x="27" y="0" />
+    <Muur x="28" y="0" />
+    <Muur x="29" y="0" />
+    <Muur x="1" y="19" />
+    <Muur x="2" y="19" />
+    <Muur x="3" y="19" />
+    <Muur x="4" y="19" />
+    <Muur x="5" y="19" />
+    <Muur x="6" y="19" />
+    <Muur x="7" y="19" />
+    <Muur x="8" y="19" />
+    <Muur x="9" y="19" />
+    <Muur x="10" y="19" />
+    <Muur x="11" y="19" />
+    <Muur x="12" y="19" />
+    <Muur x="13" y="19" />
+    <Muur x="14" y="19" />
+    <Muur x="15" y="19" />
+    <Muur x="16" y="19" />
+    <Muur x="17" y="19" />
+    <Muur x="18" y="19" />
+    <Muur x="19" y="19" />
+    <Muur x="20" y="19" />
+    <Muur x="21" y="19" />
+    <Muur x="22" y="19" />
+    <Muur x="23" y="19" />
+    <Muur x="24" y="19" />
+    <Muur x="25" y="19" />
+    <Muur x="26" y="19" />
+    <Muur x="27" y="19" />
+    <Muur x="28" y="19" />
+    <Muur x="29" y="19" />
+    
+    <Shrek x="26" y="17" />
+    <Kid x="2" y="2" />
   </Tiles>
   <Entities>
-    <Grunt>
-      <x>4</x>
-      <y>2</y>
-    </Grunt>
-    <Illuminatie>
-      <x>4</x>
-      <y>4</y>
-    </Illuminatie>
+    <Grunt x="4" y="2" />
+    <Illuminatie x="13" y="10" />
+    <Illuminatie x="14" y="10" />
+    <Illuminatie x="15" y="10" />
+    <Illuminatie x="16" y="10" />
+    <Illuminatie x="17" y="10" />
+    <Illuminatie x="14" y="9" />
+    <Illuminatie x="15" y="9" />
+    <Illuminatie x="16" y="9" />
+    <Illuminatie x="15" y="8" />
   </Entities>
 </Level>
