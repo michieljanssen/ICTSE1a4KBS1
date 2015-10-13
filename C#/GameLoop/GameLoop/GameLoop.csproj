@@ -61,7 +61,7 @@
     <Compile Include="Level\KidTile.cs" />
     <Compile Include="Level\FloorTile.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="GameLoop.cs" />
+    <Compile Include="Loop.cs" />
     <Compile Include="Level\Level.cs" />
     <Compile Include="Level\Tile.cs" />
     <Compile Include="Level\ShrekTile.cs" />
@@ -81,12 +81,6 @@
     <Compile Include="Util\Keyboard.cs" />
     <Compile Include="Util\Location.cs" />
     <Compile Include="Level\WallTile.cs" />
-    <Compile Include="Window.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Window.Designer.cs">
-      <DependentUpon>Window.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ExitBox.resx">
@@ -107,9 +101,6 @@
     </Compile>
     <EmbeddedResource Include="SettingsNoSave.resx">
       <DependentUpon>SettingsNoSave.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Window.resx">
-      <DependentUpon>Window.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

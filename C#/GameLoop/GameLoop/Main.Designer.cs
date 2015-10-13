@@ -269,7 +269,10 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "xXx-gitrekt420-xXx";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Main_KeyUp);
             this.settings.ResumeLayout(false);
             this.settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effectsVolumeSlider)).EndInit();

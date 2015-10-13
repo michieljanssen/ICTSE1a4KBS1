@@ -9,9 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
+using Menutest;
 namespace GameLoop
 {
-    class GameLoop
+    class Loop
     {
         //game class waar alles word geupdate en gerendert voor het spel
         public Game game;
@@ -31,7 +32,7 @@ namespace GameLoop
         public static long NanoTime{ get { return (long)(Stopwatch.GetTimestamp() / (Stopwatch.Frequency / 1000000000.0)); }} 
 
         //scherm
-        private Window window;
+        private Main window;
 
         //gameloop variablen
         private float targetUps;
@@ -39,9 +40,11 @@ namespace GameLoop
         private int maxFps;
         
         //constructor
-        public GameLoop(Window window, int targetUps, Boolean fpsLock, int maxFps) {
+        public Loop(Main window, int targetUps, Boolean fpsLock, int maxFps) {
             //stelt alle variablen in
             this.window = window;
+            window.Paint += this.render;
+            
             this.targetUps = targetUps;
             this.fpsLock = fpsLock;
             this.maxFps = maxFps;
@@ -76,40 +79,29 @@ namespace GameLoop
 
             while (running)
             {
+
                 //update maxfps en targetups om dynanmisch deze te kunnen veranderen 
                 nsUps = 1000000000.0 / targetUps;
                 nsFps = 1000000000.0 / maxFps;
                 
                 long now = NanoTime;                    //tijd nu in nanonseconden
-                deltaUps += (now - lastTime) / nsUps;   //berekent de delta voor updates
-                deltaFps += (now - lastTime) / nsFps;   //berekent de delta voor frames
+                //if (window.GPanel.Visible)
+                //{
+                    deltaUps += (now - lastTime) / nsUps;   //berekent de delta voor updates
+                    deltaFps += (now - lastTime) / nsFps;   //berekent de delta voor frames
 
-                //als de delta voor ups groter is dan 1 dan voert hij een update uit todat de delta kleiner is dan 1
-                while (deltaUps >= 1)
-                {   
-                    //update uitvoeren met een "time" parameter
-                    //time parameter zorgt voor constante beweging/snelheid in het spel
-                    update(DEFAULT_UPS / targetUps);
-                    deltaUps--;
-                    ups++;
-                }
-                //checked of er een fpslock/fpsmax is ingesteld
-                if (!fpsLock)
-                {
-                    //checked of een invoke op de andere thread nodig is
-                    if (window.InvokeRequired)
+                    //als de delta voor ups groter is dan 1 dan voert hij een update uit todat de delta kleiner is dan 1
+                    while (deltaUps >= 1)
                     {
-                        //voert het render event uit met een invoke
-                        window.Invoke(new MethodInvoker(window.Refresh));
+                        //update uitvoeren met een "time" parameter
+                        //time parameter zorgt voor constante beweging/snelheid in het spel
+                        update(DEFAULT_UPS / targetUps);
+                        deltaUps--;
+                        ups++;
                     }
-                    else { 
-                        //voer het render event uit
-                        window.Refresh();
-                    }
-                    frames++;
-                } else {
-                    //checked of er gerendered moet worden / dit is als de deltaFps groter dan 1 is
-                    if (deltaFps >= 1) {
+                    //checked of er een fpslock/fpsmax is ingesteld
+                    if (!fpsLock)
+                    {
                         //checked of een invoke op de andere thread nodig is
                         if (window.InvokeRequired)
                         {
@@ -122,26 +114,46 @@ namespace GameLoop
                             window.Refresh();
                         }
                         frames++;
-                        deltaFps--;
                     }
-                }
+                    else
+                    {
+                        //checked of er gerendered moet worden / dit is als de deltaFps groter dan 1 is
+                        if (deltaFps >= 1)
+                        {
+                            //checked of een invoke op de andere thread nodig is
+                            if (window.InvokeRequired)
+                            {
+                                //voert het render event uit met een invoke
+                                window.Invoke(new MethodInvoker(window.Refresh));
+                            }
+                            else
+                            {
+                                //voer het render event uit
+                                window.Refresh();
+                            }
+                            frames++;
+                            deltaFps--;
+                        }
+                    }
 
-                //checked of er een secoden voor bij is gegaan
-                if (NanoTime / 1000000 - timer > 1000)
-                {
-                    //schrijft de UPS en FPS in de console
-                    timer += 1000;
-                    Console.WriteLine("Ups: " + ups + " Fps: " + frames);
-                    //reset ups en frames variabelen
-                    ups = 0;
-                    frames = 0;
-                }
+                    //checked of er een secoden voor bij is gegaan
+                    if (NanoTime / 1000000 - timer > 1000)
+                    {
+                        //schrijft de UPS en FPS in de console
+                        timer += 1000;
+                        Console.WriteLine("Ups: " + ups + " Fps: " + frames);
+                        //reset ups en frames variabelen
+                        ups = 0;
+                        frames = 0;
+                    }
+              //  }
                 lastTime = now;
             }
         }
 
         //render event
         public void render(object sender, PaintEventArgs e) {
+            
             //renders het spel
             game.render(sender, e);
         }
@@ -149,6 +161,7 @@ namespace GameLoop
         //update methode
         public void update(float time) {
             //updates het spel
+           // Console.WriteLine("test");
             game.update(time);
         }
     }

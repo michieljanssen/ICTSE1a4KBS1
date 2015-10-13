@@ -14,7 +14,7 @@ namespace Menutest
     public partial class Main : Form
     {
         //Voor de GameLoop:
-        private GameLoop.GameLoop loop;
+        private Loop loop;
 
         //Haalt de settings op uit de Settings class
         static int refreshRate = Settings.refreshRate;
@@ -22,6 +22,8 @@ namespace Menutest
         static int effectsVolume = Settings.effectsVolume;
         //Maakt een boolean aan voor de exitwithoutsave bij het settings menu
         public static bool istrue = false;
+
+        public Panel GPanel { get { return GamePanel; } }
 
         public Main()
         {
@@ -56,7 +58,10 @@ namespace Menutest
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+           this.DoubleBuffered = true;
+           this.KeyPreview = true;
+           this.KeyUp +=new KeyEventHandler(Main_KeyUp);
+           this.KeyDown += new KeyEventHandler(Main_KeyDown);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -100,15 +105,16 @@ namespace Menutest
 
         private void SelectLevel_Click(object sender, EventArgs e)
         {
-            loop = new GameLoop(this, 60, true, Menutest.Settings.refreshRate);
+            loop = new Loop(this, 60, true, Menutest.Settings.refreshRate);
 
 
             //Zolang de panel niet werkt:
-            GameLoop.Window i = new GameLoop.Window();
-            i.ShowDialog();
+            //GameLoop.Window i = new GameLoop.Window();
+            //i.ShowDialog();
             
-            //mainmenu.Visible = false;
-            //GamePanel.Visible = true;
+            mainmenu.Visible = false;
+            GamePanel.Visible = true;
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -195,12 +201,36 @@ namespace Menutest
 
         private void mainmenu_Paint(object sender, PaintEventArgs e)
         {
-
+          
         }
 
         private void GamePanel_Paint(object sender, PaintEventArgs e)
         {
-            
+           
         }
+        //keydown event
+        private void Main_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (loop != null)
+            {
+                loop.game.keyboard.Window_KeyDown(sender, e);
+            }
+        }
+        //keyup event
+        private void Main_KeyUp(object sender, KeyEventArgs e)
+        {
+          if(loop != null){
+             loop.game.keyboard.Window_KeyUp(sender, e);
+           }
+        }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            loop.Running = false;
+            loop.loopThread.Abort();
+        }
+
+       
+       
     }
 }
