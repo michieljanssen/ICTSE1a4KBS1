@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GameLoop;
 
 namespace Menutest
 {
     public partial class Main : Form
     {
+        //Voor de GameLoop:
+        private GameLoop.GameLoop loop;
+
         //Haalt de settings op uit de Settings class
         static int refreshRate = Settings.refreshRate;
         static int musicVolume = Settings.musicVolume;
@@ -57,7 +61,7 @@ namespace Menutest
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -75,10 +79,10 @@ namespace Menutest
                     //Kiest de gebruiker voor teruggaan zonder op te slaan, dan gebeurt dat
                     settings.Visible = false;
                     mainmenu.Visible = true;
-                    
+
                     //istrue wordt weer teruggezet voor een volgende keer teruggaan naar het hoofdmenu zonder opslaan
                     istrue = false;
-                    
+
                     //Reset de settings
                     refreshRate = Settings.refreshRate;
                     musicVolume = Settings.musicVolume;
@@ -96,8 +100,15 @@ namespace Menutest
 
         private void SelectLevel_Click(object sender, EventArgs e)
         {
-            GameLoop.Window game = new GameLoop.Window();
-            game.ShowDialog();
+            loop = new GameLoop(this, 60, true, Menutest.Settings.refreshRate);
+
+
+            //Zolang de panel niet werkt:
+            GameLoop.Window i = new GameLoop.Window();
+            i.ShowDialog();
+            
+            //mainmenu.Visible = false;
+            //GamePanel.Visible = true;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -152,7 +163,7 @@ namespace Menutest
             if (refreshRateBox.Text != "")
             {
                 refreshRate = Int32.Parse(refreshRateBox.Text);
-                
+
             }
         }
 
@@ -185,6 +196,11 @@ namespace Menutest
         private void mainmenu_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void GamePanel_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }
