@@ -16,7 +16,6 @@ namespace GameLoop
     {
         //defineren gameloop
         private GameLoop loop;
-        public static bool istrue;
 
         //aanmaken window
         public Window()
@@ -56,15 +55,9 @@ namespace GameLoop
         //closing event van het scherm
         private void Window_FormClosing(object sender, FormClosingEventArgs e)
         {
-            ReallyClose i = new ReallyClose();
-            i.ShowDialog();
-            if (istrue)
-            {
                 //sluit de gameloop en thread af
                 loop.Running = false;
                 loop.loopThread.Abort();
-                //Menutest.Main.mainmenu.Visible() = false;
-            }
         }
         //keydown event
         private void Window_KeyDown(object sender, KeyEventArgs e)
