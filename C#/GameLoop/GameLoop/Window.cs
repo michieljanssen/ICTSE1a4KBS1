@@ -21,7 +21,7 @@ namespace GameLoop
         public Window()
         {
             //aanmaken gameloop
-            loop = new GameLoop(this, 60, false, 60);
+            loop = new GameLoop(this, 60, true, Menutest.Settings.refreshRate);
             InitializeComponent();
 
            // Lezen XML file
