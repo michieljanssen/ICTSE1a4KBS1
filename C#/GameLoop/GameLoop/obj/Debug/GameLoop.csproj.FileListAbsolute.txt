@@ -34,3 +34,6 @@ C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debu
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.csproj.GenerateResource.Cache
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.exe
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.pdb
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.ExitBox.resources
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.Main.resources
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.SettingsNoSave.resources

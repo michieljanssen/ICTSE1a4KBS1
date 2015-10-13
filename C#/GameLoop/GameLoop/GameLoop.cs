@@ -19,6 +19,7 @@ namespace GameLoop
         //constante voor de standaard update snelheid 
         //ups = updates per seconde
         private const float DEFAULT_UPS = 60;
+        
 
         //thread voor het updaten en renderen van het spel
         private Thread t;

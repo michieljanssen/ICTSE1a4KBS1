@@ -51,6 +51,12 @@
     <Compile Include="Entity\Entity.cs" />
     <Compile Include="Entity\Grunt.cs" />
     <Compile Include="Entity\Player.cs" />
+    <Compile Include="ExitBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exitBox.Designer.cs">
+      <DependentUpon>ExitBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Level\KidTile.cs" />
     <Compile Include="Level\FloorTile.cs" />
     <Compile Include="Game.cs" />
@@ -58,6 +64,19 @@
     <Compile Include="Level\Level.cs" />
     <Compile Include="Level\Tile.cs" />
     <Compile Include="Level\ShrekTile.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsNoSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsNoSave.Designer.cs">
+      <DependentUpon>SettingsNoSave.cs</DependentUpon>
+    </Compile>
     <Compile Include="Util\Keyboard.cs" />
     <Compile Include="Util\Location.cs" />
     <Compile Include="Level\WallTile.cs" />
@@ -69,6 +88,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ExitBox.resx">
+      <DependentUpon>ExitBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,6 +104,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SettingsNoSave.resx">
+      <DependentUpon>SettingsNoSave.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Window.resx">
       <DependentUpon>Window.cs</DependentUpon>
     </EmbeddedResource>
