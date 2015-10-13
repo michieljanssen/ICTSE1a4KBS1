@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Windows.Forms;
 namespace GameLoop
 {
-    class ShrekTile : Tile
+    class ShrekTile : Tile  //subklasse van Tile klasse
     {
 
         //vloer voor onder de shrek
