@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GameLoop;
+using System.Reflection;
+using GameLoop.Properties;
 
 namespace Menutest
 {
@@ -230,7 +232,5 @@ namespace Menutest
             loop.loopThread.Abort();
         }
 
-       
-       
     }
 }

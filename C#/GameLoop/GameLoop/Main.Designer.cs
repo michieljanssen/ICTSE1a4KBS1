@@ -249,6 +249,8 @@
             // 
             // GamePanel
             // 
+            this.GamePanel.BackgroundImage = global::GameLoop.Properties.Resources.dank_background1;
+            this.GamePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.GamePanel.Location = new System.Drawing.Point(0, 0);
             this.GamePanel.Name = "GamePanel";
             this.GamePanel.Size = new System.Drawing.Size(1264, 669);
