@@ -40,10 +40,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
-            this.SelectLevel = new System.Windows.Forms.Button();
             this.QuitGameButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.mainmenu = new System.Windows.Forms.Panel();
+            this.SelectLevel = new System.Windows.Forms.Button();
             this.GamePanel = new System.Windows.Forms.Panel();
             this.settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effectsVolumeSlider)).BeginInit();
@@ -88,7 +88,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(499, 339);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(243, 37);
+            this.label5.Size = new System.Drawing.Size(363, 55);
             this.label5.TabIndex = 10;
             this.label5.Text = "Sound Settings:";
             // 
@@ -99,7 +99,7 @@
             this.effectsVolumeSlider.Location = new System.Drawing.Point(628, 450);
             this.effectsVolumeSlider.Maximum = 100;
             this.effectsVolumeSlider.Name = "effectsVolumeSlider";
-            this.effectsVolumeSlider.Size = new System.Drawing.Size(247, 45);
+            this.effectsVolumeSlider.Size = new System.Drawing.Size(247, 69);
             this.effectsVolumeSlider.SmallChange = 5;
             this.effectsVolumeSlider.TabIndex = 9;
             this.effectsVolumeSlider.TickFrequency = 5;
@@ -112,7 +112,7 @@
             this.musicVolumeSlider.Location = new System.Drawing.Point(628, 393);
             this.musicVolumeSlider.Maximum = 100;
             this.musicVolumeSlider.Name = "musicVolumeSlider";
-            this.musicVolumeSlider.Size = new System.Drawing.Size(247, 45);
+            this.musicVolumeSlider.Size = new System.Drawing.Size(247, 69);
             this.musicVolumeSlider.SmallChange = 5;
             this.musicVolumeSlider.TabIndex = 8;
             this.musicVolumeSlider.TickFrequency = 5;
@@ -124,7 +124,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(383, 458);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(225, 37);
+            this.label4.Size = new System.Drawing.Size(335, 55);
             this.label4.TabIndex = 7;
             this.label4.Text = "Effect Volume:";
             // 
@@ -134,7 +134,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(381, 393);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(227, 37);
+            this.label3.Size = new System.Drawing.Size(338, 55);
             this.label3.TabIndex = 6;
             this.label3.Text = "Music Volume:";
             // 
@@ -145,7 +145,7 @@
             this.refreshRateBox.Location = new System.Drawing.Point(614, 215);
             this.refreshRateBox.MaxLength = 3;
             this.refreshRateBox.Name = "refreshRateBox";
-            this.refreshRateBox.Size = new System.Drawing.Size(100, 44);
+            this.refreshRateBox.Size = new System.Drawing.Size(100, 62);
             this.refreshRateBox.TabIndex = 5;
             this.refreshRateBox.Text = "0";
             this.refreshRateBox.ClientSizeChanged += new System.EventHandler(this.refreshRateBox_ClientSizeChanged);
@@ -159,7 +159,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(720, 218);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 37);
+            this.label2.Size = new System.Drawing.Size(88, 55);
             this.label2.TabIndex = 4;
             this.label2.Text = "fps";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -181,7 +181,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(397, 218);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 37);
+            this.label1.Size = new System.Drawing.Size(321, 55);
             this.label1.TabIndex = 2;
             this.label1.Text = "Refresh Rate:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -198,21 +198,11 @@
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
-            // SelectLevel
-            // 
-            this.SelectLevel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SelectLevel.Location = new System.Drawing.Point(504, 108);
-            this.SelectLevel.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.SelectLevel.Name = "SelectLevel";
-            this.SelectLevel.Size = new System.Drawing.Size(238, 65);
-            this.SelectLevel.TabIndex = 5;
-            this.SelectLevel.Text = "Start Game";
-            this.SelectLevel.UseVisualStyleBackColor = true;
-            this.SelectLevel.Click += new System.EventHandler(this.SelectLevel_Click);
-            // 
             // QuitGameButton
             // 
             this.QuitGameButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.QuitGameButton.BackgroundImage = global::GameLoop.Properties.Resources.Base;
+            this.QuitGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.QuitGameButton.Location = new System.Drawing.Point(504, 479);
             this.QuitGameButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.QuitGameButton.Name = "QuitGameButton";
@@ -225,13 +215,16 @@
             // SettingsButton
             // 
             this.SettingsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SettingsButton.BackColor = System.Drawing.Color.Transparent;
+            this.SettingsButton.BackgroundImage = global::GameLoop.Properties.Resources.Base;
+            this.SettingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SettingsButton.Location = new System.Drawing.Point(504, 289);
             this.SettingsButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.SettingsButton.Name = "SettingsButton";
             this.SettingsButton.Size = new System.Drawing.Size(238, 65);
             this.SettingsButton.TabIndex = 1;
             this.SettingsButton.Text = "Settings";
-            this.SettingsButton.UseVisualStyleBackColor = true;
+            this.SettingsButton.UseVisualStyleBackColor = false;
             this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
             // mainmenu
@@ -247,6 +240,21 @@
             this.mainmenu.TabIndex = 2;
             this.mainmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.mainmenu_Paint);
             // 
+            // SelectLevel
+            // 
+            this.SelectLevel.BackColor = System.Drawing.Color.Transparent;
+            this.SelectLevel.BackgroundImage = global::GameLoop.Properties.Resources.Base;
+            this.SelectLevel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SelectLevel.FlatAppearance.BorderSize = 0;
+            this.SelectLevel.Location = new System.Drawing.Point(504, 108);
+            this.SelectLevel.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.SelectLevel.Name = "SelectLevel";
+            this.SelectLevel.Size = new System.Drawing.Size(238, 65);
+            this.SelectLevel.TabIndex = 5;
+            this.SelectLevel.Text = "Start Game";
+            this.SelectLevel.UseVisualStyleBackColor = false;
+            this.SelectLevel.Click += new System.EventHandler(this.SelectLevel_Click);
+            // 
             // GamePanel
             // 
             this.GamePanel.BackgroundImage = global::GameLoop.Properties.Resources.dank_background1;
@@ -260,7 +268,7 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(28F, 55F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.mainmenu);
