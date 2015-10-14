@@ -90,7 +90,7 @@
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -132,6 +132,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Man_slayer.png" />
+    <None Include="Resources\dank_background.bmp" />
+    <None Include="Resources\dank_background.png" />
+    <None Include="Resources\dank_background.jpg" />
     <Content Include="Resources\Test.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

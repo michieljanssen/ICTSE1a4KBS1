@@ -139,7 +139,6 @@ namespace GameLoop
 
                 }
                 else if (xml.NodeType == XmlNodeType.Element)
-                //  && (xml.Name == "Muur" || xml.Name == "Shrek" || xml.Name == "Kid" || xml.Name == "Grunt" || xml.Name == "Illuminatie")
                 {
                     String name = xml.Name;
 

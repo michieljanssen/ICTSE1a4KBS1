@@ -12,27 +12,21 @@ namespace GameLoop.Controller
     {
         public static XmlReader read(System.IO.Stream filename)
         {
-            try
-            {
-                Console.WriteLine(typeof(XML).GetType().Assembly.GetManifestResourceNames());
-                string result = string.Empty;
 
-                using (Stream stream = filename)
-                {
-                    using (StreamReader sr = new StreamReader(stream))
+            Console.WriteLine(typeof(XML).GetType().Assembly.GetManifestResourceNames());
+            string result = string.Empty;
+
+            using (Stream stream = filename)
+            {
+                using (StreamReader sr = new StreamReader(stream))
                     {
                         result = sr.ReadToEnd();
                     }
-                }
-                string XMLstring = result;
-                StringBuilder output = new StringBuilder();
-                return XmlReader.Create(new StringReader(XMLstring));
             }
-            catch (Exception exp)
-            {
-                Console.WriteLine(exp);
-                return null;
-            }
+            string XMLstring = result;
+            StringBuilder output = new StringBuilder();
+            return XmlReader.Create(new StringReader(XMLstring));        
+
         }
     }
 }
