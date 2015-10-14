@@ -131,6 +131,36 @@ namespace GameLoop.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;Level&gt;
+        ///  &lt;Size&gt;
+        ///    &lt;Width&gt;30&lt;/Width&gt;
+        ///    &lt;Height&gt;20&lt;/Height&gt;
+        ///  &lt;/Size&gt;
+        ///  &lt;Tiles&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;0&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;1&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;2&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;3&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;4&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;5&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;6&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;7&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;8&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;9&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;10&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;11&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;12&quot; /&gt;
+        ///    &lt;Muur x=&quot;0&quot; y=&quot;13&quot; /&gt;
+        ///    &lt;Muur x=&quot;0 [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Level1 {
+            get {
+                return ResourceManager.GetString("Level1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap Man_slayer {

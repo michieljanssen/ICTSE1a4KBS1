@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Xml;
+using System.Xml.Linq;
 using System.IO;
 
 namespace GameLoop
@@ -29,8 +30,9 @@ namespace GameLoop
            // Location eindpunt = new Location(10, 10);
            // int tilesize = 32;
            // map = new Level(levelformaat, startpunt, eindpunt, tilesize);
-            XmlReader level1 = Controller.XML.read(new FileStream(Directory.GetCurrentDirectory() + "/Resources/" + "Level1.xml", FileMode.Open));
-            map = new Level(level1);
+            XDocument level1 = XDocument.Parse(Properties.Resources.Level1);
+            //Properties.Resources.ResourceManager.GetStream("Level1.xml");
+             map = new Level(level1);
 
         }
 

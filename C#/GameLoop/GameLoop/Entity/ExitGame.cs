@@ -16,5 +16,20 @@ namespace GameLoop.Entity
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_settings_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_quit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

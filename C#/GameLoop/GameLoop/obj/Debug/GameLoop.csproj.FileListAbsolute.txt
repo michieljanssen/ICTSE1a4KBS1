@@ -34,7 +34,6 @@ C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debu
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.ExitBox.resources
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.Main.resources
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.SettingsNoSave.resources
-C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Test.xml
 C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.ExitBox.resources
 C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.Main.resources
 C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.SettingsNoSave.resources
@@ -43,3 +42,6 @@ D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.Main.resources
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.SettingsNoSave.resources
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level1.xml
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level1.xml
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.ExitGame.resources
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level1.xml
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.ExitGame.resources
