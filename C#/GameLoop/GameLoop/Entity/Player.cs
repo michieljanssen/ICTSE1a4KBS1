@@ -41,6 +41,7 @@ namespace GameLoop.Entity
                    
                 }
                 
+                //if (keyboard.)
             }
             turnTimer++;
         }

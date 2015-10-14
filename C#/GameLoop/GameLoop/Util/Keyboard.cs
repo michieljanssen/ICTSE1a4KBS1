@@ -11,7 +11,7 @@ namespace GameLoop
         //array van alle mogelijk toetsen
         private Boolean[] keys;
         //status van toetsen die worden gebruikt in 
-        public Boolean up, down, left, right;
+        public Boolean up, down, left, right, esc;
 
         public Keyboard()
         {
@@ -27,6 +27,7 @@ namespace GameLoop
             down = keys[40] || keys[83];
             left = keys[37] || keys[65];
             right = keys[39] || keys[68];
+            //esc = keys[]
         }
 
         //keydown event
