@@ -121,11 +121,14 @@
   <data name="Man_slayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Man_slayer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="floor_tile_texture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\floor_tile_texture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dank_background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dank_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dank_kid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dank_kid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dank_shrek" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dank_shrek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,10 +139,10 @@
   <data name="dank_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dank_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Wall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="floor_tile_texture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\floor_tile_texture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dank_background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dank_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
