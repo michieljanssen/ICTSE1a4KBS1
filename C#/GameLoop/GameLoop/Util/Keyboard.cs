@@ -27,7 +27,7 @@ namespace GameLoop
             down = keys[40] || keys[83];
             left = keys[37] || keys[65];
             right = keys[39] || keys[68];
-            //esc = keys[]
+            esc = keys[27];
         }
 
         //keydown event

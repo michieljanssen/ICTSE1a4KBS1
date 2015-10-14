@@ -41,7 +41,10 @@ namespace GameLoop.Entity
                    
                 }
                 
-                //if (keyboard.)
+                if (keyboard.esc)
+                {
+                    Console.WriteLine("Test");
+                }
             }
             turnTimer++;
         }
