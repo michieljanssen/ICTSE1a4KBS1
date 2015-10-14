@@ -30,7 +30,8 @@ namespace GameLoop
            // int tilesize = 32;
            // map = new Level(levelformaat, startpunt, eindpunt, tilesize);
             XmlReader level1 = Controller.XML.read(new FileStream(Directory.GetCurrentDirectory() + "/Resources/" + "Level1.xml", FileMode.Open));
-            map = new Level(level1);
+            Properties.Resources.Level1.
+             map = new Level(level1);
 
         }
 

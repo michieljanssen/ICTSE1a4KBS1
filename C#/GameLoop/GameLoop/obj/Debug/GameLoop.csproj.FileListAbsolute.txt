@@ -43,3 +43,4 @@ D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.Main.resources
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.SettingsNoSave.resources
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level1.xml
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level1.xml
+C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.ExitGame.resources

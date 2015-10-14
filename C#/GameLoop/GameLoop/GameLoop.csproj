@@ -49,6 +49,12 @@
   <ItemGroup>
     <Compile Include="Controller\XML.cs" />
     <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\ExitGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity\ExitGame.Designer.cs">
+      <DependentUpon>ExitGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entity\Grunt.cs" />
     <Compile Include="Entity\Illuminatie.cs" />
     <Compile Include="Entity\Player.cs" />
@@ -83,6 +89,9 @@
     <Compile Include="Level\WallTile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Entity\ExitGame.resx">
+      <DependentUpon>ExitGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExitBox.resx">
       <DependentUpon>ExitBox.cs</DependentUpon>
     </EmbeddedResource>
