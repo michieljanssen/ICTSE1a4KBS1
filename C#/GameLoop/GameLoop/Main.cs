@@ -226,8 +226,11 @@ namespace Menutest
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            loop.Running = false;
-            loop.loopThread.Abort();
+            if (loop != null)
+            {
+                loop.Running = false;
+                loop.loopThread.Abort();
+            }
         }
 
        
