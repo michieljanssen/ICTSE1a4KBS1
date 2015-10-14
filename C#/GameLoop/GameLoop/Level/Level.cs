@@ -6,6 +6,7 @@ using System.Collections;
 using System.Xml;
 using System.Xml.Linq;
 using System.IO;
+using Menutest;
 
 namespace GameLoop
 {
@@ -202,16 +203,19 @@ namespace GameLoop
             if (!speler.Alive) {
                 var result = MessageBox.Show("Try again?", "You died!",
                                  MessageBoxButtons.YesNo);
-                                 //MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
+
                     load(file); //herlaadt het spel
                 }
-                //else if (result == DialogResult.No)
-                //{
+                else if (result == DialogResult.No)
+                {
+                    
+                    //GamePanel.Visible = false;
+                    //mainmenu.Visible = true;
+                    //settings.Visible = false;
+                }
 
-                //}
-                
 
                 //load(file); //herlaadt het spel
             }
