@@ -77,10 +77,13 @@
             this.saveButton.Location = new System.Drawing.Point(506, 556);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(245, 45);
+            this.saveButton.BackgroundImage = global::GameLoop.Properties.Resources.Base;
+            this.saveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.saveButton.TabIndex = 11;
             this.saveButton.Text = "Save Changes";
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+
             // 
             // label5
             // 
@@ -169,6 +172,8 @@
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Location = new System.Drawing.Point(554, 108);
             this.button1.Name = "button1";
+            this.button1.BackgroundImage = global::GameLoop.Properties.Resources.Base;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Size = new System.Drawing.Size(144, 53);
             this.button1.TabIndex = 3;
             this.button1.Text = "Edit UI";
@@ -191,6 +196,8 @@
             this.backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.Location = new System.Drawing.Point(1150, 12);
+            this.backButton.BackgroundImage = global::GameLoop.Properties.Resources.Base;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(102, 45);
             this.backButton.TabIndex = 1;
@@ -259,7 +266,7 @@
             // 
             this.GamePanel.BackgroundImage = global::GameLoop.Properties.Resources.dank_background1;
             this.GamePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.GamePanel.Location = new System.Drawing.Point(0, 0);
+            this.GamePanel.Location = new System.Drawing.Point(-1, 5);
             this.GamePanel.Name = "GamePanel";
             this.GamePanel.Size = new System.Drawing.Size(1264, 669);
             this.GamePanel.TabIndex = 6;
