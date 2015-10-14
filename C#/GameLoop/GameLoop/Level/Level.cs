@@ -6,6 +6,7 @@ using System.Collections;
 using System.Xml;
 using System.Xml.Linq;
 using System.IO;
+
 namespace GameLoop
 {
     internal class Level
@@ -199,7 +200,20 @@ namespace GameLoop
         {
             //checkt of de speler nog leeft
             if (!speler.Alive) {
-                load(file); //herlaadt het spel
+                var result = MessageBox.Show("Try again?", "You died!",
+                                 MessageBoxButtons.YesNo);
+                                 //MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    load(file); //herlaadt het spel
+                }
+                //else if (result == DialogResult.No)
+                //{
+
+                //}
+                
+
+                //load(file); //herlaadt het spel
             }
 
 
