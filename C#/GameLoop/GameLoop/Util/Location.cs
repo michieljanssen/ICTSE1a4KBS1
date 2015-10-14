@@ -36,14 +36,15 @@ namespace GameLoop
         }
         public bool Compareto(Location second)
         {
-            if(this.X==second.X && this.Y == second.Y)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            if(this.X==second.X && this.Y == second.Y) { return true; } else { return false;}
+        }
+        public double Distanceto(Location second)
+        {
+            int xb = second.X;
+            int yb = second.Y;
+            int a = Math.Abs(x - xb);
+            int b = Math.Abs(y- yb);
+            return Math.Sqrt(a * a + b * b);
         }
     }
 }
