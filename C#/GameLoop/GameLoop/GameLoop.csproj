@@ -132,7 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Man_slayer.png" />
-    <Content Include="Resources\Test.xml">
+    <Content Include="Resources\Level1.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
