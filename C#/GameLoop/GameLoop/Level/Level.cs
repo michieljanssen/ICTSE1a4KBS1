@@ -104,7 +104,9 @@ namespace GameLoop
         }
 
         public void load(XDocument xdoc) {
+         
             XmlReader xml = xdoc.CreateReader();
+            xml.MoveToAttribute(1);
             //xml.move
             rand = new Random(); //nee dat kan niet weg
             entities = new ArrayList();
@@ -120,7 +122,7 @@ namespace GameLoop
 
                     xml.ReadToFollowing("Width");
                     width = xml.ReadElementContentAsInt();
-                    xml.ReadToFollowing("Height");
+                    //xml.ReadToFollowing("Height");
                     height = xml.ReadElementContentAsInt();
 
                     tiles = new Tile[width][];
