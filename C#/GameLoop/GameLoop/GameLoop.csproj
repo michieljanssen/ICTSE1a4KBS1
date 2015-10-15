@@ -49,11 +49,17 @@
   <ItemGroup>
     <Compile Include="Controller\XML.cs" />
     <Compile Include="Entity\Entity.cs" />
-    <Compile Include="Entity\ExitGame.cs">
+    <Compile Include="Entity\SettingsInGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Entity\ExitGame.Designer.cs">
-      <DependentUpon>ExitGame.cs</DependentUpon>
+    <Compile Include="Entity\SettingsInGame.Designer.cs">
+      <DependentUpon>SettingsInGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EscGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EscGame.Designer.cs">
+      <DependentUpon>EscGame.cs</DependentUpon>
     </Compile>
     <Compile Include="Entity\Grunt.cs" />
     <Compile Include="Entity\Illuminatie.cs" />
@@ -89,8 +95,11 @@
     <Compile Include="Level\WallTile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Entity\ExitGame.resx">
-      <DependentUpon>ExitGame.cs</DependentUpon>
+    <EmbeddedResource Include="Entity\SettingsInGame.resx">
+      <DependentUpon>SettingsInGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EscGame.resx">
+      <DependentUpon>EscGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExitBox.resx">
       <DependentUpon>ExitBox.cs</DependentUpon>

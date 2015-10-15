@@ -43,10 +43,11 @@ namespace GameLoop.Entity
                 
                 if (keyboard.esc)
                 {
-                    //if(exit)
-                    //ExitGame exit = new ExitGame();
-                    //exit.ShowDialog();
-                    
+                    //if (exit == null)
+                    //{
+                        ExitGame exit = new ExitGame();
+                        exit.ShowDialog();
+                    //}
                 }
             }
             turnTimer++;

@@ -33,6 +33,7 @@ namespace Menutest
             //Opent het settings menu
             mainmenu.Visible = false;
             settings.Visible = true;
+
             //Set de settings naar de values van de Settings class
             refreshRate = Settings.refreshRate;
             musicVolume = Settings.musicVolume;

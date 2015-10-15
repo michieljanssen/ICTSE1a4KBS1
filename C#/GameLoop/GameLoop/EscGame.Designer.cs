@@ -51,7 +51,7 @@
             this.btn_settings.Name = "btn_settings";
             this.btn_settings.Size = new System.Drawing.Size(176, 53);
             this.btn_settings.TabIndex = 1;
-            this.btn_settings.Text = "Settings";
+            this.btn_settings.Text = "Sound";
             this.btn_settings.UseVisualStyleBackColor = true;
             this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 

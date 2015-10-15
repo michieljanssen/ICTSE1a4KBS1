@@ -24,6 +24,8 @@ namespace GameLoop.Entity
 
         private void btn_settings_Click(object sender, EventArgs e)
         {
+            SettingsInGame settings = new SettingsInGame();
+            settings.ShowDialog();
             this.Close();
         }
 

@@ -74,16 +74,15 @@
             // 
             // saveButton
             // 
+            this.saveButton.BackgroundImage = global::GameLoop.Properties.Resources.Base;
+            this.saveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.saveButton.Location = new System.Drawing.Point(506, 556);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(245, 45);
-            this.saveButton.BackgroundImage = global::GameLoop.Properties.Resources.Base;
-            this.saveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.saveButton.TabIndex = 11;
             this.saveButton.Text = "Save Changes";
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
-
             // 
             // label5
             // 
@@ -91,7 +90,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(499, 339);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(363, 55);
+            this.label5.Size = new System.Drawing.Size(243, 37);
             this.label5.TabIndex = 10;
             this.label5.Text = "Sound Settings:";
             // 
@@ -102,7 +101,7 @@
             this.effectsVolumeSlider.Location = new System.Drawing.Point(628, 450);
             this.effectsVolumeSlider.Maximum = 100;
             this.effectsVolumeSlider.Name = "effectsVolumeSlider";
-            this.effectsVolumeSlider.Size = new System.Drawing.Size(247, 69);
+            this.effectsVolumeSlider.Size = new System.Drawing.Size(247, 45);
             this.effectsVolumeSlider.SmallChange = 5;
             this.effectsVolumeSlider.TabIndex = 9;
             this.effectsVolumeSlider.TickFrequency = 5;
@@ -115,7 +114,7 @@
             this.musicVolumeSlider.Location = new System.Drawing.Point(628, 393);
             this.musicVolumeSlider.Maximum = 100;
             this.musicVolumeSlider.Name = "musicVolumeSlider";
-            this.musicVolumeSlider.Size = new System.Drawing.Size(247, 69);
+            this.musicVolumeSlider.Size = new System.Drawing.Size(247, 45);
             this.musicVolumeSlider.SmallChange = 5;
             this.musicVolumeSlider.TabIndex = 8;
             this.musicVolumeSlider.TickFrequency = 5;
@@ -127,7 +126,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(383, 458);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(335, 55);
+            this.label4.Size = new System.Drawing.Size(225, 37);
             this.label4.TabIndex = 7;
             this.label4.Text = "Effect Volume:";
             // 
@@ -137,7 +136,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(381, 393);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(338, 55);
+            this.label3.Size = new System.Drawing.Size(227, 37);
             this.label3.TabIndex = 6;
             this.label3.Text = "Music Volume:";
             // 
@@ -148,7 +147,7 @@
             this.refreshRateBox.Location = new System.Drawing.Point(614, 215);
             this.refreshRateBox.MaxLength = 3;
             this.refreshRateBox.Name = "refreshRateBox";
-            this.refreshRateBox.Size = new System.Drawing.Size(100, 62);
+            this.refreshRateBox.Size = new System.Drawing.Size(100, 44);
             this.refreshRateBox.TabIndex = 5;
             this.refreshRateBox.Text = "0";
             this.refreshRateBox.ClientSizeChanged += new System.EventHandler(this.refreshRateBox_ClientSizeChanged);
@@ -162,7 +161,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(720, 218);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 55);
+            this.label2.Size = new System.Drawing.Size(60, 37);
             this.label2.TabIndex = 4;
             this.label2.Text = "fps";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -170,10 +169,10 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(554, 108);
-            this.button1.Name = "button1";
             this.button1.BackgroundImage = global::GameLoop.Properties.Resources.Base;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(554, 108);
+            this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 53);
             this.button1.TabIndex = 3;
             this.button1.Text = "Edit UI";
@@ -186,7 +185,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(397, 218);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(321, 55);
+            this.label1.Size = new System.Drawing.Size(211, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "Refresh Rate:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -194,10 +193,10 @@
             // backButton
             // 
             this.backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(1150, 12);
             this.backButton.BackgroundImage = global::GameLoop.Properties.Resources.Base;
             this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.Location = new System.Drawing.Point(1150, 12);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(102, 45);
             this.backButton.TabIndex = 1;
@@ -275,7 +274,7 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(28F, 55F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.mainmenu);
