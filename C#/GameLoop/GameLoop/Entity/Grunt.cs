@@ -28,7 +28,7 @@ namespace GameLoop.Entity
                 //Get the distance of the player to the entity
                 float xx = Math.Abs(level.Speler.Pos.X - Pos.X);
                 float yy = Math.Abs(level.Speler.Pos.Y - Pos.Y);
-                float r = (float)Math.Sqrt(xx*xx + yy*yy);
+                float r = (float) Pos.Distanceto(level.Speler.Pos);
                 if (r < startRange)
                 { //if player comes to close start tracking (range increases)
                     following = true;
