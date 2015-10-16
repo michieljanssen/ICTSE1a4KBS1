@@ -77,7 +77,6 @@
             this.trb_MusicVolume.TabIndex = 10;
             this.trb_MusicVolume.TickFrequency = 10;
             this.trb_MusicVolume.Scroll += new System.EventHandler(this.trb_MusicVolume_Scroll);
-            this.trb_MusicVolume.Validating += new System.ComponentModel.CancelEventHandler(this.trb_MusicVolume_Validating);
             // 
             // trb_EffectsVolume
             // 
@@ -100,7 +99,7 @@
             this.Controls.Add(this.lbl_EffectsVolume);
             this.Controls.Add(this.lbl_MusicVolume);
             this.Controls.Add(this.lbl_SoundSettings);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SettingsInGame";
             this.Text = "SettingsInGame";
             ((System.ComponentModel.ISupportInitialize)(this.trb_MusicVolume)).EndInit();

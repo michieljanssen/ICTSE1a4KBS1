@@ -16,6 +16,8 @@ namespace GameLoop.Entity
     {
         public SettingsInGame()
         {
+            //trb_MusicVolume.Value = Settings.musicVolume;
+            //trb_EffectsVolume.Value = Settings.effectsVolume;
             InitializeComponent();
         }
 

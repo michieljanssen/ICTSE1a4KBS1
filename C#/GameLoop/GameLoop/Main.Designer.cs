@@ -235,10 +235,10 @@
             // 
             // mainmenu
             // 
+            this.mainmenu.Controls.Add(this.GamePanel);
             this.mainmenu.Controls.Add(this.QuitGameButton);
             this.mainmenu.Controls.Add(this.SettingsButton);
             this.mainmenu.Controls.Add(this.SelectLevel);
-            this.mainmenu.Controls.Add(this.GamePanel);
             this.mainmenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainmenu.Location = new System.Drawing.Point(0, 0);
             this.mainmenu.Name = "mainmenu";

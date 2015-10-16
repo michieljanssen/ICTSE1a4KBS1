@@ -41,14 +41,14 @@ namespace GameLoop.Entity
                    
                 }
                 
-                if (keyboard.esc)
-                {
+                //if (keyboard.esc)
+                //{
                     //if (exit == null)
                     //{
-                        ExitGame exit = new ExitGame();
-                        exit.ShowDialog();
+                    //    ExitGame exit = new ExitGame();
+                    //    exit.ShowDialog();
                     //}
-                }
+                //}
             }
             turnTimer++;
         }
