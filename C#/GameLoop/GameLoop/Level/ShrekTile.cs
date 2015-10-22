@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Xml.Linq;
+
 namespace GameLoop
 {
     class ShrekTile : Tile  //subklasse van Tile klasse
@@ -12,6 +14,8 @@ namespace GameLoop
 
         //vloer voor onder de shrek
         private Image floor;
+
+        //private Level map;
 
         public ShrekTile(Location init, Image floor, Level level)
             : base(init, TileType.shrek, false, Properties.Resources.dank_shrek, level)
@@ -31,6 +35,9 @@ namespace GameLoop
             //Shuts down if player is equal to this tile
             if (Pos.Compareto(level.Speler.Pos)) {
                 Environment.Exit(0);
+                //XDocument level2 = XDocument.Parse(Properties.Resources.Level2);
+                //map = new Level(level2);
+
             }
         }
     }

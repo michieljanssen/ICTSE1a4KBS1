@@ -109,7 +109,7 @@ namespace GameLoop
             XmlReader xml = xdoc.CreateReader();
             xml.MoveToAttribute(1);
             //xml.move
-            rand = new Random(); //nee dat kan niet weg
+            rand = new Random();
             entities = new ArrayList();
 
             Location start = new Location(0, 0);

@@ -46,3 +46,6 @@ C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debu
 C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level1.xml
 C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.ExitGame.resources
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.SettingsInGame.resources
+D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level2.xml
+D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.SettingsInGame.resources
+D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.ExitGame.resources
