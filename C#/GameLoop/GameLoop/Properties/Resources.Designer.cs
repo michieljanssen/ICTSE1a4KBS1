@@ -179,7 +179,5 @@ namespace GameLoop.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-
-        public static string Level2 { get; internal set; }
     }
 }

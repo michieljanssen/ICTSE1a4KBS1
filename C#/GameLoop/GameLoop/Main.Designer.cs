@@ -43,7 +43,6 @@
             this.QuitGameButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.mainmenu = new System.Windows.Forms.Panel();
-            this.GamePanel = new System.Windows.Forms.Panel();
             this.SelectLevel = new System.Windows.Forms.Button();
             this.settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effectsVolumeSlider)).BeginInit();
@@ -239,7 +238,6 @@
             // 
             this.mainmenu.BackgroundImage = global::GameLoop.Properties.Resources.dank_background;
             this.mainmenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.mainmenu.Controls.Add(this.GamePanel);
             this.mainmenu.Controls.Add(this.QuitGameButton);
             this.mainmenu.Controls.Add(this.SettingsButton);
             this.mainmenu.Controls.Add(this.SelectLevel);
@@ -249,17 +247,6 @@
             this.mainmenu.Size = new System.Drawing.Size(1264, 681);
             this.mainmenu.TabIndex = 2;
             this.mainmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.mainmenu_Paint);
-            // 
-            // GamePanel
-            // 
-            this.GamePanel.BackgroundImage = global::GameLoop.Properties.Resources.dank_background1;
-            this.GamePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.GamePanel.Location = new System.Drawing.Point(-1, 5);
-            this.GamePanel.Name = "GamePanel";
-            this.GamePanel.Size = new System.Drawing.Size(1264, 669);
-            this.GamePanel.TabIndex = 6;
-            this.GamePanel.Visible = false;
-            this.GamePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.GamePanel_Paint);
             // 
             // SelectLevel
             // 
@@ -319,7 +306,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button saveButton;
-        private System.Windows.Forms.Panel GamePanel;
     }
 }
 

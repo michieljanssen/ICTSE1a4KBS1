@@ -44,5 +44,11 @@ namespace GameLoop
         }
 
 
+        //releasing all keys
+        public void releaseAllKeys() {
+            for (int i = 0; i < keys.Length; i++) {
+                keys[i] = false;
+            }
+        }
     }
 }
