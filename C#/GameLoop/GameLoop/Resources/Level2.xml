@@ -102,59 +102,11 @@
     <Muur x="27" y="19" />
     <Muur x="28" y="19" />
     <Muur x="29" y="19" />
-    <Muur x="1" y="4" />
-    <Muur x="2" y="4" />
-    <Muur x="3" y="4" />
-    <Muur x="4" y="4" />
-    <Muur x="7" y="1" />
-    <Muur x="7" y="2" />
-    <Muur x="7" y="3" />
-    <Muur x="7" y="4" />
-    <Muur x="4" y="7" />
-    <Muur x="4" y="8" />
-    <Muur x="4" y="9" />
-    <Muur x="4" y="10" />
-    <Muur x="4" y="11" />
-    <Muur x="4" y="12" />
-    <Muur x="4" y="13" />
-    <Muur x="4" y="14" />
-    <Muur x="4" y="16" />
-    <Muur x="5" y="16" />
-    <Muur x="6" y="16" />
-    <Muur x="7" y="16" />
-    <Muur x="8" y="16" />
-    <Muur x="9" y="16" />
-    <Muur x="10" y="16" />
-    <Muur x="11" y="16" />
-    <Muur x="12" y="16" />
-    <Muur x="13" y="16" />
-    <Muur x="14" y="16" />
-    <Muur x="15" y="16" />
-    <Muur x="17" y="16" />
-    <Muur x="18" y="16" />
-    <Muur x="19" y="16" />
-    <Muur x="23" y="18" />
-    <Muur x="23" y="17" />
-    <Muur x="23" y="16" />
-    <Muur x="23" y="15" />
-    <Muur x="23" y="14" />
-    <Muur x="28" y="7" />
-    <Muur x="27" y="7" />
-    <Muur x="26" y="7" />
-    <Muur x="25" y="7" />
-    <Muur x="24" y="7" />
-    <Muur x="23" y="7" />
-    <Muur x="22" y="7" />
-    <Muur x="21" y="7" />
-    <Muur x="15" y="7" />
-    <Muur x="14" y="7" />
-    <Muur x="13" y="7" />
-    <Muur x="12" y="7" />
-    <Muur x="11" y="7" />
-    <Muur x="10" y="7" />
-    <Muur x="18" y="1" />
-    <Muur x="18" y="2" />
-    <Muur x="18" y="3" />
-    <Muur x="18" y="4" />
-    <Shrek x="26" y="17" />
-    <Kid x="2" y="2" />
+    <Shrek x="2" y="2" />
+    <Kid x="3" y="3" />
+  </Tiles>
+  <Entities>
+    <Grunt x="10" y="10" />
+    <Illuminatie x="11" y="11"/>
+  </Entities>
+</Level>

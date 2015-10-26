@@ -11,7 +11,6 @@ namespace GameLoop.Entity
         private Boolean following = false;
         private int startRange, fRange;
 
-
         public Grunt(Location pos, Level level)
             : base(pos, level, EntityType.grunt, Properties.Resources.Man_slayer)
         {
