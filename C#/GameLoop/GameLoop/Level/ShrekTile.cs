@@ -16,11 +16,12 @@ namespace GameLoop
         private Image floor;
 
         //private Level map;
-
-        public ShrekTile(Location init, Image floor, Level level)
+        //private Game game;
+        public ShrekTile(Location init, Image floor, Level level, Game game)
             : base(init, TileType.shrek, false, Properties.Resources.dank_shrek, level)
         {
             this.floor = floor;
+            //this.game = game;
         }
 
 
@@ -35,8 +36,9 @@ namespace GameLoop
             //Shuts down if player is equal to this tile
             if (Pos.Compareto(level.Speler.Pos)) {
                 Environment.Exit(0);
-                //XDocument level2 = XDocument.Parse(Properties.Resources.Level2);
-                //map = new Level(level2);
+
+                //XDocument level2 = XDocument.Parse(@"Resources\Level2.xml");
+                //map = new Level(level2, game);
 
             }
         }
