@@ -32,7 +32,7 @@ namespace GameLoop
         public static long NanoTime{ get { return (long)(Stopwatch.GetTimestamp() / (Stopwatch.Frequency / 1000000000.0)); }} 
 
         //scherm
-        private Main window;
+        public Main window;
 
         //gameloop variablen
         private float targetUps;
@@ -41,15 +41,17 @@ namespace GameLoop
         
         //constructor
         public Loop(Main window, int targetUps, Boolean fpsLock, int maxFps) {
+            //Console.WriteLine(window.GPanel.Visible);
             //stelt alle variablen in
             this.window = window;
+            //window.GPanel.
             window.Paint += this.render;
             
             this.targetUps = targetUps;
             this.fpsLock = fpsLock;
             this.maxFps = maxFps;
             //intalizeerd het spel
-            game = new Game();
+            game = new Game(this);
             //initalizeerd de gameloop thraed en start hem op de methode init();
             t = new Thread(init);
             t.Priority = ThreadPriority.Highest;
@@ -121,6 +123,7 @@ namespace GameLoop
                         if (deltaFps >= 1)
                         {
                             //checked of een invoke op de andere thread nodig is
+
                             if (window.InvokeRequired)
                             {
                                 //voert het render event uit met een invoke

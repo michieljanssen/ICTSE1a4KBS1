@@ -16,11 +16,15 @@ namespace Menutest
         //Maakt een boolean aan voor de exitwithoutsave bij het settings menu
         public static bool istrue = false;
 
-        public Panel GPanel { get { return GamePanel; } }
+     
+        public Panel MainMenu { get { return mainmenu; } set { mainmenu = value; } }
+        public Panel GameSettings { get { return settings; } set { settings = value; } }
 
         public Main()
         {
             InitializeComponent();
+            
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,6 +57,7 @@ namespace Menutest
         private void Main_Load(object sender, EventArgs e)
         {
            this.DoubleBuffered = true;
+           
            this.KeyPreview = true;
            this.KeyUp +=new KeyEventHandler(Main_KeyUp);
            this.KeyDown += new KeyEventHandler(Main_KeyDown);
@@ -99,15 +104,24 @@ namespace Menutest
 
         private void SelectLevel_Click(object sender, EventArgs e)
         {
-            loop = new Loop(this, 60, true, Menutest.Settings.refreshRate);
-
 
             //Zolang de panel niet werkt:
             //GameLoop.Window i = new GameLoop.Window();
             //i.ShowDialog();
-            
+           // this.Visible = true;
+            mainmenu.Hide();
             mainmenu.Visible = false;
-            GamePanel.Visible = true;
+            settings.Hide();
+            settings.Visible = false;
+            this.Visible = true;
+           // Control_Up.Visible = true;
+           // Control_Down.Visible = true;
+          //  Control_Right.Visible = true;
+          //  Control_Left.Visible = true;
+          //  Console.WriteLine(Control_Down.Parent.Name); ;
+           
+            loop = new Loop(this, 60, true, Menutest.Settings.refreshRate);
+
             
         }
 
@@ -198,10 +212,7 @@ namespace Menutest
           
         }
 
-        private void GamePanel_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
+       
         //keydown event
         private void Main_KeyDown(object sender, KeyEventArgs e)
         {
@@ -227,5 +238,12 @@ namespace Menutest
             }
         }
 
+        private void GamePanel_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+
+       
     }
 }

@@ -12,8 +12,9 @@ namespace GameLoop
 {
     internal class Level
     {
+        private Game game;
+        
         private XDocument file;
-
 
         private Location gridSize; //hergebruik van de Locatieklasse om de afmetingen van het rooster
         private Tile[][] tiles;   //Array of all the tiles in the game
@@ -35,9 +36,9 @@ namespace GameLoop
             set { start = value; }
         }
 
-        public Level(Location gridsize, Location s, Location e, int size = 32)
+        public Level(Location gridsize, Location s, Location e, Game game, int size = 32)
         {
-
+            this.game = game;
             //Setup of the gridsize
             gridSize = new Location(gridsize.X + 2, gridsize.Y + 2); //gridsize wordt vergroot met twee voor muren
             //horizontal rows are initialized
@@ -94,18 +95,22 @@ namespace GameLoop
 
         }
 
-        public Level(XmlReader xml)
+        public Level(XmlReader xml, Game game)
         {
+            this.game = game;
             this.file =XDocument.Load(xml);
             load(file);
         }
 
-        public Level(XDocument xdoc) {
+        public Level(XDocument xdoc, Game game)
+        {
+            this.game = game;
+            this.file = xdoc;
             load(xdoc);
         }
 
         public void load(XDocument xdoc) {
-         
+            game.keyboard.releaseAllKeys();
             XmlReader xml = xdoc.CreateReader();
             xml.MoveToAttribute(1);
             //xml.move
@@ -212,10 +217,27 @@ namespace GameLoop
                 }
                 else if (result == DialogResult.No)
                 {
-                    
-                    //GamePanel.Visible = false;
-                    //mainmenu.Visible = true;
-                    //settings.Visible = false;
+                   
+                    //game.loop = null;
+                  
+                    //game.loop.window.Visible = true;
+                    // game.loop.window.GPanel.Focused = false;
+                    if (game.loop.window.InvokeRequired)
+                    {
+                        game.loop.window.Invoke(new MethodInvoker(game.loop.window.MainMenu.BringToFront));
+                      //  game.loop.window.Invoke(new MethodInvoker(game.loop.window.MainMenu.Refresh));
+                         game.loop.window.Invoke(new MethodInvoker(()=> game.loop.window.MainMenu.Visible = true));
+                    }
+                   // game.loop.window.MainMenu.BringToFront();
+                    game.loop.window.CreateGraphics().Clear(Color.White);
+                    //game.loop.window.MainMenu.BringToFront();
+                    //game.loop.window.BringToFront();
+                    //game.loop.window.GameSettings.BringToFront();
+                   // game.loop.window.GameSettings.Visible = false;
+                    //game.loop.window.MainMenu.Refresh();
+                    //
+                    game.loop.Running = false;
+                    game.loop.loopThread.Abort();
                 }
 
 
