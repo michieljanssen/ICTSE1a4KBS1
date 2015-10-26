@@ -188,9 +188,10 @@ namespace GameLoop
             {
                 for (int u = 0; u < tiles[i].Length; u++)
                 {
-
-                    tiles[i][u].Paint(sender, e);
-
+                    if (tiles[i][u] != null)
+                    {
+                        tiles[i][u].Paint(sender, e);
+                    }
                 }
             }
             for (int i = 0; i < entities.Count; i++)

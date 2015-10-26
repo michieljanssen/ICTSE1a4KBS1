@@ -43,7 +43,12 @@
             this.QuitGameButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.mainmenu = new System.Windows.Forms.Panel();
+            this.Control_Up = new System.Windows.Forms.Button();
+            this.Control_Right = new System.Windows.Forms.Button();
+            this.Control_Down = new System.Windows.Forms.Button();
+            this.Control_Left = new System.Windows.Forms.Button();
             this.SelectLevel = new System.Windows.Forms.Button();
+            this.Control_Menu = new System.Windows.Forms.Button();
             this.settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effectsVolumeSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musicVolumeSlider)).BeginInit();
@@ -238,6 +243,11 @@
             // 
             this.mainmenu.BackgroundImage = global::GameLoop.Properties.Resources.dank_background;
             this.mainmenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainmenu.Controls.Add(this.Control_Menu);
+            this.mainmenu.Controls.Add(this.Control_Up);
+            this.mainmenu.Controls.Add(this.Control_Right);
+            this.mainmenu.Controls.Add(this.Control_Down);
+            this.mainmenu.Controls.Add(this.Control_Left);
             this.mainmenu.Controls.Add(this.QuitGameButton);
             this.mainmenu.Controls.Add(this.SettingsButton);
             this.mainmenu.Controls.Add(this.SelectLevel);
@@ -247,6 +257,50 @@
             this.mainmenu.Size = new System.Drawing.Size(1264, 681);
             this.mainmenu.TabIndex = 2;
             this.mainmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.mainmenu_Paint);
+            // 
+            // Control_Up
+            // 
+            this.Control_Up.Location = new System.Drawing.Point(93, 575);
+            this.Control_Up.Name = "Control_Up";
+            this.Control_Up.Size = new System.Drawing.Size(75, 44);
+            this.Control_Up.TabIndex = 9;
+            this.Control_Up.Text = "/\\";
+            this.Control_Up.UseVisualStyleBackColor = true;
+            this.Control_Up.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ControlDown);
+            this.Control_Up.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ControlUp);
+            // 
+            // Control_Right
+            // 
+            this.Control_Right.Location = new System.Drawing.Point(174, 625);
+            this.Control_Right.Name = "Control_Right";
+            this.Control_Right.Size = new System.Drawing.Size(75, 44);
+            this.Control_Right.TabIndex = 8;
+            this.Control_Right.Text = ">";
+            this.Control_Right.UseVisualStyleBackColor = true;
+            this.Control_Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ControlDown);
+            this.Control_Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ControlUp);
+            // 
+            // Control_Down
+            // 
+            this.Control_Down.Location = new System.Drawing.Point(93, 625);
+            this.Control_Down.Name = "Control_Down";
+            this.Control_Down.Size = new System.Drawing.Size(75, 44);
+            this.Control_Down.TabIndex = 7;
+            this.Control_Down.Text = "\\/";
+            this.Control_Down.UseVisualStyleBackColor = true;
+            this.Control_Down.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ControlDown);
+            this.Control_Down.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ControlUp);
+            // 
+            // Control_Left
+            // 
+            this.Control_Left.Location = new System.Drawing.Point(12, 625);
+            this.Control_Left.Name = "Control_Left";
+            this.Control_Left.Size = new System.Drawing.Size(75, 44);
+            this.Control_Left.TabIndex = 6;
+            this.Control_Left.Text = "<";
+            this.Control_Left.UseVisualStyleBackColor = true;
+            this.Control_Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ControlDown);
+            this.Control_Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ControlUp);
             // 
             // SelectLevel
             // 
@@ -262,6 +316,16 @@
             this.SelectLevel.Text = "Start Game";
             this.SelectLevel.UseVisualStyleBackColor = false;
             this.SelectLevel.Click += new System.EventHandler(this.SelectLevel_Click);
+            // 
+            // Control_Menu
+            // 
+            this.Control_Menu.Location = new System.Drawing.Point(1079, 12);
+            this.Control_Menu.Name = "Control_Menu";
+            this.Control_Menu.Size = new System.Drawing.Size(173, 45);
+            this.Control_Menu.TabIndex = 10;
+            this.Control_Menu.Text = "Menu";
+            this.Control_Menu.UseVisualStyleBackColor = true;
+            this.Control_Menu.Click += new System.EventHandler(this.Control_Menu_Click);
             // 
             // Main
             // 
@@ -306,6 +370,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button saveButton;
+        public System.Windows.Forms.Button Control_Left;
+        public System.Windows.Forms.Button Control_Down;
+        public System.Windows.Forms.Button Control_Up;
+        public System.Windows.Forms.Button Control_Right;
+        private System.Windows.Forms.Button Control_Menu;
     }
 }
 

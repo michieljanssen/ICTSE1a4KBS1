@@ -1,4 +1,4 @@
-﻿namespace GameLoop.Entity
+﻿namespace GameLoop
 {
     partial class ExitGame
     {

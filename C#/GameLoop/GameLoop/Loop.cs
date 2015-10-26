@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using Menutest;
 namespace GameLoop
 {
-    class Loop
+    public class Loop
     {
         //game class waar alles word geupdate en gerendert voor het spel
         public Game game;

@@ -16,19 +16,19 @@ namespace Menutest
         //Maakt een boolean aan voor de exitwithoutsave bij het settings menu
         public static bool istrue = false;
 
-     
+
         public Panel MainMenu { get { return mainmenu; } set { mainmenu = value; } }
         public Panel GameSettings { get { return settings; } set { settings = value; } }
 
         public Main()
         {
             InitializeComponent();
-            
-            
-        }
+            Control_Down.Parent = this;
+            Control_Up.Parent = this;
+            Control_Left.Parent = this;
+            Control_Right.Parent = this;
+            Control_Menu.Parent = this;
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -56,11 +56,11 @@ namespace Menutest
 
         private void Main_Load(object sender, EventArgs e)
         {
-           this.DoubleBuffered = true;
-           
-           this.KeyPreview = true;
-           this.KeyUp +=new KeyEventHandler(Main_KeyUp);
-           this.KeyDown += new KeyEventHandler(Main_KeyDown);
+            this.DoubleBuffered = true;
+
+            this.KeyPreview = true;
+            this.KeyUp += new KeyEventHandler(Main_KeyUp);
+            this.KeyDown += new KeyEventHandler(Main_KeyDown);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -108,21 +108,16 @@ namespace Menutest
             //Zolang de panel niet werkt:
             //GameLoop.Window i = new GameLoop.Window();
             //i.ShowDialog();
-           // this.Visible = true;
+            // this.Visible = true;
             mainmenu.Hide();
             mainmenu.Visible = false;
             settings.Hide();
             settings.Visible = false;
-            this.Visible = true;
-           // Control_Up.Visible = true;
-           // Control_Down.Visible = true;
-          //  Control_Right.Visible = true;
-          //  Control_Left.Visible = true;
-          //  Console.WriteLine(Control_Down.Parent.Name); ;
-           
+            this.Visible = true;          
+
             loop = new Loop(this, 60, true, Menutest.Settings.refreshRate);
 
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -209,10 +204,10 @@ namespace Menutest
 
         private void mainmenu_Paint(object sender, PaintEventArgs e)
         {
-          
+
         }
 
-       
+
         //keydown event
         private void Main_KeyDown(object sender, KeyEventArgs e)
         {
@@ -224,9 +219,10 @@ namespace Menutest
         //keyup event
         private void Main_KeyUp(object sender, KeyEventArgs e)
         {
-          if(loop != null){
-             loop.game.keyboard.Window_KeyUp(sender, e);
-           }
+            if (loop != null)
+            {
+                loop.game.keyboard.Window_KeyUp(sender, e);
+            }
         }
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
@@ -238,12 +234,61 @@ namespace Menutest
             }
         }
 
-        private void GamePanel_Paint(object sender, PaintEventArgs e)
+
+        private void ControlUp(object sender, MouseEventArgs e)
         {
-            
+            if (loop != null)
+            {
+             
+                if (sender.Equals(Control_Up))
+                {
+                    loop.game.keyboard.ControlUp(38);
+                }
+                else if (sender.Equals(Control_Down))
+                {
+                    loop.game.keyboard.ControlUp(40);
+                }
+                else if (sender.Equals(Control_Left))
+                {
+                    loop.game.keyboard.ControlUp(37);
+                }
+                else if (sender.Equals(Control_Right))
+                {
+                    loop.game.keyboard.ControlUp(39);
+                }
+
+
+            }
         }
 
+        private void ControlDown(object sender, MouseEventArgs e)
+        {
+            if (loop != null)
+            {
+                if (sender.Equals(Control_Up))
+                {
+                    loop.game.keyboard.ControlDown(38);
+                }
+                else if (sender.Equals(Control_Down))
+                {
+                    loop.game.keyboard.ControlDown(40);
+                }
+                else if (sender.Equals(Control_Left))
+                {
+                    loop.game.keyboard.ControlDown(37);
+                }
+                else if (sender.Equals(Control_Right))
+                {
+                    loop.game.keyboard.ControlDown(39);
+                }
+            }
+        }
 
-       
+        private void Control_Menu_Click(object sender, EventArgs e)
+        {
+            loop.game.paused = true;
+            ExitGame exit = new ExitGame(loop.game);
+            exit.Show();
+        }
     }
 }

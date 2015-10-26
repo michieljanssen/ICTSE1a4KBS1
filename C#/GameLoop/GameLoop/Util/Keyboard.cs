@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Menutest;
 namespace GameLoop
 {
-    class Keyboard
+    public class Keyboard
     {
         //array van alle mogelijk toetsen
         private Boolean[] keys;
@@ -43,6 +44,15 @@ namespace GameLoop
             keys[e.KeyValue] = false;
         }
 
+        public void ControlDown(int e)
+        {
+            keys[e] = true;
+        }
+
+        public  void ControlUp(int e)
+        {
+            keys[e] = false;
+        }
 
         //releasing all keys
         public void releaseAllKeys() {

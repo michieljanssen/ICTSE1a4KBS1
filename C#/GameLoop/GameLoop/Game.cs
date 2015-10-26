@@ -12,7 +12,7 @@ using System.IO;
 
 namespace GameLoop
 {
-    class Game
+    public class Game
     {
         //game variablene declarenen
         public Loop loop;
@@ -20,6 +20,7 @@ namespace GameLoop
         public Keyboard keyboard;
       
         private Level map;
+        public Boolean paused = false;
 
         public Game(Loop loop)
         {
@@ -49,10 +50,13 @@ namespace GameLoop
         //update metode
         public void update(float time)
         {
-            //keyboard update
-            keyboard.update();
-           
-            map.update(keyboard, time);
+            if (!paused)
+            {
+                //keyboard update
+                keyboard.update();
+
+                map.update(keyboard, time);
+            }
         }
     }
 }
