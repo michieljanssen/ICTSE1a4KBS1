@@ -148,4 +148,10 @@
   <data name="Level1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Level1.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="Headshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Headshot.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Hitmarker_sound_shit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hitmarker sound shit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
