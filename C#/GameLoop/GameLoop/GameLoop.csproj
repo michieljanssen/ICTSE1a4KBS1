@@ -155,6 +155,7 @@
     <None Include="Resources\dank_background.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Level2.xml" />
     <None Include="Resources\Base.png" />
     <Content Include="Resources\Level1.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

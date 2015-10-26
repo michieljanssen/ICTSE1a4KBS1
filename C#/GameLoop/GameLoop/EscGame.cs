@@ -33,5 +33,10 @@ namespace GameLoop.Entity
         {
             this.Close();
         }
+
+        private void ExitGame_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

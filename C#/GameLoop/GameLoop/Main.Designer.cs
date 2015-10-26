@@ -43,8 +43,8 @@
             this.QuitGameButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.mainmenu = new System.Windows.Forms.Panel();
-            this.SelectLevel = new System.Windows.Forms.Button();
             this.GamePanel = new System.Windows.Forms.Panel();
+            this.SelectLevel = new System.Windows.Forms.Button();
             this.settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effectsVolumeSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musicVolumeSlider)).BeginInit();
@@ -53,6 +53,8 @@
             // 
             // settings
             // 
+            this.settings.BackgroundImage = global::GameLoop.Properties.Resources.dank_background;
+            this.settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.settings.Controls.Add(this.saveButton);
             this.settings.Controls.Add(this.label5);
             this.settings.Controls.Add(this.effectsVolumeSlider);
@@ -235,6 +237,8 @@
             // 
             // mainmenu
             // 
+            this.mainmenu.BackgroundImage = global::GameLoop.Properties.Resources.dank_background;
+            this.mainmenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mainmenu.Controls.Add(this.GamePanel);
             this.mainmenu.Controls.Add(this.QuitGameButton);
             this.mainmenu.Controls.Add(this.SettingsButton);
@@ -245,6 +249,17 @@
             this.mainmenu.Size = new System.Drawing.Size(1264, 681);
             this.mainmenu.TabIndex = 2;
             this.mainmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.mainmenu_Paint);
+            // 
+            // GamePanel
+            // 
+            this.GamePanel.BackgroundImage = global::GameLoop.Properties.Resources.dank_background1;
+            this.GamePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.GamePanel.Location = new System.Drawing.Point(-1, 5);
+            this.GamePanel.Name = "GamePanel";
+            this.GamePanel.Size = new System.Drawing.Size(1264, 669);
+            this.GamePanel.TabIndex = 6;
+            this.GamePanel.Visible = false;
+            this.GamePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.GamePanel_Paint);
             // 
             // SelectLevel
             // 
@@ -260,17 +275,6 @@
             this.SelectLevel.Text = "Start Game";
             this.SelectLevel.UseVisualStyleBackColor = false;
             this.SelectLevel.Click += new System.EventHandler(this.SelectLevel_Click);
-            // 
-            // GamePanel
-            // 
-            this.GamePanel.BackgroundImage = global::GameLoop.Properties.Resources.dank_background1;
-            this.GamePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.GamePanel.Location = new System.Drawing.Point(-1, 5);
-            this.GamePanel.Name = "GamePanel";
-            this.GamePanel.Size = new System.Drawing.Size(1264, 669);
-            this.GamePanel.TabIndex = 6;
-            this.GamePanel.Visible = false;
-            this.GamePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.GamePanel_Paint);
             // 
             // Main
             // 

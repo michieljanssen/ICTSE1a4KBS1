@@ -32,5 +32,10 @@ namespace Menutest
             Main.istrue = true;
             this.Close();
         }
+
+        private void SettingsNoSave_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

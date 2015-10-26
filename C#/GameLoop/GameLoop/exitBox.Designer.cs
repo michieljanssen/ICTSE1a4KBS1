@@ -38,10 +38,9 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.label2.Location = new System.Drawing.Point(4, 14);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(3, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(589, 55);
+            this.label2.Size = new System.Drawing.Size(393, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "Do you really want to quit?";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -53,10 +52,9 @@
             this.YesBtn.BackgroundImage = global::GameLoop.Properties.Resources.Base;
             this.YesBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.YesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.YesBtn.Location = new System.Drawing.Point(15, 415);
-            this.YesBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.YesBtn.Location = new System.Drawing.Point(10, 270);
             this.YesBtn.Name = "YesBtn";
-            this.YesBtn.Size = new System.Drawing.Size(256, 63);
+            this.YesBtn.Size = new System.Drawing.Size(171, 41);
             this.YesBtn.TabIndex = 2;
             this.YesBtn.Text = "Yes";
             this.YesBtn.UseVisualStyleBackColor = false;
@@ -69,10 +67,9 @@
             this.NoBtn.BackgroundImage = global::GameLoop.Properties.Resources.Base;
             this.NoBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.NoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.NoBtn.Location = new System.Drawing.Point(280, 415);
-            this.NoBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NoBtn.Location = new System.Drawing.Point(187, 270);
             this.NoBtn.Name = "NoBtn";
-            this.NoBtn.Size = new System.Drawing.Size(298, 63);
+            this.NoBtn.Size = new System.Drawing.Size(199, 41);
             this.NoBtn.TabIndex = 3;
             this.NoBtn.Text = "Hell Nawww";
             this.NoBtn.UseVisualStyleBackColor = false;
@@ -80,13 +77,14 @@
             // 
             // ExitBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 494);
+            this.BackgroundImage = global::GameLoop.Properties.Resources.dank_background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(398, 321);
             this.Controls.Add(this.NoBtn);
             this.Controls.Add(this.YesBtn);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ExitBox";

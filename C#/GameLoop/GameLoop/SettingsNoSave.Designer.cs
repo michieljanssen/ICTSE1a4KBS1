@@ -71,12 +71,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GameLoop.Properties.Resources.dank_background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(408, 290);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnYes);
             this.Controls.Add(this.label2);
             this.Name = "SettingsNoSave";
             this.Text = "SettingsNoSave";
+            this.Load += new System.EventHandler(this.SettingsNoSave_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

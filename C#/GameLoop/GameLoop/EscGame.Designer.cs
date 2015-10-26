@@ -70,6 +70,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GameLoop.Properties.Resources.dank_background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(197, 190);
             this.Controls.Add(this.btn_quit);
             this.Controls.Add(this.btn_settings);
@@ -77,6 +79,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ExitGame";
             this.Text = "ExitGame";
+            this.Load += new System.EventHandler(this.ExitGame_Load);
             this.ResumeLayout(false);
 
         }
