@@ -21,7 +21,6 @@ C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\GameL
 C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\GameLoop.pdb
 C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.csprojResolveAssemblyReference.cache
 C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Properties.Resources.resources
-C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Window.resources
 C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.csproj.GenerateResource.Cache
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\GameLoop.exe.config
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\GameLoop.exe
@@ -49,4 +48,10 @@ C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debu
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level2.xml
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.SettingsInGame.resources
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.ExitGame.resources
-C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level2.xml
+C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level1.xml
+C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Debug\Resources\Level2.xml
+C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.SettingsInGame.resources
+C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\GameLoop.Entity.ExitGame.resources
+C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.ExitBox.resources
+C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.Main.resources
+C:\Users\Hugo\Documents\GitHub\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Debug\Menutest.SettingsNoSave.resources
