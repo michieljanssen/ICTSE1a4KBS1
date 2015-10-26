@@ -95,6 +95,7 @@
     <Compile Include="Level\WallTile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Sound.cs" />
     <EmbeddedResource Include="Entity\SettingsInGame.resx">
       <DependentUpon>SettingsInGame.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +157,8 @@
     <None Include="Resources\dank_background.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Headshot.wav" />
+    <None Include="Resources\Hitmarker sound shit.wav" />
     <Content Include="Resources\Level2.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

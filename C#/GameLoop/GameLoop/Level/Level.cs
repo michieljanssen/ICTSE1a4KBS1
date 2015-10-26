@@ -209,6 +209,7 @@ namespace GameLoop
         {
             //checkt of de speler nog leeft
             if (!speler.Alive) {
+                Sound.playEffect(Sound.headshot);
                 var result = MessageBox.Show("Try again?", "You died!",
                                  MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
