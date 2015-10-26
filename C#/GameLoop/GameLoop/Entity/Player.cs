@@ -8,7 +8,8 @@ namespace GameLoop.Entity
 {
     class Player : Entity
     {
-        public Player(Location pos, Level level):base(pos, level,EntityType.player, null){
+        public Player(Location pos, Level level):base(pos, level,EntityType.player, Properties.Resources.dank_kid)
+        {
         
         }
         internal void update(Keyboard keyboard, float time)

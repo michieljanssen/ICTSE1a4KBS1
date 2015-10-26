@@ -72,7 +72,7 @@ namespace GameLoop
                     if (new Location(xloc, yloc).Compareto(start))
                     {
                         //assign start location
-                        tiles[xloc][yloc] = new KidTile(new Location(xloc, yloc), Properties.Resources.floor_tile_texture, this);
+                        tiles[xloc][yloc] = new StartTile(new Location(xloc, yloc), Properties.Resources.floor_tile_texture, this);
                     }
                     if (new Location(xloc, yloc).Compareto(eind))
                     {
@@ -161,7 +161,7 @@ namespace GameLoop
                             tiles[x][y] = new ShrekTile(new Location(x, y), Properties.Resources.floor_tile_texture, this);
                             break;
                         case "Kid":
-                            tiles[x][y] = new KidTile(new Location(x, y), Properties.Resources.floor_tile_texture, this);
+                            tiles[x][y] = new StartTile(new Location(x, y), Properties.Resources.floor_tile_texture, this);
                             start = new Location(x, y);
                             break;
                         case "Grunt":

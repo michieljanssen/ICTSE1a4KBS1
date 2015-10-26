@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 using System.Drawing;
 namespace GameLoop
 {
-    class KidTile : Tile
+    class StartTile : Tile
     { 
         //vloer voor onder de kid
         private Image floor;
 
         //properties geven
-        public KidTile(Location init, Image floor, Level level)
-            : base(init, TileType.kid, false, Properties.Resources.dank_kid, level)
+        public StartTile(Location init, Image floor, Level level)
+            : base(init, TileType.floor, false, Properties.Resources.floor_tile_texture, level)
         {
             this.floor = floor;
         }
