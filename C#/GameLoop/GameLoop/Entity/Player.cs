@@ -33,13 +33,23 @@ namespace GameLoop.Entity
                 {
                     Pos.X--;
                     turnTimer = 0;
+                    if (this.Flipped)
+                    {
+                        this.Flipped = false;
+                        this.Sprite.RotateFlip(System.Drawing.RotateFlipType.RotateNoneFlipX);
+                    }
                   
                 }
                 if (keyboard.right && !level.Tiles[Pos.X +1][Pos.Y].solid)
                 {
                     Pos.X++;
                     turnTimer = 0;
-                   
+                    if (!this.Flipped)
+                    {
+                        this.Flipped = true;
+                        this.Sprite.RotateFlip(System.Drawing.RotateFlipType.RotateNoneFlipX);
+                    }
+
                 }
                 
                 //if (keyboard.esc)

@@ -22,6 +22,7 @@ namespace GameLoop.Entity
         protected Level level;
         private int size;
         private Image sprite;
+        private bool flipped = false;
 
         private Boolean alive;
 
@@ -29,6 +30,8 @@ namespace GameLoop.Entity
         public Location Pos { get { return pos; } }
         public float TurnTime { get { return turnTime; } set { turnTime = value; } }
         public int Size { get { return size; } }
+        public bool Flipped { get { return flipped; } set { flipped = value; } }
+        public Image Sprite { get { return sprite; } }
 
         public Entity(Location pos, Level level, EntityType type, Image sprite) {
             this.alive = true;
