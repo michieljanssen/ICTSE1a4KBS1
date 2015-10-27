@@ -5,11 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Media;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace GameLoop
 {
     static class Sound
     {
+        //volume change
+        [DllImport("winmm.dll")]
+        public static extern int waveOutSetVolume(IntPtr hwo, uint dwVolume);
+
         //music
         public static Stream canCanMlgAncietnReality = Properties.Resources.CAN_CAN_MLG_ANCIENTREALITY;
         public static Stream darudeMlgStorm = Properties.Resources.Darude_MLGstorm;
@@ -36,10 +41,11 @@ namespace GameLoop
         //plays sound
         public static void playEffect(Stream stream)
         {
+            waveOutSetVolume(IntPtr.Zero, (uint)(uint.MaxValue  / 100 * Menutest.Settings.effectsVolume));
             //zet stream position naaar begin
             stream.Position = 0;
             SoundPlayer sound = new SoundPlayer(stream);
-
+            
             sound.Play();
 
         }

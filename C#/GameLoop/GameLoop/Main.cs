@@ -34,6 +34,7 @@ namespace Menutest
 
         private void SettingsButton_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             //Opent het settings menu
             mainmenu.Visible = false;
             settings.Visible = true;
@@ -50,6 +51,7 @@ namespace Menutest
         private void QuitGameButton_Click(object sender, EventArgs e)
         {
             //Opent het 'wil je echt stoppen'-scherm als je op 'Quit Game' drukt
+            Sound.playEffect(Sound.hitmarker);
             ExitBox exit = new ExitBox();
             exit.ShowDialog();
         }
@@ -70,6 +72,7 @@ namespace Menutest
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             //Controleert of alle settings zijn opgeslagen
             if (refreshRate != Settings.refreshRate || musicVolume != Settings.musicVolume
                 || effectsVolume != Settings.effectsVolume)
@@ -113,8 +116,8 @@ namespace Menutest
             mainmenu.Visible = false;
             settings.Hide();
             settings.Visible = false;
-            this.Visible = true;          
-
+            this.Visible = true;
+            Sound.playEffect(Sound.hitmarker);
             loop = new Loop(this, 60, true, Menutest.Settings.refreshRate);
 
 
@@ -157,6 +160,7 @@ namespace Menutest
 
         private void saveButton_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             //Sla alles op in de settings klasse
             if (refreshRateBox.Text != "")
             {
@@ -199,7 +203,7 @@ namespace Menutest
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            Sound.playEffect(Sound.hitmarker);
         }
 
         private void mainmenu_Paint(object sender, PaintEventArgs e)
@@ -286,6 +290,7 @@ namespace Menutest
 
         private void Control_Menu_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             loop.game.paused = true;
             ExitGame exit = new ExitGame(loop.game);
             exit.Show();
