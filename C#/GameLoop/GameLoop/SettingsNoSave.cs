@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using GameLoop;
 namespace Menutest
 {
     public partial class SettingsNoSave : Form
@@ -24,11 +24,13 @@ namespace Menutest
 
         private void btnNo_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             this.Close();
         }
 
         private void btnYes_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             Main.istrue = true;
             this.Close();
         }

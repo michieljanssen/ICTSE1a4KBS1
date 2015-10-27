@@ -34,6 +34,7 @@ namespace Menutest
 
         private void SettingsButton_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             //Opent het settings menu
             mainmenu.Visible = false;
             settings.Visible = true;
@@ -42,7 +43,7 @@ namespace Menutest
             refreshRate = Settings.refreshRate;
             musicVolume = Settings.musicVolume;
             effectsVolume = Settings.effectsVolume;
-            musicVolumeSlider.Value = Settings.musicVolume;
+            //musicVolumeSlider.Value = Settings.musicVolume;
             effectsVolumeSlider.Value = Settings.effectsVolume;
             refreshRateBox.Text = Settings.refreshRate.ToString();
         }
@@ -50,6 +51,7 @@ namespace Menutest
         private void QuitGameButton_Click(object sender, EventArgs e)
         {
             //Opent het 'wil je echt stoppen'-scherm als je op 'Quit Game' drukt
+            Sound.playEffect(Sound.hitmarker);
             ExitBox exit = new ExitBox();
             exit.ShowDialog();
         }
@@ -70,6 +72,7 @@ namespace Menutest
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             //Controleert of alle settings zijn opgeslagen
             if (refreshRate != Settings.refreshRate || musicVolume != Settings.musicVolume
                 || effectsVolume != Settings.effectsVolume)
@@ -113,8 +116,8 @@ namespace Menutest
             mainmenu.Visible = false;
             settings.Hide();
             settings.Visible = false;
-            this.Visible = true;          
-
+            this.Visible = true;
+            Sound.playEffect(Sound.hitmarker);
             loop = new Loop(this, 60, true, Menutest.Settings.refreshRate);
 
 
@@ -140,8 +143,7 @@ namespace Menutest
         private void musicVolumeSlider_Scroll(object sender, EventArgs e)
         {
             //Set de int musicVolume elke keer als er gescrollt wordt in de musicVolumeSlider
-            musicVolume = musicVolumeSlider.Value;
-            //Console.WriteLine("Music: {0}", musicVolumeSlider.Value);
+            //musicVolume = musicVolumeSlider.Value;
         }
 
         private void refreshRateBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -157,12 +159,13 @@ namespace Menutest
 
         private void saveButton_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             //Sla alles op in de settings klasse
             if (refreshRateBox.Text != "")
             {
                 Settings.refreshRate = refreshRate;
             }
-            Settings.musicVolume = musicVolumeSlider.Value;
+            //Settings.musicVolume = musicVolumeSlider.Value;
             Settings.effectsVolume = effectsVolumeSlider.Value;
         }
 
@@ -184,7 +187,7 @@ namespace Menutest
 
         private void musicVolumeSlider_ClientSizeChanged(object sender, EventArgs e)
         {
-            musicVolumeSlider.Value = musicVolume;
+            //musicVolumeSlider.Value = musicVolume;
         }
 
         private void refreshRateBox_KeyUp(object sender, KeyEventArgs e)
@@ -199,7 +202,7 @@ namespace Menutest
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            Sound.playEffect(Sound.hitmarker);
         }
 
         private void mainmenu_Paint(object sender, PaintEventArgs e)
@@ -286,6 +289,7 @@ namespace Menutest
 
         private void Control_Menu_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             loop.game.paused = true;
             ExitGame exit = new ExitGame(loop.game);
             exit.Show();

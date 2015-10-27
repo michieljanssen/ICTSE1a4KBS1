@@ -24,6 +24,7 @@ namespace GameLoop
        
         private void button1_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             game.paused = false;
             this.Close();
         }
@@ -31,13 +32,16 @@ namespace GameLoop
         private void btn_settings_Click(object sender, EventArgs e)
         {
             //Laat het settingspanel zien en haalt de values van de geluidsvolumes op uit de Settings klasse.
+            Sound.playEffect(Sound.hitmarker);
             SettingsPanel.Visible = true;
             trb_Effects.Value = Menutest.Settings.effectsVolume;
-            trb_Music.Value = Menutest.Settings.musicVolume;
+            //trb_Music.Value = Menutest.Settings.musicVolume;
         }
 
         private void btn_quit_Click(object sender, EventArgs e)
+
         {
+            Sound.playEffect(Sound.hitmarker);
             if (game.loop.window.InvokeRequired)
             {
                 game.loop.window.Invoke(new MethodInvoker(game.loop.window.MainMenu.BringToFront));
@@ -63,6 +67,7 @@ namespace GameLoop
 
         private void btn_back_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             SettingsPanel.Visible = false;
         }
 
@@ -75,7 +80,12 @@ namespace GameLoop
         private void trb_musicVolume_Scroll(object sender, EventArgs e)
         {
             //Verandert de value voor music volume in de settings klasse
-            Menutest.Settings.musicVolume = trb_Music.Value;
+            //Menutest.Settings.musicVolume = trb_Music.Value;
+        }
+
+        private void lbl_musicVolume_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

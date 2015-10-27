@@ -32,9 +32,7 @@
             this.saveButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.effectsVolumeSlider = new System.Windows.Forms.TrackBar();
-            this.musicVolumeSlider = new System.Windows.Forms.TrackBar();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.refreshRateBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -51,7 +49,6 @@
             this.SelectLevel = new System.Windows.Forms.Button();
             this.settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effectsVolumeSlider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.musicVolumeSlider)).BeginInit();
             this.mainmenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,9 +59,7 @@
             this.settings.Controls.Add(this.saveButton);
             this.settings.Controls.Add(this.label5);
             this.settings.Controls.Add(this.effectsVolumeSlider);
-            this.settings.Controls.Add(this.musicVolumeSlider);
             this.settings.Controls.Add(this.label4);
-            this.settings.Controls.Add(this.label3);
             this.settings.Controls.Add(this.refreshRateBox);
             this.settings.Controls.Add(this.label2);
             this.settings.Controls.Add(this.button1);
@@ -83,7 +78,7 @@
             this.saveButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.saveButton.BackgroundImage = global::GameLoop.Properties.Resources.Base;
             this.saveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.saveButton.Location = new System.Drawing.Point(506, 556);
+            this.saveButton.Location = new System.Drawing.Point(504, 513);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(245, 45);
             this.saveButton.TabIndex = 11;
@@ -105,7 +100,7 @@
             // 
             this.effectsVolumeSlider.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.effectsVolumeSlider.LargeChange = 10;
-            this.effectsVolumeSlider.Location = new System.Drawing.Point(628, 450);
+            this.effectsVolumeSlider.Location = new System.Drawing.Point(626, 406);
             this.effectsVolumeSlider.Maximum = 100;
             this.effectsVolumeSlider.Name = "effectsVolumeSlider";
             this.effectsVolumeSlider.Size = new System.Drawing.Size(247, 45);
@@ -114,38 +109,15 @@
             this.effectsVolumeSlider.TickFrequency = 5;
             this.effectsVolumeSlider.Scroll += new System.EventHandler(this.effectsVolumeSlider_Scroll);
             // 
-            // musicVolumeSlider
-            // 
-            this.musicVolumeSlider.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.musicVolumeSlider.LargeChange = 10;
-            this.musicVolumeSlider.Location = new System.Drawing.Point(628, 393);
-            this.musicVolumeSlider.Maximum = 100;
-            this.musicVolumeSlider.Name = "musicVolumeSlider";
-            this.musicVolumeSlider.Size = new System.Drawing.Size(247, 45);
-            this.musicVolumeSlider.SmallChange = 5;
-            this.musicVolumeSlider.TabIndex = 8;
-            this.musicVolumeSlider.TickFrequency = 5;
-            this.musicVolumeSlider.Scroll += new System.EventHandler(this.musicVolumeSlider_Scroll);
-            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(383, 458);
+            this.label4.Location = new System.Drawing.Point(383, 406);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(225, 37);
             this.label4.TabIndex = 7;
             this.label4.Text = "Effect Volume:";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(381, 393);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(227, 37);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Music Volume:";
             // 
             // refreshRateBox
             // 
@@ -334,8 +306,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.mainmenu);
             this.Controls.Add(this.settings);
+            this.Controls.Add(this.mainmenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
@@ -349,7 +321,6 @@
             this.settings.ResumeLayout(false);
             this.settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effectsVolumeSlider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.musicVolumeSlider)).EndInit();
             this.mainmenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -367,9 +338,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox refreshRateBox;
         private System.Windows.Forms.TrackBar effectsVolumeSlider;
-        private System.Windows.Forms.TrackBar musicVolumeSlider;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button saveButton;
         public System.Windows.Forms.Button Control_Left;

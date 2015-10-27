@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GameLoop;
 
 namespace Menutest
 {
@@ -24,11 +25,13 @@ namespace Menutest
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             this.Close();
         }
 
         private void YesBtn_Click(object sender, EventArgs e)
         {
+            Sound.playEffect(Sound.hitmarker);
             Application.Exit();
         }
     }
