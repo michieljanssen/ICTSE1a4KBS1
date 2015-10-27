@@ -19,7 +19,7 @@ namespace GameLoop
         public Loop loop;
         //keyboard input class
         public Keyboard keyboard;
-      
+
         private Level map;
         public Boolean paused = false;
 
@@ -29,13 +29,9 @@ namespace GameLoop
 
             //variablene intializeren
             keyboard = new Keyboard();
-            //  Location levelformaat = new Location(20, 20);
-            //  Location startpunt = new Location(1, 1);
-            // Location eindpunt = new Location(10, 10);
-            // int tilesize = 32;
-            // map = new Level(levelformaat, startpunt, eindpunt, tilesize);
+
+            // Level 1 initializeren
             XDocument level1 = XDocument.Parse(Properties.Resources.Level1);
-            //Properties.Resources.ResourceManager.GetStream("Level1.xml");
             map = new Level(level1, this);
 
         }
@@ -59,22 +55,66 @@ namespace GameLoop
             }
         }
 
-        public void changeLevel(XDocument xdoc)
+        // Methode om terug te gaan naar het main menu vanuit de game
+        public void backToMain()
         {
-            map = new Level(xdoc, this);
+            if (this.loop.window.InvokeRequired)
+            {
+                this.loop.window.Invoke(new MethodInvoker(this.loop.window.MainMenu.BringToFront));
+                this.loop.window.Invoke(new MethodInvoker(() => this.loop.window.MainMenu.Visible = true));
+            }
+            this.loop.window.CreateGraphics().Clear(Color.White);
+            this.loop.Running = false;
+            this.loop.loopThread.Abort();
         }
-
+        
+        // Aantal keren dat je level complete per instance
         int timesWon = 0;
-        string[] levels = {
+        // Array met strings
+        static string[] levels = {
             Properties.Resources.Level1,
             Properties.Resources.Level2,
             Properties.Resources.Level3,
         };
+        //Totaal aantal levels. De lengte van de array
+        int totalLevels = levels.Length;
+        // Methode om aan te roepen als je op de finish komt
         public void nextLevel()
         {
             timesWon++;
-            XDocument level = XDocument.Parse(levels[timesWon]);
-            map = new Level(level, this);
+            // Als aantal keren gewonnen gelijk of groter is dan het aantal levels heb je het spel uitgespeeld
+            if(timesWon >= totalLevels)
+            {
+                var result = MessageBox.Show("Exit game?", "You have beaten the game!",
+                                                                     MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    Environment.Exit(0);
+                }
+                else if (result == DialogResult.No)
+                {
+                    this.backToMain();
+                }
+                
+
+            }
+            // Zo niet, dan krijg je het volgende level
+            else
+            {
+                var result = MessageBox.Show("Next level?", "You won!",
+                                                 MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    XDocument level = XDocument.Parse(levels[timesWon]);
+                    map = new Level(level, this);
+                }
+                else if (result == DialogResult.No)
+                {
+                    this.backToMain();
+                }
+            }
+            
+
         }
     }
 }

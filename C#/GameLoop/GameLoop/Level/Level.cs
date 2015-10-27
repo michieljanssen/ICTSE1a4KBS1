@@ -226,19 +226,8 @@ namespace GameLoop
                 }
                 else if (result == DialogResult.No)
                 {
-                   
-                   
-                    if (game.loop.window.InvokeRequired)
-                    {
-                        game.loop.window.Invoke(new MethodInvoker(game.loop.window.MainMenu.BringToFront));
-                      
-                         game.loop.window.Invoke(new MethodInvoker(()=> game.loop.window.MainMenu.Visible = true));
-                    }
-                  
-                    game.loop.window.CreateGraphics().Clear(Color.White);
-                   
-                    game.loop.Running = false;
-                    game.loop.loopThread.Abort();
+
+                    Game.backToMain();
                 }
 
 

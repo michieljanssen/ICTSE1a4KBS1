@@ -13,7 +13,6 @@ namespace GameLoop
     {       
         //vloer voor onder de shrek
         private Image floor;
-        private Game game;
         public ShrekTile(Location init, Image floor, Level level)
             : base(init, TileType.shrek, false, Properties.Resources.dank_shrek, level)
         {
@@ -32,26 +31,7 @@ namespace GameLoop
         public override void Update() {
             //Shuts down if player is equal to this tile
             if (Pos.Compareto(level.Speler.Pos)) {
-                var result = MessageBox.Show("Next level?", "You won!",
-                                 MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    this.level.Game.nextLevel();                   
-                }
-                else if (result == DialogResult.No)
-                {
-                    if (game.loop.window.InvokeRequired)
-                    {
-                        game.loop.window.Invoke(new MethodInvoker(game.loop.window.MainMenu.BringToFront));
-                        game.loop.window.Invoke(new MethodInvoker(() => game.loop.window.MainMenu.Visible = true));
-                    }
-                    game.loop.window.CreateGraphics().Clear(Color.White);
-                    game.loop.Running = false;
-                    game.loop.loopThread.Abort();
-                }
-                    //Environment.Exit(0);
-
-
+                this.level.Game.nextLevel();
             }
         }
     }
