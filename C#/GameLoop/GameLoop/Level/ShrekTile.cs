@@ -10,18 +10,15 @@ using System.Xml.Linq;
 namespace GameLoop
 {
     class ShrekTile : Tile  //subklasse van Tile klasse
-    {
-
+    {       
         //vloer voor onder de shrek
         private Image floor;
-
-        private Level map;
         private Game game;
-        public ShrekTile(Location init, Image floor, Level level, Game game)
+        public ShrekTile(Location init, Image floor, Level level)
             : base(init, TileType.shrek, false, Properties.Resources.dank_shrek, level)
         {
             this.floor = floor;
-            this.game = game;
+            
         }
 
 
@@ -39,9 +36,7 @@ namespace GameLoop
                                  MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    XDocument level2 = XDocument.Parse(Properties.Resources.Level2);
-                    this.level.Game.changeLevel(level2);
-                   
+                    this.level.Game.nextLevel();                   
                 }
                 else if (result == DialogResult.No)
                 {

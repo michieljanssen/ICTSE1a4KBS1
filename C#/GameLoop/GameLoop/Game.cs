@@ -10,6 +10,7 @@ using System.Xml;
 using System.Xml.Linq;
 using System.IO;
 
+
 namespace GameLoop
 {
     public class Game
@@ -37,10 +38,6 @@ namespace GameLoop
             //Properties.Resources.ResourceManager.GetStream("Level1.xml");
             map = new Level(level1, this);
 
-            //XDocument level2 = XDocument.Parse(Properties.Resources.Level2);
-            //map = new Level(level2, game);
-
-
         }
 
         //render metode
@@ -62,9 +59,22 @@ namespace GameLoop
             }
         }
 
-        public void changeLevel(XDocument xdoc) {
+        public void changeLevel(XDocument xdoc)
+        {
             map = new Level(xdoc, this);
         }
 
+        int timesWon = 0;
+        string[] levels = {
+            Properties.Resources.Level1,
+            Properties.Resources.Level2,
+            Properties.Resources.Level3,
+        };
+        public void nextLevel()
+        {
+            timesWon++;
+            XDocument level = XDocument.Parse(levels[timesWon]);
+            map = new Level(level, this);
+        }
     }
 }

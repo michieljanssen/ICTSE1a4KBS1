@@ -159,6 +159,9 @@
     <None Include="Resources\dank_background.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Level3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\Spooky_Skeletons_MLW_Remix.wav" />
     <None Include="Resources\Wow_MLG_Sound_Effect.wav" />
     <None Include="Resources\WHAT_ARE_THOSE.wav" />
