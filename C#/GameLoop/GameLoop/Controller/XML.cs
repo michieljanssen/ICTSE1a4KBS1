@@ -10,7 +10,7 @@ namespace GameLoop.Controller
 {
     abstract public class XML
     {
-        public static XmlReader read(System.IO.Stream filename)
+        public static XmlReader read(Stream filename)
         {
 
             Console.WriteLine(typeof(XML).GetType().Assembly.GetManifestResourceNames());
