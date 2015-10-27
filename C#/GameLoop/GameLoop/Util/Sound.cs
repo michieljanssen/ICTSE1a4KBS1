@@ -32,23 +32,16 @@ namespace GameLoop
         public static Stream smokeWeedEveryday = Properties.Resources.Smoke_Weed_Everyday;
         public static Stream whatAreThose = Properties.Resources.WHAT_ARE_THOSE;
         public static Stream wow = Properties.Resources.Wow_MLG_Sound_Effect;
-        
-        
 
-        public static void playEffect(Stream stream) {
-         
-            //wp.URL = System.Reflection.Assembly.GetExecutingAssembly().GetType().;
 
+        //plays sound
+        public static void playEffect(Stream stream)
+        {
             stream.Position = 0;
             SoundPlayer sound = new SoundPlayer(stream);
             //sound.Load();
             sound.Play();
-        }
 
-        public static void playMusic(Stream stream) {
-            stream.Position = 0;
-           music =  new SoundPlayer(stream);
-           music.PlayLooping();
         }
 
     }
