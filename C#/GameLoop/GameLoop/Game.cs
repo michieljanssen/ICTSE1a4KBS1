@@ -36,7 +36,10 @@ namespace GameLoop
             XDocument level1 = XDocument.Parse(Properties.Resources.Level1);
             //Properties.Resources.ResourceManager.GetStream("Level1.xml");
             map = new Level(level1, this);
-            
+
+            //XDocument level2 = XDocument.Parse(Properties.Resources.Level2);
+            //map = new Level(level2, game);
+
 
         }
 
