@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Menutest.Settings;
 
 namespace GameLoop
 {
@@ -29,9 +30,10 @@ namespace GameLoop
 
         private void btn_settings_Click(object sender, EventArgs e)
         {
-           // SettingsInGame settings = new SettingsInGame();
-           // settings.ShowDialog();
-           // this.Close();
+            //Laat het settingspanel zien en haalt de values van de geluidsvolumes op uit de Settings klasse.
+            SettingsPanel.Visible = true;
+            trb_Effects.Value = Menutest.Settings.effectsVolume;
+            trb_Music.Value = Menutest.Settings.musicVolume;
         }
 
         private void btn_quit_Click(object sender, EventArgs e)
@@ -57,6 +59,23 @@ namespace GameLoop
         private void ExitGame_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            SettingsPanel.Visible = false;
+        }
+
+        private void trb_Effects_Scroll(object sender, EventArgs e)
+        {
+            //Verandert de value voor effects volume in de settings klasse
+            Menutest.Settings.effectsVolume = trb_Effects.Value;
+        }
+
+        private void trb_musicVolume_Scroll(object sender, EventArgs e)
+        {
+            //Verandert de value voor music volume in de settings klasse
+            Menutest.Settings.musicVolume = trb_Music.Value;
         }
     }
 }

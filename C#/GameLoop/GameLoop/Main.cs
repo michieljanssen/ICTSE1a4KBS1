@@ -157,7 +157,7 @@ namespace Menutest
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            //Sla alles op
+            //Sla alles op in de settings klasse
             if (refreshRateBox.Text != "")
             {
                 Settings.refreshRate = refreshRate;

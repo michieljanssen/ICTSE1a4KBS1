@@ -43,12 +43,12 @@
             this.QuitGameButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.mainmenu = new System.Windows.Forms.Panel();
+            this.Control_Menu = new System.Windows.Forms.Button();
             this.Control_Up = new System.Windows.Forms.Button();
             this.Control_Right = new System.Windows.Forms.Button();
             this.Control_Down = new System.Windows.Forms.Button();
             this.Control_Left = new System.Windows.Forms.Button();
             this.SelectLevel = new System.Windows.Forms.Button();
-            this.Control_Menu = new System.Windows.Forms.Button();
             this.settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effectsVolumeSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musicVolumeSlider)).BeginInit();
@@ -80,6 +80,7 @@
             // 
             // saveButton
             // 
+            this.saveButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.saveButton.BackgroundImage = global::GameLoop.Properties.Resources.Base;
             this.saveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.saveButton.Location = new System.Drawing.Point(506, 556);
@@ -258,6 +259,16 @@
             this.mainmenu.TabIndex = 2;
             this.mainmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.mainmenu_Paint);
             // 
+            // Control_Menu
+            // 
+            this.Control_Menu.Location = new System.Drawing.Point(1079, 12);
+            this.Control_Menu.Name = "Control_Menu";
+            this.Control_Menu.Size = new System.Drawing.Size(173, 45);
+            this.Control_Menu.TabIndex = 10;
+            this.Control_Menu.Text = "Menu";
+            this.Control_Menu.UseVisualStyleBackColor = true;
+            this.Control_Menu.Click += new System.EventHandler(this.Control_Menu_Click);
+            // 
             // Control_Up
             // 
             this.Control_Up.Location = new System.Drawing.Point(93, 575);
@@ -304,6 +315,7 @@
             // 
             // SelectLevel
             // 
+            this.SelectLevel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SelectLevel.BackColor = System.Drawing.Color.Transparent;
             this.SelectLevel.BackgroundImage = global::GameLoop.Properties.Resources.Base;
             this.SelectLevel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -316,16 +328,6 @@
             this.SelectLevel.Text = "Start Game";
             this.SelectLevel.UseVisualStyleBackColor = false;
             this.SelectLevel.Click += new System.EventHandler(this.SelectLevel_Click);
-            // 
-            // Control_Menu
-            // 
-            this.Control_Menu.Location = new System.Drawing.Point(1079, 12);
-            this.Control_Menu.Name = "Control_Menu";
-            this.Control_Menu.Size = new System.Drawing.Size(173, 45);
-            this.Control_Menu.TabIndex = 10;
-            this.Control_Menu.Text = "Menu";
-            this.Control_Menu.UseVisualStyleBackColor = true;
-            this.Control_Menu.Click += new System.EventHandler(this.Control_Menu_Click);
             // 
             // Main
             // 
