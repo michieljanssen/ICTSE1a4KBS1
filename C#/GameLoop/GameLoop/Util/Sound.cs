@@ -36,13 +36,17 @@ namespace GameLoop
         
 
         public static void playEffect(Stream stream) {
+         
+            //wp.URL = System.Reflection.Assembly.GetExecutingAssembly().GetType().;
+
+            stream.Position = 0;
             SoundPlayer sound = new SoundPlayer(stream);
+            //sound.Load();
             sound.Play();
         }
 
-        public static void playMusic(Stream stream) { 
-            
-
+        public static void playMusic(Stream stream) {
+            stream.Position = 0;
            music =  new SoundPlayer(stream);
            music.PlayLooping();
         }
