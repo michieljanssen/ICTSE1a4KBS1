@@ -43,7 +43,7 @@ namespace Menutest
             refreshRate = Settings.refreshRate;
             musicVolume = Settings.musicVolume;
             effectsVolume = Settings.effectsVolume;
-            musicVolumeSlider.Value = Settings.musicVolume;
+            //musicVolumeSlider.Value = Settings.musicVolume;
             effectsVolumeSlider.Value = Settings.effectsVolume;
             refreshRateBox.Text = Settings.refreshRate.ToString();
         }
@@ -143,8 +143,7 @@ namespace Menutest
         private void musicVolumeSlider_Scroll(object sender, EventArgs e)
         {
             //Set de int musicVolume elke keer als er gescrollt wordt in de musicVolumeSlider
-            musicVolume = musicVolumeSlider.Value;
-            //Console.WriteLine("Music: {0}", musicVolumeSlider.Value);
+            //musicVolume = musicVolumeSlider.Value;
         }
 
         private void refreshRateBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -166,7 +165,7 @@ namespace Menutest
             {
                 Settings.refreshRate = refreshRate;
             }
-            Settings.musicVolume = musicVolumeSlider.Value;
+            //Settings.musicVolume = musicVolumeSlider.Value;
             Settings.effectsVolume = effectsVolumeSlider.Value;
         }
 
@@ -188,7 +187,7 @@ namespace Menutest
 
         private void musicVolumeSlider_ClientSizeChanged(object sender, EventArgs e)
         {
-            musicVolumeSlider.Value = musicVolume;
+            //musicVolumeSlider.Value = musicVolume;
         }
 
         private void refreshRateBox_KeyUp(object sender, KeyEventArgs e)

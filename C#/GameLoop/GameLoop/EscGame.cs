@@ -35,7 +35,7 @@ namespace GameLoop
             Sound.playEffect(Sound.hitmarker);
             SettingsPanel.Visible = true;
             trb_Effects.Value = Menutest.Settings.effectsVolume;
-            trb_Music.Value = Menutest.Settings.musicVolume;
+            //trb_Music.Value = Menutest.Settings.musicVolume;
         }
 
         private void btn_quit_Click(object sender, EventArgs e)
@@ -80,7 +80,12 @@ namespace GameLoop
         private void trb_musicVolume_Scroll(object sender, EventArgs e)
         {
             //Verandert de value voor music volume in de settings klasse
-            Menutest.Settings.musicVolume = trb_Music.Value;
+            //Menutest.Settings.musicVolume = trb_Music.Value;
+        }
+
+        private void lbl_musicVolume_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
