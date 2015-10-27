@@ -60,6 +60,7 @@ namespace GameLoop.Entity
                     //    exit.ShowDialog();
                     //}
                 //}
+                Sound.playEffect(Sound.hitmarker);
             }
             turnTimer++;
         }

@@ -148,10 +148,64 @@
   <data name="Level1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Level1.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="air_horn_sad_violin_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\air_horn_sad_violin_preview.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Alluha_Akbar_Sound_Effect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alluha_Akbar_Sound_Effect.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAN_CAN_MLG_ANCIENTREALITY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAN_CAN_MLG_ANCIENTREALITY.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Darude_MLGstorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Darude_MLGstorm.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Fuck_her_right_in_the_puss_sound_effect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fuck_her_right_in_the_puss_sound_effect.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GET_NOSCOPED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GET_NOSCOPED.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GTA_V_Wasted_Busted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GTA_V_Wasted_Busted.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Headshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Headshot.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Headshot_converted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Headshot_converted.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Hitmarker_sound_shit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hitmarker sound shit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Hitmarker_sound_shit_converted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hitmarker_sound_shit_converted.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ILLUMINATI_CONFIRMED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ILLUMINATI_CONFIRMED.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ITS_SANNIIC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ITS_SANNIIC.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="JOHN_CENA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JOHN_CENA.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Oh_Baby_A_Triple_Sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oh_Baby_A_Triple_Sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SHOTS_FIRED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHOTS_FIRED.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Smoke_Weed_Everyday" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Smoke_Weed_Everyday.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Spooky_Skeletons_MLW_Remix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spooky_Skeletons_MLW_Remix.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WHAT_ARE_THOSE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WHAT_ARE_THOSE.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wow_MLG_Sound_Effect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wow_MLG_Sound_Effect.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -38,6 +38,7 @@ namespace GameLoop
 
         public Level(Location gridsize, Location s, Location e, Game game, int size = 32)
         {
+         
             this.game = game;
             //Setup of the gridsize
             gridSize = new Location(gridsize.X + 2, gridsize.Y + 2); //gridsize wordt vergroot met twee voor muren
@@ -109,7 +110,9 @@ namespace GameLoop
             load(xdoc);
         }
 
-        public void load(XDocument xdoc) {
+        public void load(XDocument xdoc)
+        {
+            //Sound.playMusic(Sound.skeleton);
             game.keyboard.releaseAllKeys();
             XmlReader xml = xdoc.CreateReader();
             xml.MoveToAttribute(1);

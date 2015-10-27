@@ -61,12 +61,39 @@ namespace GameLoop.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream air_horn_sad_violin_preview {
+            get {
+                return ResourceManager.GetStream("air_horn_sad_violin_preview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream Alluha_Akbar_Sound_Effect {
+            get {
+                return ResourceManager.GetStream("Alluha_Akbar_Sound_Effect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap Base {
             get {
                 object obj = ResourceManager.GetObject("Base", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream CAN_CAN_MLG_ANCIENTREALITY {
+            get {
+                return ResourceManager.GetStream("CAN_CAN_MLG_ANCIENTREALITY", resourceCulture);
             }
         }
         
@@ -111,12 +138,48 @@ namespace GameLoop.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream Darude_MLGstorm {
+            get {
+                return ResourceManager.GetStream("Darude_MLGstorm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap floor_tile_texture {
             get {
                 object obj = ResourceManager.GetObject("floor_tile_texture", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream Fuck_her_right_in_the_puss_sound_effect {
+            get {
+                return ResourceManager.GetStream("Fuck_her_right_in_the_puss_sound_effect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream GET_NOSCOPED {
+            get {
+                return ResourceManager.GetStream("GET_NOSCOPED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream GTA_V_Wasted_Busted {
+            get {
+                return ResourceManager.GetStream("GTA_V_Wasted_Busted", resourceCulture);
             }
         }
         
@@ -132,9 +195,27 @@ namespace GameLoop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        public static System.IO.UnmanagedMemoryStream Headshot_converted {
+            get {
+                return ResourceManager.GetStream("Headshot_converted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         public static System.IO.UnmanagedMemoryStream Hitmarker_sound_shit {
             get {
                 return ResourceManager.GetStream("Hitmarker_sound_shit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream Hitmarker_sound_shit_converted {
+            get {
+                return ResourceManager.GetStream("Hitmarker_sound_shit_converted", resourceCulture);
             }
         }
         
@@ -145,6 +226,33 @@ namespace GameLoop.Properties {
             get {
                 object obj = ResourceManager.GetObject("illerminaty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream ILLUMINATI_CONFIRMED {
+            get {
+                return ResourceManager.GetStream("ILLUMINATI_CONFIRMED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream ITS_SANNIIC {
+            get {
+                return ResourceManager.GetStream("ITS_SANNIIC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream JOHN_CENA {
+            get {
+                return ResourceManager.GetStream("JOHN_CENA", resourceCulture);
             }
         }
         
@@ -189,12 +297,66 @@ namespace GameLoop.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream Oh_Baby_A_Triple_Sound {
+            get {
+                return ResourceManager.GetStream("Oh_Baby_A_Triple_Sound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream SHOTS_FIRED {
+            get {
+                return ResourceManager.GetStream("SHOTS_FIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream Smoke_Weed_Everyday {
+            get {
+                return ResourceManager.GetStream("Smoke_Weed_Everyday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream Spooky_Skeletons_MLW_Remix {
+            get {
+                return ResourceManager.GetStream("Spooky_Skeletons_MLW_Remix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap Wall {
             get {
                 object obj = ResourceManager.GetObject("Wall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream WHAT_ARE_THOSE {
+            get {
+                return ResourceManager.GetStream("WHAT_ARE_THOSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream Wow_MLG_Sound_Effect {
+            get {
+                return ResourceManager.GetStream("Wow_MLG_Sound_Effect", resourceCulture);
             }
         }
     }
