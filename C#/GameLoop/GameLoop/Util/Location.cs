@@ -63,5 +63,15 @@ namespace GameLoop
             int b = Math.Abs(y- yb);
             return Math.Sqrt(a * a + b * b);
         }
+        /// <summary>
+        /// Changes the position based upon it's current location
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        public void Move(int x,int y)
+        {
+            this.x += x;
+            this.y += y;
+        }
     }
 }

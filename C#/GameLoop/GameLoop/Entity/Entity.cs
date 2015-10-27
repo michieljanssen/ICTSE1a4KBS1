@@ -13,6 +13,7 @@ namespace GameLoop.Entity
     abstract class Entity
     {
         public  enum EntityType { player, grunt, illuminatie};
+        public enum Dir { up,down,left,right};
 
         private float turnTime;
         protected float turnTimer;
@@ -47,7 +48,7 @@ namespace GameLoop.Entity
             this.pos = new Location(x, y);
             this.type = type;
         }
-
+        
         public virtual void Paint(object sender, PaintEventArgs e)
         {
             if (sprite == null)
@@ -59,10 +60,42 @@ namespace GameLoop.Entity
                 e.Graphics.DrawImage(sprite, Pos.X * Size, Pos.Y * Size);
             }
         }
-
         public virtual void update(float time) { 
         
 
+        }
+
+        public bool Move(Dir a)
+        {
+            bool canmove = false;
+            switch (a)
+            {
+                case Dir.up:
+                    if (!level.Tiles[pos.X][pos.Y-1].solid) { pos.Y--;  canmove = true; }
+                    break;
+                case Dir.down:
+                    if (!level.Tiles[pos.X][pos.Y + 1].solid) { pos.Y++; canmove = true; }
+                    break;
+                case Dir.left:
+                    if (!level.Tiles[pos.X-1][pos.Y].solid) { pos.X--; canmove = true; }
+                    if (Flipped)
+                    {
+                        this.Sprite.RotateFlip(RotateFlipType.RotateNoneFlipX);
+                        Flipped = false;
+                    }
+                    break;
+                case Dir.right:
+                    if (!level.Tiles[pos.X+1][pos.Y].solid) { pos.X++; canmove = true; }
+                    if (!Flipped)
+                    {
+                        this.Sprite.RotateFlip(RotateFlipType.RotateNoneFlipX);
+                        Flipped = true;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            return canmove;
         }
     }
 }

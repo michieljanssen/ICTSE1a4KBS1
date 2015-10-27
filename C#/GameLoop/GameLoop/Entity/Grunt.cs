@@ -44,12 +44,12 @@ namespace GameLoop.Entity
                     {
                         if (Pos.X > level.Speler.Pos.X && !level.Tiles[Pos.X - 1][Pos.Y].solid)
                         {
-                            Pos.X--;
+                            this.Move(Dir.left);
                             turnTimer = 0;
                         }
                         else if (Pos.X < level.Speler.Pos.X && !level.Tiles[Pos.X + 1][Pos.Y].solid)
                         {
-                            Pos.X++;
+                            this.Move(Dir.right);
                             turnTimer = 0;
                         }
                     }
@@ -57,12 +57,12 @@ namespace GameLoop.Entity
                     {
                         if (Pos.Y > level.Speler.Pos.Y && !level.Tiles[Pos.X][Pos.Y - 1].solid)
                         {
-                            Pos.Y--;
+                            this.Move(Dir.up);
                             turnTimer = 0;
                         }
                         else if (Pos.Y < level.Speler.Pos.Y && !level.Tiles[Pos.X][Pos.Y + 1].solid)
                         {
-                            Pos.Y++;
+                            this.Move(Dir.down);
                             turnTimer = 0;
                         }
                     }
@@ -70,19 +70,29 @@ namespace GameLoop.Entity
                 //Action this entity does when the player is not present.
                 else
                 {
-                    int dx = level.rand.Next(3) - 1;
-
-                    int dy = level.rand.Next(3) - 1;
-                    if (!level.Tiles[Pos.X + dx][Pos.Y].solid)
+                    int dx = level.rand.Next(4);
+                    switch (dx)
                     {
-                        Pos.X += dx;
-                        turnTimer = 0;
+                        case 0:
+                            c0:
+                            if (!Move(Dir.up)) { goto c1; }
+                            break;
+                        case 1:
+                            c1:
+                            if (!Move(Dir.down)) { goto c2; }
+                            break;
+                        case 2:
+                            c2:
+                            if (!Move(Dir.left)) { goto c3; }
+                            break;
+                        case 3:
+                            c3:
+                            if (!Move(Dir.right)) { goto c0; }
+                            break;
+                        default:
+                            break;
                     }
-                    if (!level.Tiles[Pos.X][Pos.Y + dy].solid)
-                    {
-                        Pos.Y += dy;
-                        turnTimer = 0;
-                    }
+                    turnTimer = 0;
 
                 }
             }
