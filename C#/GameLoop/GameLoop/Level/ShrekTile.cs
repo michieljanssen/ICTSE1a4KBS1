@@ -40,7 +40,8 @@ namespace GameLoop
                 if (result == DialogResult.Yes)
                 {
                     XDocument level2 = XDocument.Parse(Properties.Resources.Level2);
-                    map = new Level(level2, game);
+                    this.level.Game.changeLevel(level2);
+                   
                 }
                 else if (result == DialogResult.No)
                 {

@@ -61,5 +61,10 @@ namespace GameLoop
                 map.update(keyboard, time);
             }
         }
+
+        public void changeLevel(XDocument xdoc) {
+            map = new Level(xdoc, this);
+        }
+
     }
 }

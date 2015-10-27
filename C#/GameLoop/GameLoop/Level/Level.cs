@@ -25,7 +25,7 @@ namespace GameLoop
         public Tile[][] Tiles { get { return tiles; } }
         public Location GridSize { get { return gridSize; } }
         private ArrayList entities;
-
+        public Game Game { get { return game; } }
         public Player Speler { get { return speler; } }
 
         public Random rand;
