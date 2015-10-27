@@ -11,7 +11,6 @@ namespace GameLoop
     static class Sound
     {
         //music
-        static SoundPlayer music;
         public static Stream canCanMlgAncietnReality = Properties.Resources.CAN_CAN_MLG_ANCIENTREALITY;
         public static Stream darudeMlgStorm = Properties.Resources.Darude_MLGstorm;
         public static Stream sanic = Properties.Resources.ITS_SANNIIC;
@@ -37,9 +36,10 @@ namespace GameLoop
         //plays sound
         public static void playEffect(Stream stream)
         {
+            //zet stream position naaar begin
             stream.Position = 0;
             SoundPlayer sound = new SoundPlayer(stream);
-            //sound.Load();
+
             sound.Play();
 
         }

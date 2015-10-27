@@ -20,6 +20,8 @@ namespace GameLoop
         public ShrekTile(Location init, Image floor, Level level, Game game)
             : base(init, TileType.shrek, false, Properties.Resources.dank_shrek, level)
         {
+         
+             
             this.floor = floor;
             //this.game = game;
         }
@@ -35,6 +37,8 @@ namespace GameLoop
         public override void Update() {
             //Shuts down if player is equal to this tile
             if (Pos.Compareto(level.Speler.Pos)) {
+                Sound.playEffect(Sound.sanic);
+             
                 Environment.Exit(0);
 
                 //XDocument level2 = XDocument.Parse(@"Resources\Level2.xml");

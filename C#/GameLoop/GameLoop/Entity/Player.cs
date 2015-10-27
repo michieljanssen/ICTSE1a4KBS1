@@ -19,18 +19,21 @@ namespace GameLoop.Entity
             {
                 if (keyboard.up && !level.Tiles[Pos.X][Pos.Y-1].solid)
                 {
+                    Sound.playEffect(Sound.hitmarker);
                     Pos.Y--;
                     turnTimer = 0;
                    
                 }
                 if (keyboard.down && !level.Tiles[Pos.X][Pos.Y + 1].solid)
                 {
+                    Sound.playEffect(Sound.hitmarker);
                     Pos.Y++;
                     turnTimer = 0;
                    
                 }
                 if (keyboard.left && !level.Tiles[Pos.X -1][Pos.Y ].solid)
                 {
+                    Sound.playEffect(Sound.hitmarker);
                     Pos.X--;
                     turnTimer = 0;
                     if (this.Flipped)
@@ -42,6 +45,7 @@ namespace GameLoop.Entity
                 }
                 if (keyboard.right && !level.Tiles[Pos.X +1][Pos.Y].solid)
                 {
+                    Sound.playEffect(Sound.hitmarker);
                     Pos.X++;
                     turnTimer = 0;
                     if (!this.Flipped)
@@ -60,7 +64,7 @@ namespace GameLoop.Entity
                     //    exit.ShowDialog();
                     //}
                 //}
-                //Sound.playEffect(Sound.hitmarker);
+                Sound.playEffect(Sound.hitmarker);
             }
             turnTimer++;
         }

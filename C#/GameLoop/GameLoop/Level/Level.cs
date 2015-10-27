@@ -212,6 +212,8 @@ namespace GameLoop
         {
             //checkt of de speler nog leeft
             if (!speler.Alive) {
+                //speelt geluid af
+
                 Sound.playEffect(Sound.headshot);
                 var result = MessageBox.Show("Try again?", "You died!",
                                  MessageBoxButtons.YesNo);
@@ -223,24 +225,16 @@ namespace GameLoop
                 else if (result == DialogResult.No)
                 {
                    
-                    //game.loop = null;
-                  
-                    //game.loop.window.Visible = true;
-                    // game.loop.window.GPanel.Focused = false;
+                   
                     if (game.loop.window.InvokeRequired)
                     {
                         game.loop.window.Invoke(new MethodInvoker(game.loop.window.MainMenu.BringToFront));
-                      //  game.loop.window.Invoke(new MethodInvoker(game.loop.window.MainMenu.Refresh));
+                      
                          game.loop.window.Invoke(new MethodInvoker(()=> game.loop.window.MainMenu.Visible = true));
                     }
-                   // game.loop.window.MainMenu.BringToFront();
+                  
                     game.loop.window.CreateGraphics().Clear(Color.White);
-                    //game.loop.window.MainMenu.BringToFront();
-                    //game.loop.window.BringToFront();
-                    //game.loop.window.GameSettings.BringToFront();
-                   // game.loop.window.GameSettings.Visible = false;
-                    //game.loop.window.MainMenu.Refresh();
-                    //
+                   
                     game.loop.Running = false;
                     game.loop.loopThread.Abort();
                 }

@@ -33,9 +33,9 @@ namespace GameLoop
             // Location eindpunt = new Location(10, 10);
             // int tilesize = 32;
             // map = new Level(levelformaat, startpunt, eindpunt, tilesize);
-            XDocument level1 = XDocument.Parse(Properties.Resources.Level1);
+            XDocument level2 = XDocument.Parse(Properties.Resources.Level2);
             //Properties.Resources.ResourceManager.GetStream("Level1.xml");
-            map = new Level(level1, this);
+            map = new Level(level2, this);
             
 
         }
@@ -43,6 +43,7 @@ namespace GameLoop
         //render metode
         public void render(object sender, PaintEventArgs e)
         {
+          //  e.Graphics.Clear(Color.White);
             map.Paint(sender, e);
           
         }
