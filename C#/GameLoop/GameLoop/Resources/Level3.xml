@@ -148,14 +148,14 @@
   <Entities>
     <Grunt x="5" y="5" />
     <Grunt x="2" y="13" />
-    <Grunt x="15" y="16" />
+    <!--<Grunt x="15" y="16" />-->
     <Grunt x="8" y="11" />
     <Grunt x="15" y="3" />
     <Grunt x="20" y="4" />
-    <Grunt x="21" y="12" />
+    <!--<Grunt x="21" y="12" />-->
     <Grunt x="21" y="18" />
-    <Grunt x="24" y="6" />
-    <Grunt x="24" y="14" />
+    <!--<Grunt x="24" y="6" />
+    <Grunt x="24" y="14" />-->
 
     <Illuminatie x="1" y="8" />
     <Illuminatie x="1" y="12" />
@@ -218,5 +218,15 @@
     <Illuminatie x="25" y="16" />
     <Illuminatie x="28" y="15" />
     <Illuminatie x="25" y="18" />
+    <Illuminatie x="13" y="7" />
+    <Illuminatie x="13" y="8" />
+    <Illuminatie x="13" y="9" />
+    <Illuminatie x="15" y="11" />
+    <Illuminatie x="15" y="10" />
+    <Illuminatie x="15" y="9" />
+    <Illuminatie x="15" y="8" />
+    <Illuminatie x="17" y="7" />
+    <Illuminatie x="17" y="8" />
+    <Illuminatie x="17" y="9" />
   </Entities>
 </Level>
