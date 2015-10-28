@@ -35,7 +35,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.refreshRateBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
             this.QuitGameButton = new System.Windows.Forms.Button();
@@ -62,7 +61,6 @@
             this.settings.Controls.Add(this.label4);
             this.settings.Controls.Add(this.refreshRateBox);
             this.settings.Controls.Add(this.label2);
-            this.settings.Controls.Add(this.button1);
             this.settings.Controls.Add(this.label1);
             this.settings.Controls.Add(this.backButton);
             this.settings.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -78,7 +76,7 @@
             this.saveButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.saveButton.BackgroundImage = global::GameLoop.Properties.Resources.Base;
             this.saveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.saveButton.Location = new System.Drawing.Point(504, 513);
+            this.saveButton.Location = new System.Drawing.Point(497, 470);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(245, 45);
             this.saveButton.TabIndex = 11;
@@ -90,7 +88,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(499, 339);
+            this.label5.Location = new System.Drawing.Point(497, 289);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(243, 37);
             this.label5.TabIndex = 10;
@@ -100,7 +98,7 @@
             // 
             this.effectsVolumeSlider.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.effectsVolumeSlider.LargeChange = 10;
-            this.effectsVolumeSlider.Location = new System.Drawing.Point(626, 406);
+            this.effectsVolumeSlider.Location = new System.Drawing.Point(614, 374);
             this.effectsVolumeSlider.Maximum = 100;
             this.effectsVolumeSlider.Name = "effectsVolumeSlider";
             this.effectsVolumeSlider.Size = new System.Drawing.Size(247, 45);
@@ -113,7 +111,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(383, 406);
+            this.label4.Location = new System.Drawing.Point(383, 374);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(225, 37);
             this.label4.TabIndex = 7;
@@ -123,7 +121,7 @@
             // 
             this.refreshRateBox.AcceptsReturn = true;
             this.refreshRateBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.refreshRateBox.Location = new System.Drawing.Point(614, 215);
+            this.refreshRateBox.Location = new System.Drawing.Point(614, 192);
             this.refreshRateBox.MaxLength = 3;
             this.refreshRateBox.Name = "refreshRateBox";
             this.refreshRateBox.Size = new System.Drawing.Size(100, 44);
@@ -138,31 +136,18 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(720, 218);
+            this.label2.Location = new System.Drawing.Point(720, 192);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 37);
             this.label2.TabIndex = 4;
             this.label2.Text = "fps";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackgroundImage = global::GameLoop.Properties.Resources.Base;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(554, 108);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 53);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Edit UI";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(397, 218);
+            this.label1.Location = new System.Drawing.Point(397, 192);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(211, 37);
             this.label1.TabIndex = 2;
@@ -333,7 +318,6 @@
         private System.Windows.Forms.Button QuitGameButton;
         private System.Windows.Forms.Button SettingsButton;
         private System.Windows.Forms.Panel mainmenu;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox refreshRateBox;
