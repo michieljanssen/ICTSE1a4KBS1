@@ -32,6 +32,8 @@ namespace GameLoop.Entity
         public int Size { get { return size; } }
         public bool Flipped { get { return flipped; } set { flipped = value; } }
         public Image Sprite { get { return sprite; } }
+        public EntityType Type { get { return type; } }
+
 
         public Entity(Location pos, Level level, EntityType type, Image sprite) {
             this.alive = true;
