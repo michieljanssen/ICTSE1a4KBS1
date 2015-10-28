@@ -70,17 +70,6 @@ namespace GameLoop
                         //assign floor
                         tiles[xloc][yloc] = new FloorTile(new Location(xloc, yloc), this);
                     }
-
-                    if (new Location(xloc, yloc).Compareto(start))
-                    {
-                        //assign start location
-                        tiles[xloc][yloc] = new StartTile(new Location(xloc, yloc), Properties.Resources.floor_tile_texture, this);
-                    }
-                    if (new Location(xloc, yloc).Compareto(eind))
-                    {
-                        //assign end location
-                        tiles[xloc][yloc] = new ShrekTile(new Location(xloc, yloc), Properties.Resources.floor_tile_texture, this);
-                    }
                 }
             }
             rand = new Random();
@@ -217,16 +206,16 @@ namespace GameLoop
                 //speelt geluid af
 
                 Sound.playEffect(Sound.headshot);
+                game.paused = true;
                 var result = MessageBox.Show("Try again?", "You died!",
                                  MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-
                     load(file); //herlaadt het spel
+                    game.paused = false;
                 }
                 else if (result == DialogResult.No)
                 {
-
                     Game.backToMain();
                 }
 
