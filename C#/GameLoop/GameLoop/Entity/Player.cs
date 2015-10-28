@@ -14,7 +14,7 @@ namespace GameLoop.Entity
         }
         internal void update(Keyboard keyboard, float time)
         {
-            //Console.WriteLine("test");
+           
             if (turnTimer * time >= TurnTime)
             {
                 if (keyboard.up && !level.Tiles[Pos.X][Pos.Y-1].solid)
@@ -64,7 +64,7 @@ namespace GameLoop.Entity
                     //    exit.ShowDialog();
                     //}
                 //}
-                Sound.playEffect(Sound.hitmarker);
+               // Sound.playEffect(Sound.hitmarker);
             }
             turnTimer++;
         }

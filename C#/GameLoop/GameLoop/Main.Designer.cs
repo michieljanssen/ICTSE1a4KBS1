@@ -69,7 +69,6 @@
             this.settings.Size = new System.Drawing.Size(1264, 681);
             this.settings.TabIndex = 3;
             this.settings.Visible = false;
-            this.settings.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // saveButton
             // 
@@ -141,7 +140,6 @@
             this.label2.Size = new System.Drawing.Size(60, 37);
             this.label2.TabIndex = 4;
             this.label2.Text = "fps";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -152,7 +150,6 @@
             this.label1.Size = new System.Drawing.Size(211, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "Refresh Rate:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // backButton
             // 
@@ -214,7 +211,6 @@
             this.mainmenu.Name = "mainmenu";
             this.mainmenu.Size = new System.Drawing.Size(1264, 681);
             this.mainmenu.TabIndex = 2;
-            this.mainmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.mainmenu_Paint);
             // 
             // Control_Menu
             // 

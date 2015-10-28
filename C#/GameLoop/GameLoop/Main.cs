@@ -28,8 +28,6 @@ namespace Menutest
             Control_Left.Parent = this;
             Control_Right.Parent = this;
             Control_Menu.Parent = this;
-
-
         }
 
         private void SettingsButton_Click(object sender, EventArgs e)
@@ -59,15 +57,9 @@ namespace Menutest
         private void Main_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
-
             this.KeyPreview = true;
             this.KeyUp += new KeyEventHandler(Main_KeyUp);
             this.KeyDown += new KeyEventHandler(Main_KeyDown);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -123,16 +115,6 @@ namespace Menutest
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void effectsVolumeSlider_Scroll(object sender, EventArgs e)
         {
             //Set de int effectsVolume elke keer als er gescrollt wordt in de effectsVolumeSlider
@@ -175,7 +157,6 @@ namespace Menutest
             if (refreshRateBox.Text != "")
             {
                 refreshRate = Int32.Parse(refreshRateBox.Text);
-
             }
         }
 
@@ -183,11 +164,6 @@ namespace Menutest
         {
             //Set de text in de refreshratebox naar de refreshrate bij het starten van het programma
             refreshRateBox.Text = refreshRate.ToString();
-        }
-
-        private void musicVolumeSlider_ClientSizeChanged(object sender, EventArgs e)
-        {
-            //musicVolumeSlider.Value = musicVolume;
         }
 
         private void refreshRateBox_KeyUp(object sender, KeyEventArgs e)
@@ -199,17 +175,6 @@ namespace Menutest
                 Console.WriteLine("Refresh Rate: {0}", refreshRate);
             }
         }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            Sound.playEffect(Sound.hitmarker);
-        }
-
-        private void mainmenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
 
         //keydown event
         private void Main_KeyDown(object sender, KeyEventArgs e)
@@ -227,7 +192,7 @@ namespace Menutest
                 loop.game.keyboard.Window_KeyUp(sender, e);
             }
         }
-
+        //sluit de gameloop af als hij aanstaat
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (loop != null)
@@ -237,12 +202,11 @@ namespace Menutest
             }
         }
 
-
+        //on screen control released event
         private void ControlUp(object sender, MouseEventArgs e)
         {
             if (loop != null)
             {
-             
                 if (sender.Equals(Control_Up))
                 {
                     loop.game.keyboard.ControlUp(38);
@@ -259,11 +223,10 @@ namespace Menutest
                 {
                     loop.game.keyboard.ControlUp(39);
                 }
-
-
             }
         }
 
+        //on screen control pressed event
         private void ControlDown(object sender, MouseEventArgs e)
         {
             if (loop != null)
@@ -286,7 +249,7 @@ namespace Menutest
                 }
             }
         }
-
+        //ingame menu openen
         private void Control_Menu_Click(object sender, EventArgs e)
         {
             Sound.playEffect(Sound.hitmarker);
