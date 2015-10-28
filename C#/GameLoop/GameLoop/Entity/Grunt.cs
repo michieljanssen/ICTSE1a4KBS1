@@ -25,8 +25,8 @@ namespace GameLoop.Entity
             if (turnTimer * time >= TurnTime)
             {
                 //Get the distance of the player to the entity
-                float xx = Math.Abs(level.Speler.Pos.X - Pos.X);
-                float yy = Math.Abs(level.Speler.Pos.Y - Pos.Y);
+                float horz = level.Speler.Pos.X - Pos.X;
+                float vert = level.Speler.Pos.Y - Pos.Y;
                 float r = (float) Pos.Distanceto(level.Speler.Pos);
                 if (r < startRange)
                 { //if player comes to close start tracking (range increases)
@@ -40,30 +40,58 @@ namespace GameLoop.Entity
                 //If player is within range
                 if (r < startRange || (r < fRange && following))
                 {
-                    if (xx > yy)
+
+                    if (Math.Abs(horz) > Math.Abs(vert))
                     {
-                        if (Pos.X > level.Speler.Pos.X && !level.Tiles[Pos.X - 1][Pos.Y].solid)
+                        if (horz<0)
                         {
-                            this.Move(Dir.left);
-                            turnTimer = 0;
+                            if (!this.Move(Dir.left) && vert<0)
+                            {
+                                this.Move(Dir.up);
+                            }
+                            else if(vert>0)
+                            {
+                                this.Move(Dir.down);
+                            }
+                            //turnTimer = 0;
                         }
-                        else if (Pos.X < level.Speler.Pos.X && !level.Tiles[Pos.X + 1][Pos.Y].solid)
+                        else if (horz>0)
                         {
-                            this.Move(Dir.right);
-                            turnTimer = 0;
+                            if (!this.Move(Dir.right) && vert < 0)
+                            {
+                                this.Move(Dir.up);
+                            }
+                            else if(vert > 0)
+                            {
+                                this.Move(Dir.down);
+                            }
                         }
                     }
                     else
                     {
-                        if (Pos.Y > level.Speler.Pos.Y && !level.Tiles[Pos.X][Pos.Y - 1].solid)
+                        if (vert<0)
                         {
-                            this.Move(Dir.up);
-                            turnTimer = 0;
+                            if(!this.Move(Dir.up) && horz < 0)
+                            {
+                                this.Move(Dir.left);
+                            }
+                            else if(horz>0)
+                            {
+                                this.Move(Dir.right);
+                            }
+                            
                         }
-                        else if (Pos.Y < level.Speler.Pos.Y && !level.Tiles[Pos.X][Pos.Y + 1].solid)
+                        else if (vert>0)
                         {
-                            this.Move(Dir.down);
-                            turnTimer = 0;
+                            if (!this.Move(Dir.down) && horz < 0)
+                            {
+                                this.Move(Dir.left);
+                            }
+                            else if (horz > 0)
+                            {
+                                this.Move(Dir.right);
+                            }
+
                         }
                     }
                 }
@@ -92,9 +120,10 @@ namespace GameLoop.Entity
                         default:
                             break;
                     }
-                    turnTimer = 0;
+                    //turnTimer = 0;
 
                 }
+                turnTimer = 0;
             }
             turnTimer++;
 
