@@ -24,7 +24,6 @@ namespace GameLoop.Entity
         private int size;
         private Image sprite;
         private bool flipped = false;
-
         private Boolean alive;
 
         public Boolean Alive { get { return alive; } set { alive = value; } }
@@ -43,7 +42,6 @@ namespace GameLoop.Entity
             size = 32;
             turnTime = 15;
         }
-
         public Entity(int x, int y, EntityType type) {
             this.pos = new Location(x, y);
             this.type = type;

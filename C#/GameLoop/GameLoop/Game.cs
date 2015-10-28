@@ -85,15 +85,15 @@ namespace GameLoop
             // Als aantal keren gewonnen gelijk of groter is dan het aantal levels heb je het spel uitgespeeld
             if(timesWon >= totalLevels)
             {
-                var result = MessageBox.Show("Exit game?", "You have beaten the game!",
+                var result = MessageBox.Show("Back to main menu?", "You have beaten the game!",
                                                                      MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    Environment.Exit(0);
+                    this.backToMain();
                 }
                 else if (result == DialogResult.No)
                 {
-                    this.backToMain();
+                    Environment.Exit(0);
                 }
                 
 
