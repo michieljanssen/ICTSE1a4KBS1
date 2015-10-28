@@ -85,18 +85,16 @@ namespace GameLoop
             // Als aantal keren gewonnen gelijk of groter is dan het aantal levels heb je het spel uitgespeeld
             if(timesWon >= totalLevels)
             {
-                var result = MessageBox.Show("Back to main menu?", "You have beaten the game!",
+                var result = MessageBox.Show("Opnieuw spelen?", "You have beaten the game!",
                                                                      MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    this.backToMain();
+                    this.playAgain();
                 }
                 else if (result == DialogResult.No)
                 {
-                    Environment.Exit(0);
+                    this.backToMain();
                 }
-                
-
             }
             // Zo niet, dan krijg je het volgende level
             else
@@ -113,8 +111,12 @@ namespace GameLoop
                     this.backToMain();
                 }
             }
-            
-
+        }
+        public void playAgain()
+        {
+            timesWon = 0;
+            XDocument level = XDocument.Parse(levels[timesWon]);
+            map = new Level(level, this);
         }
     }
 }
