@@ -11,7 +11,7 @@ namespace GameLoop
 {
     static class Sound
     {
-        //volume change
+        //volume veranderen
         [DllImport("winmm.dll")]
         public static extern int waveOutSetVolume(IntPtr hwo, uint dwVolume);
 
@@ -41,11 +41,12 @@ namespace GameLoop
         //plays sound
         public static void playEffect(Stream stream)
         {
+            //zet het volume voor het geluid uit de settings
             waveOutSetVolume(IntPtr.Zero, (uint)(uint.MaxValue  / 100 * Menutest.Settings.effectsVolume));
             //zet stream position naaar begin
             stream.Position = 0;
             SoundPlayer sound = new SoundPlayer(stream);
-            
+            //geluid afspelen
             sound.Play();
 
         }

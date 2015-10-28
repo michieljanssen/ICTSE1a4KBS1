@@ -43,12 +43,12 @@ namespace GameLoop
         {
             keys[e.KeyValue] = false;
         }
-
+        //on screen buttons pressed event
         public void ControlDown(int e)
         {
             keys[e] = true;
         }
-
+        //on screen buttons released event
         public  void ControlUp(int e)
         {
             keys[e] = false;
