@@ -20,6 +20,11 @@ namespace GameLoop
             x = posx;
             y = posy;
         }
+        public Location(Location location)
+        {
+            x = location.x;
+            y = location.y;
+        }
 
         //properties x
         public int X
