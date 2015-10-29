@@ -55,9 +55,10 @@
     <Compile Include="Entity\IlluminatieTests.cs" />
     <Compile Include="Entity\PlayerTests.cs" />
     <Compile Include="Level\FloorTileTests.cs" />
+    <Compile Include="Level\LevelTests.cs" />
     <Compile Include="Level\StartTileTests.cs" />
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\LocationTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GameLoop\GameLoop.csproj">

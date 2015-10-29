@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameLoop
 {
-    class Location  //Klasse met X en Y positie
+    public class Location  //Klasse met X en Y positie
     {
         int x;
         int y;

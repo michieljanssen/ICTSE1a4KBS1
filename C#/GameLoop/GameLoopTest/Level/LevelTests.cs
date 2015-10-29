@@ -9,16 +9,28 @@ using System.Threading.Tasks;
 namespace GameLoop.Tests
 {
     [TestClass()]
-    public class StartTileTests
+    public class LevelTests
     {
         [TestMethod()]
-        public void StartTileTest()
+        public void LevelTest()
         {
             Assert.Fail();
         }
 
         [TestMethod()]
-        public void StartTileTest1()
+        public void LevelTest1()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod()]
+        public void LevelTest2()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod()]
+        public void loadTest()
         {
             Assert.Fail();
         }
