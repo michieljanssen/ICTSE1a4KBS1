@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 namespace GameLoop
 {
-    class StartTile : Tile
+    public class StartTile : Tile
     { 
         //vloer voor onder de kid
         private Image floor;

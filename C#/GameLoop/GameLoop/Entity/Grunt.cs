@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 namespace GameLoop.Entity
 {
-    class Grunt : Entity
+    public class Grunt : Entity
     {
         private Boolean following = false;
         private int startRange, fRange;

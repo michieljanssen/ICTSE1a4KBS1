@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Drawing;
 namespace GameLoop
 {
-    class FloorTile : Tile
+    public class FloorTile : Tile
     {
         //properties geven
         public FloorTile(Location init, Level level) : base(init, TileType.floor, false, Properties.Resources.floor_tile_texture, level) { 
