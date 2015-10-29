@@ -39,10 +39,10 @@ namespace GameLoop
             return Math.Sqrt(horz * horz + vert * vert);
         }
         //beweegt een locatie
-        public void Move(int x,int y)
+        public void Move(int xx,int yy)
         {
-            this.x += x;
-            this.y += y;
+            this.x = this.x +xx;
+            this.y = this.y + yy;
         }
         //to string methode
         public override string ToString()

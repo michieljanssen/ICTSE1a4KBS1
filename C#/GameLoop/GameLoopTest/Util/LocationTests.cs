@@ -26,7 +26,11 @@ namespace GameLoop.Tests
         [TestMethod()]
         public void ComparetoTest()
         {
-            Assert.Fail();
+            bool expected = false;
+            Location loc1 = new Location(3, 4);
+            Location loc2 = new Location(4, 5);
+            bool actual = loc1.Compareto(loc2);
+            Assert.AreEqual(expected, actual);
         }
         
 
@@ -45,7 +49,11 @@ namespace GameLoop.Tests
         [TestMethod()]
         public void MoveTest()
         {
-            Assert.Fail();
+
+            Location actual = new Location(3, 4);
+            Location expected = new Location(4, 5);
+            actual.Move(1, 1);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
