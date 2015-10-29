@@ -13,7 +13,7 @@ namespace GameLoop
     internal class Level
     {
         private Game game;
-        
+
         private XDocument file;
 
         private Location gridSize; //hergebruik van de Locatieklasse om de afmetingen van het rooster
@@ -38,7 +38,7 @@ namespace GameLoop
 
         public Level(Location gridsize, Location s, Location e, Game game, int size = 32)
         {
-         
+
             this.game = game;
             //Setup of the gridsize
             gridSize = new Location(gridsize.X + 2, gridsize.Y + 2); //gridsize wordt vergroot met twee voor muren
@@ -99,7 +99,7 @@ namespace GameLoop
         public Level(XmlReader xml, Game game)
         {
             this.game = game;
-            this.file =XDocument.Load(xml);
+            this.file = XDocument.Load(xml);
             load(file);
         }
 
@@ -189,7 +189,8 @@ namespace GameLoop
         {
             for (int i = 0; i < tiles.Length; i++)
             {
-                if (tiles[i] != null) {
+                if (tiles[i] != null)
+                {
                     for (int u = 0; u < tiles[i].Length; u++)
                     {
                         if (tiles[i][u] != null)
@@ -213,10 +214,28 @@ namespace GameLoop
         internal void update(Keyboard keyboard, float time)
         {
             //checkt of de speler nog leeft
-            if (!speler.Alive) {
+            if (!speler.Alive)
+            {
                 //speelt geluid af
-
-                Sound.playEffect(Sound.headshot);
+                //checked welke entity de speler heeft geraakt
+                for (int i = 0; i < entities.Count; i++)
+                {
+                    Entity.Entity enitity = (Entity.Entity)entities.ToArray()[i];
+                    //positie controleren
+                    if (speler.Pos.Compareto(enitity.Pos))
+                    {
+                        //geluid alfspelen specifiek aan de entity type
+                        switch (enitity.Type)
+                        {
+                            case Entity.Entity.EntityType.grunt:
+                                Sound.playEffect(Sound.headshot);
+                                break;
+                            case Entity.Entity.EntityType.illuminatie:
+                                Sound.playEffect(Sound.illuminatieConfirmed);
+                                break;
+                        }
+                    }
+                }
                 var result = MessageBox.Show("Try again?", "You died!",
                                  MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)

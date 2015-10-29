@@ -82,6 +82,7 @@ namespace GameLoop
         public void nextLevel()
         {
             timesWon++;
+            paused = true;
             // Als aantal keren gewonnen gelijk of groter is dan het aantal levels heb je het spel uitgespeeld
             if(timesWon >= totalLevels)
             {
@@ -89,6 +90,7 @@ namespace GameLoop
                                                                      MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
+                    paused = false;
                     this.playAgain();
                 }
                 else if (result == DialogResult.No)
@@ -103,6 +105,7 @@ namespace GameLoop
                                                  MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
+                    paused = false;
                     XDocument level = XDocument.Parse(levels[timesWon]);
                     map = new Level(level, this);
                 }
