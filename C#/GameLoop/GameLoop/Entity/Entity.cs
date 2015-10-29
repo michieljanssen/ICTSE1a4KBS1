@@ -10,7 +10,7 @@ using System.Drawing;
 namespace GameLoop.Entity
 {
   
-    public abstract class Entity
+   abstract class Entity
     {
         public  enum EntityType { player, grunt, illuminatie};
         public enum Dir { up,down,left,right};

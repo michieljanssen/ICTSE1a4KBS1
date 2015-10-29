@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace GameLoop.Entity
-{
-    public class Illuminatie : Entity
+{ class Illuminatie : Entity
     {
         public Illuminatie(Location init, Level level):base( init, level, EntityType.illuminatie, Properties.Resources.illerminaty ){
     

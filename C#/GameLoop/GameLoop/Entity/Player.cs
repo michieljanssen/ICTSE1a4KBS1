@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameLoop.Entity
 {
-    public class Player : Entity
+ class Player : Entity
     {
         public Player(Location pos, Level level):base(pos, level,EntityType.player, Properties.Resources.dank_kid)
         {
