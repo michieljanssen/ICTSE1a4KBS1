@@ -25,7 +25,6 @@ C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\Menutest.
 C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.ExitGame.resources
 C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\Interop.WMPLib.dll
 C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.csproj.ResolveComReference.cache
-C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.csprojResolveAssemblyReference.cache
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\Interop.WMPLib.dll
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.csproj.ResolveComReference.cache
 C:\Users\Bob\Documents\Windesheim\KBS\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Release\Resources\Level3.xml
@@ -51,3 +50,4 @@ D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\Menutest.SettingsNoSave.
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.csproj.GenerateResource.Cache
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.exe
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.pdb
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Release\Resources\Level3.xml

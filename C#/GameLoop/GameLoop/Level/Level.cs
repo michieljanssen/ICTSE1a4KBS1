@@ -10,7 +10,7 @@ using Menutest;
 
 namespace GameLoop
 {
-    public class Level
+    class Level
     {
         private Game game;
 
