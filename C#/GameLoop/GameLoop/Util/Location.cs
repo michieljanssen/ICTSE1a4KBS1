@@ -24,12 +24,12 @@ namespace GameLoop
             x = location.x;
             y = location.y;
         }
-
+        //vergelijken methode
         public bool Compareto(Location second)
         {
             if(this.X==second.X && this.Y == second.Y) { return true; } else { return false;}
         }
-
+        //krijgt de afstand tussen 2 locaties
         public double Distanceto(Location location)
         {
             int xb = location.X;
@@ -38,13 +38,13 @@ namespace GameLoop
             int vert = Math.Abs(y- yb);
             return Math.Sqrt(horz * horz + vert * vert);
         }
-
+        //beweegt een locatie
         public void Move(int x,int y)
         {
             this.x += x;
             this.y += y;
         }
-
+        //to string methode
         public override string ToString()
         {
             return ((string)"(" + x + "|" + y + ")");

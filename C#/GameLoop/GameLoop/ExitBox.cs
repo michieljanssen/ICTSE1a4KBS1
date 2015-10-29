@@ -13,6 +13,7 @@ namespace Menutest
 {
     public partial class ExitBox : Form
     {
+        //opent het afsluit notificatie menu
         public ExitBox()
         {
             InitializeComponent();
@@ -22,13 +23,13 @@ namespace Menutest
         {
 
         }
-
+        //sluit het exit menu
         private void button2_Click(object sender, EventArgs e)
         {
             Sound.playEffect(Sound.hitmarker);
             this.Close();
         }
-
+        //sluit applicatie af als de ja knop word ingedrukt
         private void YesBtn_Click(object sender, EventArgs e)
         {
             Sound.playEffect(Sound.hitmarker);

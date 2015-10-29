@@ -51,3 +51,4 @@ D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.csproj.Generate
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.exe
 D:\School\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.pdb
 C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\bin\Release\Resources\Level3.xml
+C:\Users\Oscar\Documents\ICTSE1a4KBS1\C#\GameLoop\GameLoop\obj\Release\GameLoop.csprojResolveAssemblyReference.cache

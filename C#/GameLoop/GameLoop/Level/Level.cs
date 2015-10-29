@@ -36,6 +36,7 @@ namespace GameLoop
             set { start = value; }
         }
 
+        //veroudere constructor
         public Level(Location gridsize, Location s, Location e, Game game, int size = 32)
         {
 
@@ -96,44 +97,44 @@ namespace GameLoop
 
         }
 
+        //level uit xmlreader laden
         public Level(XmlReader xml, Game game)
         {
             this.game = game;
             this.file = XDocument.Load(xml);
             load(file);
         }
-
+        //level uit xdocumetn laden
         public Level(XDocument xdoc, Game game)
         {
             this.game = game;
             this.file = xdoc;
             load(xdoc);
         }
-
+        //level uit xdocument aan het laden
         public void load(XDocument xdoc)
         {
-            //Sound.playMusic(Sound.skeleton);
+            //variablen initalizeren
             game.keyboard.releaseAllKeys();
             XmlReader xml = xdoc.CreateReader();
             xml.MoveToAttribute(1);
-            //xml.move
             rand = new Random();
             entities = new ArrayList();
-
             Location start = new Location(0, 0);
             int width = 0, height = 0;
 
-            //    xml.
+            //    xml. lezen
             while (xml.Read())
             {
+                //checked of hij bij de size requirements zit
                 if (xml.NodeType == XmlNodeType.Element && xml.Name == "Size")
                 {
 
                     xml.ReadToFollowing("Width");
                     width = xml.ReadElementContentAsInt();
-                    //xml.ReadToFollowing("Height");
-                    height = xml.ReadElementContentAsInt();
 
+                    height = xml.ReadElementContentAsInt();
+                    //tiles inilzation
                     tiles = new Tile[width][];
                     for (int y = 0; y < width; y++)
                     {
@@ -141,6 +142,7 @@ namespace GameLoop
                         tiles[y] = new Tile[height];
                     }
 
+                    //alles standaart floortiles
                     for (int x = 0; x < tiles.Length; x++)
                     {
                         for (int y = 0; y < tiles[x].Length; y++)
@@ -150,13 +152,15 @@ namespace GameLoop
                     }
 
                 }
+                //checked of hij anders hij de tiles zit
                 else if (xml.NodeType == XmlNodeType.Element)
                 {
+                    //kriigt de tile naam
                     String name = xml.Name;
-
+                    //krijgt de tile positie
                     int x = Convert.ToInt32(xml.GetAttribute("x"));
                     int y = Convert.ToInt32(xml.GetAttribute("y"));
-
+                    //switched tussen de types tiles and zet ze op de goeie positie
                     switch (name)
                     {
                         case "Muur":
@@ -180,13 +184,14 @@ namespace GameLoop
                             break;
                     }
                 }
-                speler = new Player(start, this);
             }
+            speler = new Player(start, this);
         }
 
         //Paint's the level
         internal void Paint(object sender, PaintEventArgs e)
         {
+            //paint elke tile in de 2d array
             for (int i = 0; i < tiles.Length; i++)
             {
                 if (tiles[i] != null)
@@ -195,16 +200,19 @@ namespace GameLoop
                     {
                         if (tiles[i][u] != null)
                         {
+                            //paint de tile
                             tiles[i][u].Paint(sender, e);
                         }
                     }
                 }
             }
+            //paint elke entity
             for (int i = 0; i < entities.Count; i++)
             {
                 if (entities.ToArray()[i] is Entity.Entity)
                 {
                     Entity.Entity enitity = (Entity.Entity)entities.ToArray()[i];
+                    //paint de entity
                     enitity.Paint(sender, e);
                 }
             }
@@ -253,22 +261,26 @@ namespace GameLoop
                 //load(file); //herlaadt het spel
             }
 
-
+            //update de speler
             speler.update(keyboard, time);
+            //update alle tiles
             for (int i = 0; i < tiles.Length; i++)
             {
                 for (int u = 0; u < tiles[i].Length; u++)
                 {
                     if (tiles[i][u] != null)
                     {
+                        //update de tile
                         tiles[i][u].Update();
                     }
                 }
             }
+            //update alle entities
             for (int i = 0; i < entities.Count; i++)
             {
                 if (entities.ToArray()[i] is Entity.Entity)
                 {
+                    //update de entity
                     Entity.Entity enitity = (Entity.Entity)entities.ToArray()[i];
                     enitity.update(time);
                 }

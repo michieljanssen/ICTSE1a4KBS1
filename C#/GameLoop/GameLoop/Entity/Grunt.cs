@@ -8,7 +8,9 @@ namespace GameLoop.Entity
 {
     class Grunt : Entity
     {
+        //variablen voor speler volgen status
         private Boolean following = false;
+        //variablen voor afstanden voor het volgen van de speler
         private int startRange, fRange;
 
         public Grunt(Location pos, Level level)

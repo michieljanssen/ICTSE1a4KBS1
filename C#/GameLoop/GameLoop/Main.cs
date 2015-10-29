@@ -56,7 +56,10 @@ namespace Menutest
 
         private void Main_Load(object sender, EventArgs e)
         {
+            //set nodig variablenen voor de game loop
+            //doublebuffered tegen flikkeren
             this.DoubleBuffered = true;
+            //key handeling
             this.KeyPreview = true;
             this.KeyUp += new KeyEventHandler(Main_KeyUp);
             this.KeyDown += new KeyEventHandler(Main_KeyDown);
