@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="GameLoop.Controller.XML">
+    <Position X="17.5" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\XML.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Entity.Entity">
+    <Position X="4.75" Y="0.5" Width="1.75" />
+    <NestedTypes>
+      <Enum Name="GameLoop.Entity.Entity.EntityType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entity\Entity.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="GameLoop.Entity.Entity.Dir" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entity\Entity.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIAAgJAAAICAAIAABBGBAAQQAQAAAAAMAAA=</HashCode>
+      <FileName>Entity\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Entity.Grunt">
+    <Position X="6.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAgAAAAAAgAAAAAAAAAEAAA=</HashCode>
+      <FileName>Entity\Grunt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Entity.Illuminatie">
+    <Position X="6.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Entity\Illuminatie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Entity.Player">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Entity\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Entity.SettingsInGame">
+    <Position X="11.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACCAAAgAAACCAAAICAAAAEAAAAQAgEAAAAAA=</HashCode>
+      <FileName>Entity\SettingsInGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.ExitGame">
+    <Position X="22" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AADAgAAIACAQAAEAACKAAAACgAABAAAIAEAAAAAaAAA=</HashCode>
+      <FileName>EscGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Game">
+    <Position X="10.25" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAFEAAIAAEADAAAAAAAAAAAAAEAAAAAAAAAABAUIAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.FloorTile">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Level\FloorTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.StartTile">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="GameLoop.Tile" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="1.562" />
+        <Point X="2.75" Y="1.562" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Level\KidTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Level">
+    <Position X="0.75" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIEEAKAABAAgAAAAAAAAAggAAQIIBgAAAAIMAAA=</HashCode>
+      <FileName>Level\Level.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.ShrekTile">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Level\ShrekTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Tile">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="GameLoop.Tile.TileType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Level\Tile.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAgAAEAAAAAIAAAQmBAgAAAQIAAAAIAAA=</HashCode>
+      <FileName>Level\Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.WallTile">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Level\WallTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Loop">
+    <Position X="12.25" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAgAEAAAAAAABAAAAAAAAAAwCAAIIAAQAAAAUBAA=</HashCode>
+      <FileName>Loop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Keyboard">
+    <Position X="3" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAgAAAAKAAAAQAAAAAAAAAAIAAAAAgAEAgAEgIA=</HashCode>
+      <FileName>Util\Keyboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Location">
+    <Position X="5.25" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAQACEAAAAAAAAAAAAAAAAAABgAAAAYAA=</HashCode>
+      <FileName>Util\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Sound">
+    <Position X="7.5" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAYAAAAAAAAAAAAAAAAAEgAAAgAAAgAgABAAAA=</HashCode>
+      <FileName>Util\Sound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menutest.ExitBox">
+    <Position X="8.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAABAAAACAAAACAAAAAAhAACAQAAAAAAA=</HashCode>
+      <FileName>ExitBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menutest.Main">
+    <Position X="14.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AABACAgACCAWCRARARiIhAASAQCIABLwAgEgYCAABgg=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menutest.Program">
+    <Position X="19.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menutest.Settings">
+    <Position X="19.75" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAACAABAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menutest.SettingsNoSave">
+    <Position X="8.75" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAQAAKQAABAAAACAAAASAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SettingsNoSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Properties.Resources">
+    <Position X="17.5" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAKhAAAAAAAAAIAAAABEAAAAYAAAAUDAABAUAAEwIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop.Properties.Settings">
+    <Position X="17.5" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
