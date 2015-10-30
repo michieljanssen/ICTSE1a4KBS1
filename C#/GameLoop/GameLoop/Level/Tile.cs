@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace GameLoop
 {
     
-    abstract class Tile
+    public abstract class Tile
     {   
         public enum TileType { wall, floor, kid, shrek }; //tiletypes
         private TileType type; // huidige type van tile

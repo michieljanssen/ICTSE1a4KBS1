@@ -1,30 +1,24 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using GameLoop.Entity;
+using GameLoop;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameLoop.Entity.Tests
+namespace GameLoop.Tests
 {
     [TestClass()]
-    public class GruntTests
+    public class ShrekTileTests
     {
         [TestMethod()]
-        public void GruntTest()
+        public void ShrekTileTest()
         {
             Assert.Fail();
         }
 
         [TestMethod()]
-        public void updateTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void MoveTest()
+        public void UpdateTest()
         {
             Assert.Fail();
         }

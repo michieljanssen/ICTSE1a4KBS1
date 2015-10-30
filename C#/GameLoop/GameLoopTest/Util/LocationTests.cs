@@ -49,17 +49,12 @@ namespace GameLoop.Tests
         [TestMethod()]
         public void MoveTest()
         {
-
-            Location actual = new Location(3, 4);
-            Location expected = new Location(4, 5);
-            actual.Move(1, 1);
+            bool expected = true;
+            Location loc1 = new Location(3, 4);
+            Location loc2 = new Location(4, 5);
+            loc1.Move(1, 1);
+            bool actual = loc1.Compareto(loc2);
             Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod()]
-        public void ToStringTest()
-        {
-            Assert.Fail();
         }
     }
 }

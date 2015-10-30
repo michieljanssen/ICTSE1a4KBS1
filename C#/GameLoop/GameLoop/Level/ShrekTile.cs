@@ -9,7 +9,7 @@ using System.Xml.Linq;
 
 namespace GameLoop
 {
-    class ShrekTile : Tile  //subklasse van Tile klasse
+    public class ShrekTile : Tile  //subklasse van Tile klasse
     {       
         //vloer voor onder de shrek
         private Image floor;
