@@ -11,10 +11,6 @@ namespace GameLoop.Tests
     [TestClass()]
     public class FloorTileTests
     {
-        [TestMethod()]
-        public void FloorTileTest()
-        {
-            Assert.Fail();
-        }
+
     }
 }

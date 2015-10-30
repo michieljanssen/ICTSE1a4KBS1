@@ -11,16 +11,6 @@ namespace GameLoop.Entity.Tests
     [TestClass()]
     public class IlluminatieTests
     {
-        [TestMethod()]
-        public void IlluminatieTest()
-        {
-            Assert.Fail();
-        }
 
-        [TestMethod()]
-        public void updateTest()
-        {
-            Assert.Fail();
-        }
     }
 }

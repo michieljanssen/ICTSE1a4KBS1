@@ -11,16 +11,6 @@ namespace GameLoop.Tests
     [TestClass()]
     public class ShrekTileTests
     {
-        [TestMethod()]
-        public void ShrekTileTest()
-        {
-            Assert.Fail();
-        }
 
-        [TestMethod()]
-        public void UpdateTest()
-        {
-            Assert.Fail();
-        }
     }
 }

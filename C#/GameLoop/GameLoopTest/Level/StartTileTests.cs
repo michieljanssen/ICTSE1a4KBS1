@@ -11,16 +11,6 @@ namespace GameLoop.Tests
     [TestClass()]
     public class StartTileTests
     {
-        [TestMethod()]
-        public void StartTileTest()
-        {
-            Assert.Fail();
-        }
 
-        [TestMethod()]
-        public void StartTileTest1()
-        {
-            Assert.Fail();
-        }
     }
 }

@@ -11,10 +11,6 @@ namespace GameLoop.Entity.Tests
     [TestClass()]
     public class PlayerTests
     {
-        [TestMethod()]
-        public void PlayerTest()
-        {
-            Assert.Fail();
-        }
+
     }
 }

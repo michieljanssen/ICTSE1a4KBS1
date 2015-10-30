@@ -11,17 +11,6 @@ namespace GameLoop.Tests
     [TestClass()]
     public class LocationTests
     {
-        [TestMethod()]
-        public void LocationTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void LocationTest1()
-        {
-            Assert.Fail();
-        }
 
         [TestMethod()]
         public void ComparetoTest()
@@ -33,7 +22,6 @@ namespace GameLoop.Tests
             Assert.AreEqual(expected, actual);
         }
         
-
         [TestMethod()]
         public void DistancetoTest()
         {

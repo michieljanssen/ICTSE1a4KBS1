@@ -11,22 +11,6 @@ namespace GameLoop.Entity.Tests
     [TestClass()]
     public class GruntTests
     {
-        [TestMethod()]
-        public void GruntTest()
-        {
-            Assert.Fail();
-        }
 
-        [TestMethod()]
-        public void updateTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void MoveTest()
-        {
-            Assert.Fail();
-        }
     }
 }

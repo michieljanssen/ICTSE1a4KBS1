@@ -11,28 +11,6 @@ namespace GameLoop.Tests
     [TestClass()]
     public class LevelTests
     {
-        [TestMethod()]
-        public void LevelTest()
-        {
-            Assert.Fail();
-        }
 
-        [TestMethod()]
-        public void LevelTest1()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void LevelTest2()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void loadTest()
-        {
-            Assert.Fail();
-        }
     }
 }
